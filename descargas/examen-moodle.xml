@@ -7,9 +7,9 @@
   </question>
 
   <question type="multichoice">
-    <name><text><![CDATA[P1 · El riesgo de una situación depende de…]]></text></name>
-    <questiontext format="html"><text><![CDATA[El riesgo de una situación depende de…]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[Riesgo = probabilidad de daño modulada por exposición, vulnerabilidad y capacidad de respuesta. Por eso se puede reducir aunque el peligro siga ahí. (Sesión 1, lección 1)]]></text></generalfeedback>
+    <name><text><![CDATA[P1 · El risc d’una situació depén de…]]></text></name>
+    <questiontext format="html"><text><![CDATA[El risc d’una situació depén de…]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[Risc = probabilitat de mal modulada per exposició, vulnerabilitat i capacitat de resposta. (Sessió 1, lliçó 1)]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
     <hidden>0</hidden>
@@ -20,17 +20,17 @@
     <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
     <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
     <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
-    <answer fraction="0" format="html"><text><![CDATA[La fuerza del fenómeno, únicamente.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="100" format="html"><text><![CDATA[La probabilidad de daño según la exposición, la vulnerabilidad y la capacidad de respuesta.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[El número de efectivos de emergencia.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[La rapidez con la que se evacua.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[La força del fenomen, únicament.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[La probabilitat de mal segons l’exposició, la vulnerabilitat i la capacitat de resposta.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[El nombre d’efectius d’emergència.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[La rapidesa amb què s’evacua.]]></text><feedback format="html"><text></text></feedback></answer>
     <tags><tag><text>sesion1</text></tag><tag><text>fundamentos</text></tag></tags>
   </question>
 
   <question type="multichoice">
-    <name><text><![CDATA[P2 · El orden correcto del ciclo de protección civil es:]]></text></name>
-    <questiontext format="html"><text><![CDATA[El orden correcto del ciclo de protección civil es:]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[Anticipar → prevenir → preparar → responder → recuperar. (Sesión 1, lección 1)]]></text></generalfeedback>
+    <name><text><![CDATA[P2 · L’ordre correcte del cicle de protecció civil és:]]></text></name>
+    <questiontext format="html"><text><![CDATA[L’ordre correcte del cicle de protecció civil és:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[Anticipar → prevenir → preparar → respondre → recuperar. (Sessió 1, lliçó 1)]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
     <hidden>0</hidden>
@@ -41,17 +41,17 @@
     <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
     <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
     <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
-    <answer fraction="0" format="html"><text><![CDATA[Prevenir, anticipar, responder, preparar, recuperar.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="100" format="html"><text><![CDATA[Anticipar, prevenir, preparar, responder, recuperar.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Anticipar, preparar, prevenir, recuperar, responder.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Responder, recuperar, anticipar, prevenir, preparar.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Prevenir, anticipar, respondre, preparar, recuperar.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[Anticipar, prevenir, preparar, respondre, recuperar.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Anticipar, preparar, prevenir, recuperar, respondre.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Respondre, recuperar, anticipar, prevenir, preparar.]]></text><feedback format="html"><text></text></feedback></answer>
     <tags><tag><text>sesion1</text></tag><tag><text>fundamentos</text></tag></tags>
   </question>
 
   <question type="multichoice">
-    <name><text><![CDATA[P3 · La instrucción, dentro de la cadena de alerta, es:]]></text></name>
-    <questiontext format="html"><text><![CDATA[La instrucción, dentro de la cadena de alerta, es:]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[El aviso informa, la alerta exige atención y la instrucción es la conducta concreta que debes seguir. (Sesión 1, lección 2)]]></text></generalfeedback>
+    <name><text><![CDATA[P3 · La instrucció, dins de la cadena d’alerta, és:]]></text></name>
+    <questiontext format="html"><text><![CDATA[La instrucció, dins de la cadena d’alerta, és:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[L’avís informa, l’alerta exigix atenció i la instrucció és la conducta concreta. (Sessió 1, lliçó 2)]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
     <hidden>0</hidden>
@@ -62,17 +62,17 @@
     <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
     <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
     <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
-    <answer fraction="0" format="html"><text><![CDATA[La información sobre la posibilidad de un fenómeno.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="100" format="html"><text><![CDATA[Lo que tienes que hacer exactamente: entrar, salir, esperar, no cruzar.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[El aviso técnico de AEMET.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[El mensaje que se reenvía a las familias.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[La informació sobre la possibilitat d’un fenomen.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[El que has de fer exactament: entrar, eixir, esperar, no creuar.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[L’avís tècnic d’AEMET.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[El missatge que es reenvia a les famílies.]]></text><feedback format="html"><text></text></feedback></answer>
     <tags><tag><text>sesion1</text></tag><tag><text>fundamentos</text></tag></tags>
   </question>
 
   <question type="multichoice">
-    <name><text><![CDATA[P4 · Recibes un ES-Alert en el móvil. Lo correcto es:]]></text></name>
-    <questiontext format="html"><text><![CDATA[Recibes un ES-Alert en el móvil. Lo correcto es:]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[Es un mensaje oficial con instrucciones de protección: se lee entero y se cumple. (Sesión 1, lección 2)]]></text></generalfeedback>
+    <name><text><![CDATA[P4 · Reps un ES-Alert al mòbil. El correcte és:]]></text></name>
+    <questiontext format="html"><text><![CDATA[Reps un ES-Alert al mòbil. El correcte és:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[És un missatge oficial amb instruccions de protecció: es llig sencer i es complix. (Sessió 1, lliçó 2)]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
     <hidden>0</hidden>
@@ -83,17 +83,17 @@
     <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
     <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
     <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
-    <answer fraction="0" format="html"><text><![CDATA[Reenviarlo a todos los contactos.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="100" format="html"><text><![CDATA[Leerlo completo, cumplir la instrucción y no difundirlo como cadena.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Esperar a que alguien llame al centro.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Borrarlo si no ves nada raro.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Reenviar-lo a tots els contactes.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[Llig-lo sencer, complir la instrucció i no difondre’l com a cadena.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Esperar que algú telefone al centre.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Esborrar-lo si no veus res estrany.]]></text><feedback format="html"><text></text></feedback></answer>
     <tags><tag><text>sesion1</text></tag><tag><text>fundamentos</text></tag></tags>
   </question>
 
   <question type="multichoice">
-    <name><text><![CDATA[P5 · En una llamada al 1·1·2 hay que decir, como mínimo:]]></text></name>
-    <questiontext format="html"><text><![CDATA[En una llamada al 1·1·2 hay que decir, como mínimo:]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[Qué pasa, dónde (calle, municipio, punto de referencia) y cuántas personas. Después, no colgar y seguir instrucciones. (Sesión 1, lección 2)]]></text></generalfeedback>
+    <name><text><![CDATA[P5 · En una telefonada a l’1·1·2 cal dir, com a mínim:]]></text></name>
+    <questiontext format="html"><text><![CDATA[En una telefonada a l’1·1·2 cal dir, com a mínim:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[Què passa, on (carrer, municipi, punt de referència) i quantes persones. Després, no penjar i seguir instruccions. (Sessió 1, lliçó 2)]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
     <hidden>0</hidden>
@@ -104,17 +104,17 @@
     <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
     <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
     <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
-    <answer fraction="100" format="html"><text><![CDATA[Qué pasa, dónde es y cuántas personas están afectadas.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[El nombre del centro y el curso.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Solo el municipio y la hora.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Tu nombre y tu teléfono personal.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[Què passa, on és i quantes persones estan afectades.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[El nom del centre i el curs.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Només el municipi i l’hora.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[El teu nom i el teu telèfon personal.]]></text><feedback format="html"><text></text></feedback></answer>
     <tags><tag><text>sesion1</text></tag><tag><text>fundamentos</text></tag></tags>
   </question>
 
   <question type="multichoice">
-    <name><text><![CDATA[P6 · La fórmula de comunicación en emergencias es:]]></text></name>
-    <questiontext format="html"><text><![CDATA[La fórmula de comunicación en emergencias es:]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[Un hecho verificado, una acción clara y un canal único. Menos ruido, más protección. (Sesión 1, lección 3)]]></text></generalfeedback>
+    <name><text><![CDATA[P6 · La fórmula de comunicació en emergències és:]]></text></name>
+    <questiontext format="html"><text><![CDATA[La fórmula de comunicació en emergències és:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[Un fet verificat, una acció clara i un canal únic. (Sessió 1, lliçó 3)]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
     <hidden>0</hidden>
@@ -125,17 +125,17 @@
     <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
     <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
     <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
-    <answer fraction="100" format="html"><text><![CDATA[Hecho verificado + acción clara + canal único.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Explicación completa + contexto + debate.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Varias órdenes a la vez + megafonía.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Mensaje emocional + red social oficial.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[Fet verificat + acció clara + canal únic.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Explicació completa + context + debat.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Diverses ordes alhora + megafonia.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Missatge emocional + xarxa social oficial.]]></text><feedback format="html"><text></text></feedback></answer>
     <tags><tag><text>sesion1</text></tag><tag><text>fundamentos</text></tag></tags>
   </question>
 
   <question type="multichoice">
-    <name><text><![CDATA[P7 · Una DANA es:]]></text></name>
-    <questiontext format="html"><text><![CDATA[Una DANA es:]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[Es una bolsa de aire frío aislada en altura. Puede provocar lluvias muy intensas, pero no equivale automáticamente a inundación. (Sesión 2, lección 1)]]></text></generalfeedback>
+    <name><text><![CDATA[P7 · Una DANA és:]]></text></name>
+    <questiontext format="html"><text><![CDATA[Una DANA és:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[És una bossa d’aire fred aïllada en altura. Pot provocar pluges molt intenses, però no equival automàticament a inundació. (Sessió 2, lliçó 1)]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
     <hidden>0</hidden>
@@ -146,17 +146,17 @@
     <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
     <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
     <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
-    <answer fraction="100" format="html"><text><![CDATA[Una depresión aislada en niveles altos de la atmósfera.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Una alerta roja automática por inundación.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Un sistema de drenaje de avenidas.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Un protocolo municipal de evacuación.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[Una depressió aïllada en nivells alts de l’atmosfera.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Una alerta roja automàtica per inundació.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Un sistema de drenatge d’avingudes.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Un protocol municipal d’evacuació.]]></text><feedback format="html"><text></text></feedback></answer>
     <tags><tag><text>sesion2</text></tag><tag><text>agua-fuego</text></tag></tags>
   </question>
 
   <question type="multichoice">
-    <name><text><![CDATA[P8 · Sobre el agua en movimiento, la afirmación correcta es:]]></text></name>
-    <questiontext format="html"><text><![CDATA[Sobre el agua en movimiento, la afirmación correcta es:]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[La velocidad es lo que más influye. No se cruza, ni andando ni en coche. (Sesión 2, lección 1)]]></text></generalfeedback>
+    <name><text><![CDATA[P8 · Sobre l’aigua en moviment, l’afirmació correcta és:]]></text></name>
+    <questiontext format="html"><text><![CDATA[Sobre l’aigua en moviment, l’afirmació correcta és:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[La velocitat és el que més influïx. No es creua, ni a peu ni en cotxe. (Sessió 2, lliçó 1)]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
     <hidden>0</hidden>
@@ -167,17 +167,17 @@
     <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
     <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
     <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
-    <answer fraction="0" format="html"><text><![CDATA[Con poca profundidad no hay riesgo.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="100" format="html"><text><![CDATA[Unos centímetros pueden tumbarte por la velocidad y la fuerza de arrastre.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Solo es peligrosa si supera un metro.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Se puede cruzar despacio y en grupo.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Amb poca profunditat no hi ha risc.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[Uns centímetres poden tombar-te per la velocitat i la força d’arrossegament.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Només és perillosa si supera un metre.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Es pot creuar a poc a poc i en grup.]]></text><feedback format="html"><text></text></feedback></answer>
     <tags><tag><text>sesion2</text></tag><tag><text>agua-fuego</text></tag></tags>
   </question>
 
   <question type="multichoice">
-    <name><text><![CDATA[P9 · ¿Qué presas deben tener plan de emergencia?]]></text></name>
-    <questiontext format="html"><text><![CDATA[¿Qué presas deben tener plan de emergencia?]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[Se clasifican por riesgo potencial en A, B y C. Las categorías A y B necesitan plan de emergencia. (Sesión 2, lección 1)]]></text></generalfeedback>
+    <name><text><![CDATA[P9 · Quines preses han de tindre pla d’emergència?]]></text></name>
+    <questiontext format="html"><text><![CDATA[Quines preses han de tindre pla d’emergència?]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[Es classifiquen per risc potencial en A, B i C. Les categories A i B necessiten pla d’emergència. (Sessió 2, lliçó 1)]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
     <hidden>0</hidden>
@@ -188,17 +188,17 @@
     <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
     <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
     <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
-    <answer fraction="0" format="html"><text><![CDATA[Todas, sin excepción.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="100" format="html"><text><![CDATA[Las de categoría A y B.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Solo las de categoría C.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Solo las de la Comunitat Valenciana.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Totes, sense excepció.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[Les de categoria A i B.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Només les de categoria C.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Només les de la Comunitat Valenciana.]]></text><feedback format="html"><text></text></feedback></answer>
     <tags><tag><text>sesion2</text></tag><tag><text>agua-fuego</text></tag></tags>
   </question>
 
   <question type="multichoice">
-    <name><text><![CDATA[P10 · El valor de viento que la guía usa como referencia para tomar medidas ]]></text></name>
-    <questiontext format="html"><text><![CDATA[El valor de viento que la guía usa como referencia para tomar medidas es:]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[70 km/h, aunque puede haber avisos con menos viento si el peligro es grave. Y con truenos, ya toca entrar. (Sesión 2, lección 2)]]></text></generalfeedback>
+    <name><text><![CDATA[P10 · El valor de vent que la guia usa com a referència per a prendre mesure]]></text></name>
+    <questiontext format="html"><text><![CDATA[El valor de vent que la guia usa com a referència per a prendre mesures és:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[70 km/h, encara que pot haver-hi avisos amb menys vent si el perill és greu. (Sessió 2, lliçó 2)]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
     <hidden>0</hidden>
@@ -217,9 +217,9 @@
   </question>
 
   <question type="multichoice">
-    <name><text><![CDATA[P11 · En el triángulo del fuego, el comburente es:]]></text></name>
-    <questiontext format="html"><text><![CDATA[En el triángulo del fuego, el comburente es:]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[El oxígeno (21 % del aire; el fuego necesita al menos un 16 %). La vegetación es combustible y la chispa, la fuente de calor. (Sesión 2, lección 3)]]></text></generalfeedback>
+    <name><text><![CDATA[P11 · En el triangle del foc, el comburent és:]]></text></name>
+    <questiontext format="html"><text><![CDATA[En el triangle del foc, el comburent és:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[L’oxigen (21 % de l’aire; el foc necessita almenys un 16 %). (Sessió 2, lliçó 3)]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
     <hidden>0</hidden>
@@ -230,17 +230,17 @@
     <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
     <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
     <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
-    <answer fraction="0" format="html"><text><![CDATA[La vegetación seca.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="100" format="html"><text><![CDATA[El oxígeno del aire.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[La chispa.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[El viento.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[La vegetació seca.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[L’oxigen de l’aire.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[L’espurna.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[El vent.]]></text><feedback format="html"><text></text></feedback></answer>
     <tags><tag><text>sesion2</text></tag><tag><text>agua-fuego</text></tag></tags>
   </question>
 
   <question type="multichoice">
-    <name><text><![CDATA[P12 · En un incendio interior, el principal peligro suele ser:]]></text></name>
-    <questiontext format="html"><text><![CDATA[En un incendio interior, el principal peligro suele ser:]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[El humo quita visibilidad, desorienta, irrita la garganta y puede ser tóxico. (Sesión 3, lección 1)]]></text></generalfeedback>
+    <name><text><![CDATA[P12 · En un incendi interior, el principal perill sol ser:]]></text></name>
+    <questiontext format="html"><text><![CDATA[En un incendi interior, el principal perill sol ser:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[El fum lleva visibilitat, desorienta, irrita la gola i pot ser tòxic. (Sessió 3, lliçó 1)]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
     <hidden>0</hidden>
@@ -251,17 +251,17 @@
     <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
     <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
     <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
-    <answer fraction="0" format="html"><text><![CDATA[La llama.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="100" format="html"><text><![CDATA[El humo.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[El calor del suelo.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[La alarma.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[La flama.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[El fum.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[La calor del sòl.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[L’alarma.]]></text><feedback format="html"><text></text></feedback></answer>
     <tags><tag><text>sesion3</text></tag><tag><text>centro-hogar</text></tag></tags>
   </question>
 
   <question type="multichoice">
-    <name><text><![CDATA[P13 · Si el humo impide salir del aula, hay que:]]></text></name>
-    <questiontext format="html"><text><![CDATA[Si el humo impide salir del aula, hay que:]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[Cerrar y esperar protegido. Nunca ascensor, nunca volver atrás, nunca abrir una puerta caliente. (Sesión 3, lección 1)]]></text></generalfeedback>
+    <name><text><![CDATA[P13 · Si el fum impedix eixir de l’aula, cal:]]></text></name>
+    <questiontext format="html"><text><![CDATA[Si el fum impedix eixir de l’aula, cal:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[Tancar i esperar protegit. Mai ascensor, mai tornar arrere, mai obrir una porta calenta. (Sessió 3, lliçó 1)]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
     <hidden>0</hidden>
@@ -272,17 +272,17 @@
     <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
     <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
     <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
-    <answer fraction="0" format="html"><text><![CDATA[Usar el ascensor.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="100" format="html"><text><![CDATA[Cerrar la puerta, tapar rendijas y esperar en el espacio más protegido.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Abrir las ventanas y esperar en el pasillo.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Volver a por la mochila.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Usar l’ascensor.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[Tancar la porta, tapar escletxes i esperar en l’espai més protegit.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Obrir les finestres i esperar al passadís.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Tornar a per la motxilla.]]></text><feedback format="html"><text></text></feedback></answer>
     <tags><tag><text>sesion3</text></tag><tag><text>centro-hogar</text></tag></tags>
   </question>
 
   <question type="multichoice">
-    <name><text><![CDATA[P14 · Varias personas tienen a la vez dolor de cabeza, náuseas y sueño en un]]></text></name>
-    <questiontext format="html"><text><![CDATA[Varias personas tienen a la vez dolor de cabeza, náuseas y sueño en un aula con calefacción. Sospechas:]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[El CO no se ve ni huele. Si varias personas se marean a la vez, ventila, sal y avisa. (Sesión 3, lección 2)]]></text></generalfeedback>
+    <name><text><![CDATA[P14 · Diverses persones tenen alhora mal de cap, nàusees i son en una aula a]]></text></name>
+    <questiontext format="html"><text><![CDATA[Diverses persones tenen alhora mal de cap, nàusees i son en una aula amb calefacció. Sospites:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[El CO no es veu ni fa olor. Si diverses persones es maregen alhora, ventila, ix i avisa. (Sessió 3, lliçó 2)]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
     <hidden>0</hidden>
@@ -293,17 +293,17 @@
     <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
     <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
     <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
-    <answer fraction="100" format="html"><text><![CDATA[Monóxido de carbono.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Exceso de oxígeno.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Alergia al polvo.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Un problema de iluminación.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[Monòxid de carboni.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Excés d’oxigen.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Al·lèrgia a la pols.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Un problema d’il·luminació.]]></text><feedback format="html"><text></text></feedback></answer>
     <tags><tag><text>sesion3</text></tag><tag><text>centro-hogar</text></tag></tags>
   </question>
 
   <question type="multichoice">
-    <name><text><![CDATA[P15 · Con mucho calor, la pauta correcta es:]]></text></name>
-    <questiontext format="html"><text><![CDATA[Con mucho calor, la pauta correcta es:]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[La sed llega tarde. Suspender a tiempo es mejor que esperar a que alguien se desmaye. (Sesión 3, lección 2)]]></text></generalfeedback>
+    <name><text><![CDATA[P15 · Amb molta calor, la pauta correcta és:]]></text></name>
+    <questiontext format="html"><text><![CDATA[Amb molta calor, la pauta correcta és:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[La set arriba tard. Suspendre a temps és millor que esperar que algú es desmaie. (Sessió 3, lliçó 2)]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
     <hidden>0</hidden>
@@ -314,17 +314,17 @@
     <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
     <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
     <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
-    <answer fraction="0" format="html"><text><![CDATA[Beber solo cuando alguien tenga sed.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="100" format="html"><text><![CDATA[Beber de forma proactiva y adaptar o suspender el esfuerzo físico.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Mantener el ejercicio para aclimatarse.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Sustituir el agua por bebidas azucaradas.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Beure només quan algú tinga set.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[Beure de manera proactiva i adaptar o suspendre l’esforç físic.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Mantindre l’exercici per a aclimatar-se.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Substituir l’aigua per begudes ensucrades.]]></text><feedback format="html"><text></text></feedback></answer>
     <tags><tag><text>sesion3</text></tag><tag><text>centro-hogar</text></tag></tags>
   </question>
 
   <question type="multichoice">
-    <name><text><![CDATA[P16 · Si un artefacto pirotécnico falla, hay que:]]></text></name>
-    <questiontext format="html"><text><![CDATA[Si un artefacto pirotécnico falla, hay que:]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[No se manipula nunca, aunque parezca apagado. Se mantiene el perímetro y se avisa. (Sesión 3, lección 3)]]></text></generalfeedback>
+    <name><text><![CDATA[P16 · Si un artefacte pirotècnic falla, cal:]]></text></name>
+    <questiontext format="html"><text><![CDATA[Si un artefacte pirotècnic falla, cal:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[No es manipula mai, encara que parega apagat. Es manté el perímetre i s’avisa. (Sessió 3, lliçó 3)]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
     <hidden>0</hidden>
@@ -335,17 +335,17 @@
     <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
     <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
     <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
-    <answer fraction="0" format="html"><text><![CDATA[Acercarse a comprobar la mecha.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="100" format="html"><text><![CDATA[No tocarlo, mantener la distancia y avisar.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Recogerlo y llevarlo a un cubo de agua.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Lanzarlo otra vez.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Acostar-se a comprovar la metxa.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[No tocar-lo, mantindre la distància i avisar.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Recollir-lo i tirar-lo a un poal d’aigua.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Llançar-lo una altra vegada.]]></text><feedback format="html"><text></text></feedback></answer>
     <tags><tag><text>sesion3</text></tag><tag><text>centro-hogar</text></tag></tags>
   </question>
 
   <question type="multichoice">
-    <name><text><![CDATA[P17 · Durante una sacudida sísmica en el aula hay que:]]></text></name>
-    <questiontext format="html"><text><![CDATA[Durante una sacudida sísmica en el aula hay que:]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[Protegerte donde estás es más seguro que correr mientras caen objetos. La evacuación llega después. (Sesión 4, lección 1)]]></text></generalfeedback>
+    <name><text><![CDATA[P17 · Durant una sacsada sísmica a l’aula cal:]]></text></name>
+    <questiontext format="html"><text><![CDATA[Durant una sacsada sísmica a l’aula cal:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[Protegir-te on estàs és més segur que córrer mentres cauen objectes. (Sessió 4, lliçó 1)]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
     <hidden>0</hidden>
@@ -356,17 +356,17 @@
     <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
     <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
     <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
-    <answer fraction="0" format="html"><text><![CDATA[Salir corriendo al patio.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="100" format="html"><text><![CDATA[Agacharse, cubrirse la cabeza y el cuello y sujetarse; evacuar después si toca.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Bajar por el ascensor.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Asomarse a la ventana.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Eixir corrent al pati.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[Ajupir-se, cobrir-se el cap i el coll i subjectar-se; evacuar després si toca.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Baixar per l’ascensor.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Asomar-se a la finestra.]]></text><feedback format="html"><text></text></feedback></answer>
     <tags><tag><text>sesion4</text></tag><tag><text>respuesta</text></tag></tags>
   </question>
 
   <question type="multichoice">
-    <name><text><![CDATA[P18 · Ante un aviso de nube tóxica por un accidente industrial:]]></text></name>
-    <questiontext format="html"><text><![CDATA[Ante un aviso de nube tóxica por un accidente industrial:]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[El confinamiento es una respuesta activa. Salir a mirar puede meterte justo en la nube. (Sesión 4, lección 1)]]></text></generalfeedback>
+    <name><text><![CDATA[P18 · Davant d’un avís de núvol tòxic per un accident industrial:]]></text></name>
+    <questiontext format="html"><text><![CDATA[Davant d’un avís de núvol tòxic per un accident industrial:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[El confinament és una resposta activa. Eixir a mirar et pot posar just dins del núvol. (Sessió 4, lliçó 1)]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
     <hidden>0</hidden>
@@ -377,17 +377,17 @@
     <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
     <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
     <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
-    <answer fraction="0" format="html"><text><![CDATA[Salir del centro en dirección al viento.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="100" format="html"><text><![CDATA[Entrar, cerrar ventanas y puertas, limitar la ventilación y esperar información oficial.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Abrir las ventanas para ventilar.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Ir a la valla a mirar.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Eixir del centre en direcció al vent.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[Entrar, tancar finestres i portes, limitar la ventilació i esperar informació oficial.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Obrir les finestres per a ventilar.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Anar a la tanca a mirar.]]></text><feedback format="html"><text></text></feedback></answer>
     <tags><tag><text>sesion4</text></tag><tag><text>respuesta</text></tag></tags>
   </question>
 
   <question type="multichoice">
-    <name><text><![CDATA[P19 · ¿Qué características debe cumplir un punto de encuentro?]]></text></name>
-    <questiontext format="html"><text><![CDATA[¿Qué características debe cumplir un punto de encuentro?]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[Debe estar lejos de fachadas, cristales y postes, ser accesible para todo el mundo y no bloquear la entrada de los servicios de emergencia. Y todo el grupo debe conocerlo. (Sesión 4, lección 2)]]></text></generalfeedback>
+    <name><text><![CDATA[P19 · Quines característiques ha de complir un punt de trobada?]]></text></name>
+    <questiontext format="html"><text><![CDATA[Quines característiques ha de complir un punt de trobada?]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[Ha d’estar lluny de façanes, cristalls i pals, ser accessible i no bloquejar l’entrada d’emergències. (Sessió 4, lliçó 2)]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
     <hidden>0</hidden>
@@ -398,17 +398,17 @@
     <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
     <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
     <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
-    <answer fraction="0" format="html"><text><![CDATA[Estar dentro del edificio, junto a las escaleras.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="100" format="html"><text><![CDATA[Estar lejos de fachadas y cristales, ser accesible y conocido por todo el grupo.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Ser la puerta principal del centro.]]></text><feedback format="html"><text></text></feedback></answer>
-    <answer fraction="0" format="html"><text><![CDATA[Estar en el patio, debajo del árbol más grande.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Estar dins de l’edifici, junt a les escales.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[Estar lluny de façanes i cristalls, ser accessible i connegut per tot el grup.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Ser la porta principal del centre.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Estar al pati, davall de l’arbre més gran.]]></text><feedback format="html"><text></text></feedback></answer>
     <tags><tag><text>sesion4</text></tag><tag><text>respuesta</text></tag></tags>
   </question>
 
   <question type="truefalse">
-    <name><text><![CDATA[P20 · Un simulacro debe terminar con una lista de correcciones concretas, co]]></text></name>
-    <questiontext format="html"><text><![CDATA[Un simulacro debe terminar con una lista de correcciones concretas, con responsable y fecha.]]></text></questiontext>
-    <generalfeedback format="html"><text><![CDATA[Verdadero. Un simulacro es una medición: sirve para mejorar, no para lucirse. (Sesión 4, lección 3)]]></text></generalfeedback>
+    <name><text><![CDATA[P20 · Un simulacre ha d’acabar amb una llista de correccions concretes, amb ]]></text></name>
+    <questiontext format="html"><text><![CDATA[Un simulacre ha d’acabar amb una llista de correccions concretes, amb responsable i data.]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[Verdader. Un simulacre és una mesura: servix per a millorar, no per a lluir-se. (Sessió 4, lliçó 3)]]></text></generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>1.0000000</penalty>
     <hidden>0</hidden>

@@ -630,31 +630,26 @@ const SOURCES = {
     kind: 'guia',
     title: 'Guia tècnica de suport i consulta ràpida per al professorat de centres docents no universitaris',
     href: 'https://www.112cv.gva.es/documents/163565706/413620410/Guia+val+DIGITAL+05-08.pdf/6b1a605c-f436-98eb-31e8-38a5c8a0ce82?t=1786354188826',
-    note: 'Direcció General d’Innovació en Emergències · Conselleria d’Emergències i Interior · agost 2026 · 44 pág. (PDF)'
   },
   inf1: {
     kind: 'infografia',
     title: 'Infografies Nivell 1 (valencià)',
     href: 'https://www.112cv.gva.es/documents/163565706/412645166/Infografias_Nivel1_Val.pdf/8b05479a-ebe0-f844-e03d-af059a8db8f3?t=1784094794928',
-    note: '8 infografías con la mascota «Emer» para Infantil y primeros cursos de Primaria (PDF)'
   },
   txt1: {
     kind: 'infografia',
     title: 'Textos de suport Nivell 1 (valencià)',
     href: 'https://www.112cv.gva.es/documents/163565706/412645166/TextosApoyo_Nivel1_Val.pdf/53092b47-40c6-9384-51bd-788cf70cf3ba?t=1784094864657',
-    note: 'Textos de apoyo al profesorado para acompañar las infografías N1 (PDF)'
   },
   inf2: {
     kind: 'infografia',
     title: 'Infografies Nivell 2 (valencià)',
     href: 'https://www.112cv.gva.es/documents/163565706/412645169/Infografias_Nivel2_Val.pdf/28d6aaef-be74-1427-c0aa-dfe9ab4c1be1?t=1784094946275',
-    note: '10 infografías de riesgo para Primaria y ESO (PDF)'
   },
   n3: {
     kind: 'infografia',
     title: 'Infografies Nivell 3 · galería completa (15 infografías)',
     href: 'https://www.112cv.gva.es/va/infografias-textos/nivel-3',
-    note: 'Estructura «ABANS / DURANT / DESPRÉS» · Secundaria, Bachillerato y FP'
   },
   n3_1: { kind:'infografia', title:'N3 · 1. DANA', href:'https://www.112cv.gva.es/documents/163565706/415855315/1_DANA_n3_V.jpg/2946238f-f325-0c5f-de58-70e067145010?version=1.0&t=1791198993263' },
   n3_2: { kind:'infografia', title:'N3 · 2. Preses', href:'https://www.112cv.gva.es/documents/163565706/415855315/2_PRESAS_n3_V.jpg/c604f373-f984-9f9b-19d6-5b8bc7bd78bd?version=1.0&t=1791198994250' },
@@ -675,25 +670,21 @@ const SOURCES = {
     kind: 'video',
     title: 'Vídeo «VÍDEO_DANA_Valenciano»',
     href: 'https://www.112cv.gva.es/va/-/v%C3%8Ddeo_dana_valenciano',
-    note: 'Galería de vídeos de Educació preventiva · Inundacions, 112 Comunitat Valenciana (reproductor videos.gva.es, entrada 0_br2sh6vb)'
   },
   audio_dana: {
     kind: 'video',
     title: 'Audiolibro «AUDIOLIBRO_Valenciano»',
     href: 'https://www.112cv.gva.es/va/-/audiolibro_valenciano',
-    note: 'Versión en audio del material educativo sobre inundaciones y DANA (entrada 0_jrusboos)'
   },
   diptico: {
     kind: 'infografia',
     title: 'Díptic «Inundacions, com protegir-nos?» · guia per a xiquets i xiquetes',
     href: 'https://www.112cv.gva.es/documents/163565706/396931138/D%C3%8DPTICO_+Proyecto+educativo+DANA.pdf/e1341fac-a331-7cbf-bb17-8c91e2d3a53b?t=1759484979099',
-    note: 'Proyecto educativo DANA · material para el alumnado (PDF)'
   },
   cartell: {
     kind: 'infografia',
     title: 'Cartell «Inundacions, com protegir-nos?»',
     href: 'https://www.112cv.gva.es/documents/163565706/396931138/CARTELL_+Inundacions%2C+com+protegir-nos_.pdf/18f3f347-8666-98dc-5db4-7657a63bbbc5?t=1759484977998',
-    note: 'Póster de aula para el riesgo de inundación (PDF)'
   },
   w_autoproteccion: { kind:'web', title:'112CV · Autoprotecció', href:'https://www.112cv.gva.es/va/autoproteccion' },
   w_edificios: { kind:'web', title:'112CV · Incendis en edificis', href:'https://www.112cv.gva.es/va/incendios-en-edificios' },
@@ -2401,7 +2392,641 @@ COURSE.glossary = [
   { t: '1·1·2', d: 'Número únic europeu d’emergències. Activa bombers, policia, sanitaris i protecció civil.' }
 ];
 
-COURSE.partial = true;
+/* Capa de pràctica en valencià · sessions 1 i 2 */
+COURSE.extras = Object.assign(COURSE.extras || {}, {
+
+  s1l1: {
+    time: { read: 6, practice: 8 },
+    examples: [
+      { t: 'L’atall per la rambla', s: 'Tornes a casa pel llit sec perquè estalvies cinc minuts. Hi ha avís groc per pluges.', a: 'No el faces servir. Fes la volta per la vorera, encara que tardes més.', w: 'la pluja forta pot caure lluny d’on estàs i arribar de colp. El llit és el punt més baix de tota la conca.' },
+      { t: 'La porta falcada', s: 'Algú ha posat un extintor per a mantindre oberta la porta del passadís i que corra l’aire.', a: 'Lleva l’extintor, deixa la porta tancada i avisa.', w: 'una porta tallafoc oberta deixa passar fum i foc. L’extintor, a més, ha d’estar al seu lloc per a poder usar-lo.' },
+      { t: 'Les crosses i l’escala', s: 'Un company amb crosses no pot baixar ràpid per l’escala principal.', a: 'Conéixer per endavant la ruta alternativa i l’espai de refugi previst, amb una persona assignada per a ajudar-lo.', w: 'la vulnerabilitat es preveu abans. Improvisar al passadís costa minuts que no hi ha.' }
+    ],
+    practice: [
+      { type: 'decide', label: 'Triar', q: 'Quina d’estes accions reduïx l’exposició i no només posa una barrera?',
+        options: [
+          { t: 'Tancar la porta de l’aula en eixir.', ok: false, fb: 'Això és una barrera: impedix que el fum entre. Reduïx el mal, però no el temps que estàs exposat.' },
+          { t: 'Suspendre el pati quan hi ha tempesta.', ok: true, fb: 'Correcte: evites estar en el lloc i el moment perillosos. Això és reduir l’exposició.' },
+          { t: 'Pujar a la segona planta si entra aigua.', ok: false, fb: 'Això és moure’t del perill: canvies de posició respecte de l’amenaça.' }
+        ] },
+      { type: 'vf', items: [
+        { t: 'El risc i el perill signifiquen el mateix.', ok: false, fb: 'El perill és el que pot fer mal; el risc és la probabilitat que t’afecte.' },
+        { t: 'La vulnerabilitat d’una persona forma part del risc.', ok: true, fb: 'Sí: mobilitat, edat o barreres de comprensió canvien el risc encara que el perill siga el mateix.' },
+        { t: 'El perill es pot eliminar sempre.', ok: false, fb: 'Quasi mai. El que es pot canviar és l’exposició, la vulnerabilitat i la capacitat de resposta.' }
+      ]},
+      { type: 'order', hint: 'Ordena estos llocs de MENYS a MÉS risc si hi ha una inundació.', items: ['Segona planta', 'Planta baixa', 'Soterrani'] }
+    ]
+  },
+
+  s1l2: {
+    time: { read: 7, practice: 9 },
+    examples: [
+      { t: 'Avís groc i eixida', s: 'Hi ha avís groc per pluges i el pla era anar a peu a un parc a 40 minuts.', a: 'Consultar l’avís, valorar una alternativa coberta i decidir abans d’eixir.', w: 'un avís groc no prohibix eixir, però obliga a pensar. Decidir en la porta, amb trenta persones esperant, és tard.' },
+      { t: 'ES-Alert al pati', s: 'Sonen tots els mòbils alhora amb una alerta d’inundació.', a: 'Llig el missatge sencer en veu alta, comprova quina instrucció demana i aplica-la amb el grup.', w: 'el soroll simultani no és l’emergència. La instrucció sí que importa, i cal complir-la tal com està escrita.' },
+      { t: 'El vídeo del cotxe arrossegat', s: 'Un vídeo diu que és de hui al teu municipi i tothom el reenvia.', a: 'No reenviar. Comprovar la font en 112CV o en l’ajuntament.', w: 'molts vídeos són d’altres anys o d’altres llocs. Compartir sense verificar pot moure la gent cap a la zona perillosa.' }
+    ],
+    practice: [
+      { type: 'decide', label: 'Triar', q: 'Abans d’una eixida amb el centre, on comproves si hi ha avís?',
+        options: [
+          { t: 'En el grup de WhatsApp de la classe.', ok: false, fb: 'Ahí arriba de tot, sense font ni hora. Servix per a avisar de coses del grup, no per a verificar un risc.' },
+          { t: 'En AEMET i en els canals del 112CV.', ok: true, fb: 'Correcte: són les fonts oficials, amb hora i nivell de risc. El centre, a més, donarà la instrucció.' },
+          { t: 'En el compte de notícies que més seguisc.', ok: false, fb: 'Pot ser ràpid, però no és la font que emet l’avís. Per a decidir, usa l’oficial.' }
+        ] },
+      { type: 'decide', label: 'Triar', q: 'Telefones a l’112 i no saps l’adreça exacta. Què dius?',
+        options: [
+          { t: 'Que no saps l’adreça i esperes que ho esbrinen.', ok: false, fb: 'Es perden segons que importen. Cal donar la millor referència possible.' },
+          { t: 'El nom del centre, el municipi i un punt visible prop («davant del poliesportiu»).', ok: true, fb: 'Correcte: això permet localitzar-vos encara que no sàpigues el número. Després, seguix les instruccions de l’operador.' },
+          { t: 'Pengen, busques l’adreça i tornes a telefonar.', ok: false, fb: 'Penjar abans deixa la línia lliure, però retarda l’ajuda. Millor donar referències i no penjar.' }
+        ] },
+      { type: 'vf', items: [
+        { t: 'AEMET emet els avisos meteorològics oficials.', ok: true, fb: 'Sí, a través de Meteoalerta, amb nivells i intensitat.' },
+        { t: 'Un ES-Alert es pot reenviar als contactes per a avisar.', ok: false, fb: 'No és una cadena: es llig sencer, es complix i no es difon.' },
+        { t: 'L’112 és només per a urgències reals.', ok: true, fb: 'Sí. Telefonar per a confirmar un rumor deixa la línia ocupada quan algú la necessita.' }
+      ]}
+    ]
+  },
+
+  s1l3: {
+    time: { read: 6, practice: 8 },
+    examples: [
+      { t: 'L’ordre al pati', s: 'Comença a granissar i algú crida «¡anem, anem!» des de l’altre extrem del pati.', a: 'Una sola veu, una acció concreta: «Entrem per la porta del gimnàs i esperem dins».', w: '«anem» no diu a on. Una ordre es pot complir quan es pot imaginar el moviment.' },
+      { t: 'Un company sord', s: 'Dones l’ordre d’esquena i un company sord no s’assabenta.', a: 'Contacte visual, gest cap a l’eixida i, si cal, una senyal visual acordada.', w: 'l’accessibilitat no és un extra: un missatge que no es percep no protegix.' },
+      { t: 'L’autobús', s: 'En una eixida, el grup està dins de l’autobús i cal baixar ràpid.', a: 'Una instrucció per fila, amb paraules literals: «fila de davant, baixeu i espereu junt a la porta».', w: 'en espais estrets, les ordes simultànies generen embossos i empentes.' }
+    ],
+    practice: [
+      { type: 'decide', label: 'Tria la millor ordre', q: 'Hi ha fum al passadís i el grup està a l’aula.',
+        options: [
+          { t: '«Eixiu com pugueu, ens veiem baix».', ok: false, fb: 'Genera un grup dispers, sense recompte i sense saber per on va cadascú.' },
+          { t: '«Hi ha fum. Eixim per la porta del darrere, en fila i sense córrer. Ningú no torna arrere».', ok: true, fb: 'Fet, acció i canal. Es pot seguir sense preguntar i permet controlar el grup.' },
+          { t: '«Esteu tots bé? Què ha passat?».', ok: false, fb: 'Preguntar no és ordenar. En eixe moment cal moure el grup, no obrir un debat.' }
+        ] },
+      { type: 'vf', items: [
+        { t: 'És millor donar tres ordes alhora perquè sàpien tot el pla.', ok: false, fb: 'Quasi ningú no reté tres accions en tensió. Una cada vegada.' },
+        { t: 'Comprovar la comprensió es fa mirant la conducta.', ok: true, fb: 'Sí: si la gent es mou com vas demanar, ha entés. Preguntar quasi sempre rep un «sí» automàtic.' },
+        { t: 'El color per si sol és suficient per a senyalitzar una ruta.', ok: false, fb: 'Hi ha persones daltòniques. Combina color, icona, paraula i gest.' }
+      ]},
+      { type: 'order', hint: 'Ordena la fórmula d’una bona ordre.', items: ['Fet verificat', 'Acció clara', 'Canal únic'] }
+    ]
+  },
+
+  s2l1: {
+    time: { read: 7, practice: 10 },
+    examples: [
+      { t: 'El garatge', s: 'Comença a entrar aigua al garatge del centre i hi ha vehicles dins.', a: 'Ningú no baixa. S’avisa i es manté el grup en altura.', w: 'l’aigua pot pujar més ràpid del que es tarda a baixar i tornar, i la rampa es convertix en un parany.' },
+      { t: 'La rambla que creua el camí', s: 'L’autobús escolar passa per un gual que, amb pluja forta, s’inunda.', a: 'Suspendre la ruta o esperar que passe l’episodi; no creuar.', w: 'la profunditat no és l’única dada: el corrent i els socavons ocults fan impossible mantindre el control.' },
+      { t: 'La presa d’aigües amunt', s: 'El municipi rep un avís per una presa pròxima.', a: 'Seguir la instrucció municipal: pujar a la cota prevista, sense acostar-se al llit a mirar.', w: 'una avinguda sobtada arriba amb força i arrossega vehicles. Mirar des del llit és el pitjor lloc.' }
+    ],
+    practice: [
+      { type: 'decide', label: 'Decidix', q: 'L’aigua ja cobrix el carrer i talla l’eixida principal. Què fas?',
+        options: [
+          { t: 'Creuar ràpid per a arribar al punt de trobada.', ok: false, fb: 'Creuar és el que més víctimes causa. El punt de trobada es canvia, no es força.' },
+          { t: 'Pujar a una planta alta, avisar i esperar instruccions.', ok: true, fb: 'Correcte: altura, avís i espera. Si l’aigua talla l’eixida, l’edifici pot ser el lloc més segur.' },
+          { t: 'Baixar al soterrani a comprovar si hi ha aigua.', ok: false, fb: 'Els soterranis són els primers a inundar-se i els últims a buidar-se. No es baixa mai.' }
+        ] },
+      { type: 'order', hint: 'Ordena estos llocs de MENYS a MÉS perill durant una inundació.', items: ['Tercera planta', 'Pati', 'Garatge'] },
+      { type: 'vf', items: [
+        { t: 'Una DANA sempre acaba en inundació.', ok: false, fb: 'No. És una configuració atmosfèrica que pot produir pluges intenses, però no sempre ho fa.' },
+        { t: 'Un cotxe és un bon refugi si l’aigua puja.', ok: false, fb: 'Flota i deixa d’obeir. Cal eixir i buscar altura.' },
+        { t: 'Les preses de categoria A i B necessiten pla d’emergència.', ok: true, fb: 'Sí, pel risc potencial que generen aigües avall.' }
+      ]}
+    ]
+  },
+
+  s2l2: {
+    time: { read: 6, practice: 9 },
+    examples: [
+      { t: 'El partit', s: 'Hi ha trons i el partit continua perquè «encara no plou».', a: 'Suspendre i entrar. El tro és la senyal, no la pluja.', w: 'el raig pot caure abans que arribe la pluja, i el camp és el pitjor lloc: estàs a la intempèrie i envoltat d’objectes alts.' },
+      { t: 'L’eixida', s: 'Esteu en una cresta i s’acosta una tempesta.', a: 'Baixar a una zona baixa, evitar arbres aïllats i buscar un refugi sòlid.', w: 'els llocs alts i els objectes aïllats atrauen el raig. Baixar i cobrir-se reduïx el risc.' },
+      { t: 'L’espigó', s: 'Hi ha temporal i la gent s’acosta a l’espigó a fer fotos.', a: 'Allunyar-se del passeig i de l’espigó; no acostar-se encara que altres ho facen.', w: 'una ona pot superar la barrera i arrossegar qui està dret. La distància és la protecció.' }
+    ],
+    practice: [
+      { type: 'decide', label: 'Decidix', q: 'Estàs en una eixida i comença a tronar. On et refugies?',
+        options: [
+          { t: 'Davall de l’arbre més gran.', ok: false, fb: 'És l’objecte més alt: atrau el raig i pot perdre branques.' },
+          { t: 'En un edifici o en un vehicle tancat.', ok: true, fb: 'Correcte: són refugis sòlids. Espera dins fins que passe.' },
+          { t: 'Estirat al sòl, enmig del camp.', ok: false, fb: 'Estar estirat en camp obert no protegix; cal buscar un refugi.' }
+        ] },
+      { type: 'order', hint: 'Ordena què fas en sentir el primer tro.', items: ['Entrar a l’edifici', 'Allunyar-se de finestres i cristalls', 'Esperar dins', 'Reprendre quan ho indiquen'] },
+      { type: 'vf', items: [
+        { t: 'Amb 70 km/h de vent ja poden volar cadires i tendals.', ok: true, fb: 'Sí. És la referència que usa la guia per a activar mesures preventives.' },
+        { t: 'Si escampa, ja es pot tornar al pati.', ok: false, fb: 'No: la tempesta pot tornar i el sòl continua relliscós. Es reprén quan ho indiquen.' },
+        { t: 'Els cables caiguts es poden apartar amb un pal.', ok: false, fb: 'Mai. Poden seguir amb corrent. S’avisa i es manté la gent lluny.' }
+      ]}
+    ]
+  },
+
+  s2l3: {
+    time: { read: 7, practice: 8 },
+    examples: [
+      { t: 'El fum que arriba de lluny', s: 'Hi ha un incendi a diversos quilòmetres i el fum entra al pati.', a: 'Entrar, tancar finestres i avisar. No continuar amb esport a l’aire lliure.', w: 'les partícules del fum afecten persones amb asma o al·lèrgia encara que el foc no es veja.' },
+      { t: 'La carretera tallada', s: 'La carretera cap al centre està oberta, però hi ha fum dens.', a: 'No usar-la. Esperar la indicació oficial i buscar una ruta alternativa.', w: 'una carretera oberta no és una carretera segura: la visibilitat pot caure a pocs metres.' },
+      { t: 'El confinament', s: 'El centre rep l’ordre de confinar-se per fum.', a: 'Tancar portes i finestres, allunyar-se de les finestres i esperar informació.', w: 'confinar-se és una mesura activa: reduïx l’entrada de fum mentres s’organitza la resposta.' }
+    ],
+    practice: [
+      { type: 'decide', label: 'Decidix', q: 'Fa olor de fum al pati i el foc està lluny. Què fas?',
+        options: [
+          { t: 'Continuar la classe a l’aire lliure: el foc no està prop.', ok: false, fb: 'La distància al foc no mesura el risc: el fum viatja i afecta la respiració.' },
+          { t: 'Entrar, tancar finestres i portes i avisar.', ok: true, fb: 'Correcte: reduïx l’exposició al fum i seguix la indicació del centre.' },
+          { t: 'Anar a la tanca a vore d’on ve.', ok: false, fb: 'Acostar-se al fum i al front és una de les pitjors idees, i destorba els bombers.' }
+        ] },
+      { type: 'order', hint: 'Ordena els passos per a confinar-se per fum.', items: ['Entrar a l’edifici', 'Tancar portes i finestres', 'Allunyar-se de les finestres', 'Esperar informació oficial'] },
+      { type: 'vf', items: [
+        { t: 'El fum és perillós només si veus la flama.', ok: false, fb: 'No. El fum és el principal agent lesiu, també a distància.' },
+        { t: 'La majoria dels incendis tenen origen humà.', ok: true, fb: 'Sí: neglicències, burilles, cremes, maquinària o pirotècnia.' },
+        { t: 'Confinar-se és no fer res.', ok: false, fb: 'És una mesura activa: tancar, segellar, allunyar-se de finestres i esperar informació.' }
+      ]}
+    ]
+  }
+});
+/* Capa de pràctica en valencià · sessions 3 i 4 */
+COURSE.extras = Object.assign(COURSE.extras || {}, {
+
+  s3l1: {
+    time: { read: 6, practice: 10 },
+    examples: [
+      { t: 'La porta calenta', s: 'En tocar la porta de l’aula, crema. Hi ha fum per l’escletxa.', a: 'No obrir. Segellar, avisar i esperar en la zona més protegida.', w: 'si la porta crema, a l’altre costat hi ha foc. Obrir-la pot fer entrar una llengua de foc a l’aula.' },
+      { t: 'L’ascensor', s: 'El grup vol baixar per l’ascensor perquè està més prop.', a: 'Usar l’escala, si està lliure de fum.', w: 'l’ascensor pot obrir en la planta de l’incendi, parar-se per tall de llum o omplir-se de fum.' },
+      { t: 'La motxilla', s: 'En evacuar, algú s’adona que es deixa la motxilla.', a: 'Ningú no torna arrere. Es recupera un altre dia.', w: 'tornar arrere afegix una persona exposada i obliga algú a anar-la a buscar.' }
+    ],
+    practice: [
+      { type: 'decide', label: 'Decidix', q: 'El passadís està ple de fum i l’escala està al fons. Què fas?',
+        options: [
+          { t: 'Creuar ajupit i amb la camiseta en la boca.', ok: false, fb: 'El teixit és només un suport bàsic, mai una solució suficient. Creuar un passadís amb fum dens et pot desorientar.' },
+          { t: 'Tancar la porta, segellar escletxes i avisar de la vostra ubicació.', ok: true, fb: 'Correcte: si no hi ha ruta neta, l’aula és l’espai protegit fins que arribe ajuda.' },
+          { t: 'Obrir les finestres perquè se’n vaja el fum.', ok: false, fb: 'Pot alimentar el foc i fer entrar més fum. No s’obrin sense indicació.' }
+        ] },
+      { type: 'order', hint: 'Ordena l’evacuació: dos recomptes, un abans i un altre després.', items: ['Deixar el que estigues fent', 'Comptar el grup', 'Eixir per la ruta segura', 'Anar al punt de trobada i tornar a comptar'] },
+      { type: 'vf', items: [
+        { t: 'En un incendi, el fum és més perillós que la flama.', ok: true, fb: 'Sí: desorienta, irrita i pot ser tòxic. La majoria de les víctimes no arriba a vore el foc.' },
+        { t: 'Si el conat és xicotet, es pot tornar a entrar.', ok: false, fb: 'No. No es reingressa fins a l’autorització expressa, encara que no es veja fum.' },
+        { t: 'Tancar la porta en eixir ajuda a frenar el fum.', ok: true, fb: 'Sí, guanya minuts i limita la propagació.' }
+      ]}
+    ]
+  },
+
+  s3l2: {
+    time: { read: 6, practice: 9 },
+    examples: [
+      { t: 'L’estufa', s: 'En una aula xicoteta hi ha una estufa de combustió i la finestra està tancada.', a: 'Ventilar i revisar l’aparell; si hi ha símptomes compartits, eixir i avisar.', w: 'sense ventilació, la combustió produïx monòxid de carboni, que no es veu ni fa olor.' },
+      { t: 'El colp de calor', s: 'Una companya deixa de suar, està confosa i molt roja.', a: 'Ombra, afluixar-roba, refrescar i trucar a l’112.', w: 'deixar de suar és un signe de gravetat. No es resol seient un ratet.' },
+      { t: 'L’aula del sud', s: '36 ºC, sol directe i ningú no beu aigua.', a: 'Baixar persianes, oferir aigua i reduir l’esforç.', w: 'la càrrega tèrmica acumulada baixa el rendiment i l’humor abans que algú es desmaie.' }
+    ],
+    practice: [
+      { type: 'decide', label: 'Decidix', q: 'Tres persones tenen mal de cap i son en una aula amb calefacció. Què fas primer?',
+        options: [
+          { t: 'Obrir la finestra un poc i continuar.', ok: false, fb: 'Si continua havent-hi combustió, no basta. Cal eixir de l’espai i avisar.' },
+          { t: 'Apagar l’estufa si és segur, ventilar i eixir.', ok: true, fb: 'Correcte. Després, avisar i trucar a l’112 si algú es troba malament.' },
+          { t: 'Dir-los que s’aguanten fins al final de la classe.', ok: false, fb: 'El malestar compartit no és una excusa: pot ser una intoxicació.' }
+        ] },
+      { type: 'order', hint: 'Ordena l’actuació davant d’un possible colp de calor.', items: ['Portar a l’ombra', 'Afluixar la roba', 'Refrescar amb aigua', 'Trucar a l’112'] },
+      { type: 'vf', items: [
+        { t: 'La set és una senyal primerenca de deshidratació.', ok: false, fb: 'Arriba tard. Cal beure abans, de manera proactiva.' },
+        { t: 'El monòxid de carboni fa olor de gas.', ok: false, fb: 'No fa olor, no es veu i no irrita. Per això és tan perillós.' },
+        { t: 'Amb calor, suspendre una activitat a temps és una mesura de protecció.', ok: true, fb: 'Sí. És millor que esperar que algú es desmaie.' }
+      ]}
+    ]
+  },
+
+  s3l3: {
+    time: { read: 6, practice: 9 },
+    examples: [
+      { t: 'El petard fallit', s: 'Un petard cau sense explotar i algú s’acosta.', a: 'Parar-lo, mantindre el perímetre i avisar.', w: 'pot explotar amb retard, just quan algú està damunt. Mai no es toca.' },
+      { t: 'La paella cremant', s: 'L’oli de la paella s’encén i hi ha aigua al costat.', a: 'Mai tirar aigua. Tapar si és segur, allunyar-se i avisar.', w: 'l’aigua es vaporitza de colp i projecta oli encés.' },
+      { t: 'Olor de gas', s: 'Fa olor de gas en entrar a casa.', a: 'No tocar interruptors, obrir finestres, eixir i avisar des de fora.', w: 'qualsevol espurna pot provocar una explosió. S’avisa des de fora.' }
+    ],
+    practice: [
+      { type: 'decide', label: 'Decidix', q: 'En una mascletà, un petard no explota i un amic va a agafar-lo.',
+        options: [
+          { t: 'Deixar-lo, però des de lluny.', ok: false, fb: 'Acostar-se és el que provoca la majoria de les lesions. Cal parar-lo.' },
+          { t: 'Parar-lo, mantindre tots lluny i avisar.', ok: true, fb: 'Correcte. Mai no es manipula un artefacte fallit, encara que parega apagat.' },
+          { t: 'Tirar-lo a un poal d’aigua.', ok: false, fb: 'Manipular-lo ja és perillós. S’avisa i es manté el perímetre.' }
+        ] },
+      { type: 'order', hint: 'Ordena els quatre verbs davant d’un accident a casa.', items: ['Parar', 'Mirar', 'No tocar', 'Avisar'] },
+      { type: 'vf', items: [
+        { t: 'La protecció auditiva és exagerada en una mascletà.', ok: false, fb: 'El soroll pot superar els 120 dB, el llindar del dolor. Protegir-se és normal.' },
+        { t: 'Qui no vullga participar pot quedar-se en un lloc més controlat.', ok: true, fb: 'Sí. És part de l’accessibilitat i del dret a no participar.' },
+        { t: 'Mesclar lleixiu i amoníac neteja millor.', ok: false, fb: 'Allibera gasos irritants que poden causar problemes respiratoris greus.' }
+      ]}
+    ]
+  },
+
+  s4l1: {
+    time: { read: 7, practice: 10 },
+    examples: [
+      { t: 'La sacsada a l’aula', s: 'Comença a tremolar i la porta està a cinc metres.', a: 'Ajupir-se, cobrir-se i subjectar-se. Evacuar després, si toca.', w: 'córrer durant la sacsada és la causa de moltes lesions: continuen caent objectes.' },
+      { t: 'L’avís al pati', s: 'Sona un ES-Alert de confinament mentres esteu al pati.', a: 'Entrar a l’edifici més pròxim, tancar i avisar d’on esteu.', w: 'el grup unit i dins val més que arribar a l’aula de sempre.' },
+      { t: 'La rèplica', s: 'Després del primer tremolor, algú vol entrar a per la motxilla.', a: 'No entrar fins que ho autoritzen.', w: 'les rèpliques troben els edificis ja danyats.' }
+    ],
+    practice: [
+      { type: 'decide', label: 'Decidix', q: 'Estàs al pati i comença a tremolar. Què fas?',
+        options: [
+          { t: 'Córrer cap a la porta de l’edifici.', ok: false, fb: 'Córrer mentres cauen cornises o cristalls és perillós. Allunya’t de façanes i ajup-te.' },
+          { t: 'Allunyar-te de façanes i pals, ajupir-te i cobrir-te el cap.', ok: true, fb: 'Correcte: a l’exterior, el perill són els despreniments. Protegix el cap i espera.' },
+          { t: 'Quedar-te junt a la paret de l’edifici.', ok: false, fb: 'Junt a la façana és on cauen cornises i cristalls.' }
+        ] },
+      { type: 'order', hint: 'Ordena les accions del confinament per risc químic.', items: ['Entrar a l’edifici', 'Tancar finestres i portes', 'Allunyar-se de finestres i reixetes', 'Esperar informació oficial'] },
+      { type: 'vf', items: [
+        { t: 'Durant un sisme cal córrer a l’eixida.', ok: false, fb: 'No. Primer et protegeixes on estàs; l’evacuació arriba després.' },
+        { t: 'En un incident radiològic importen el temps, la distància i el blindatge.', ok: true, fb: 'Sí: menys temps, més lluny i amb més massa pel mig.' },
+        { t: 'Si hi ha un núvol tòxic, convé obrir finestres per a ventilar.', ok: false, fb: 'Al contrari: es tanquen perquè no entre l’aire contaminat.' }
+      ]}
+    ]
+  },
+
+  s4l2: {
+    time: { read: 5, practice: 9 },
+    examples: [
+      { t: 'El punt de trobada ocupat', s: 'Una obra ocupa el punt de trobada habitual.', a: 'Usar l’alternativa prevista i registrar la incidència.', w: 'improvisar en plena evacuació genera dos grups i un recompte impossible.' },
+      { t: 'L’escala tancada', s: 'L’escala principal està en obres i ningú no ha avisat.', a: 'Identificar l’eixida alternativa i comprovar que és accessible.', w: 'una ruta que no es pot usar no és una ruta: és un parany el dia de l’incident.' },
+      { t: 'El kit sense piles', s: 'La llanterna del kit no encén.', a: 'Canviar les piles i anotar la revisió.', w: 'un kit que no funciona és pitjor que no tindre’l: genera falsa confiança.' }
+    ],
+    practice: [
+      { type: 'decide', label: 'Decidix', q: 'Quina d’estes coses NO hauria d’estar al kit d’aula?',
+        options: [
+          { t: 'Una ràdio de piles.', ok: false, fb: 'Sí que ha d’estar: és el mitjà més resistent si fallen les comunicacions.' },
+          { t: 'Espelmes i encenedors.', ok: true, fb: 'Correcte: són un risc d’incendi. Mai en un kit escolar.' },
+          { t: 'La llista del grup amb telèfons.', ok: false, fb: 'Sí que ha d’estar: permet comptar i avisar.' }
+        ] },
+      { type: 'order', hint: 'Ordena què fas en evacuar.', items: ['Comptar el grup', 'Eixir per la ruta segura', 'Anar al punt de trobada', 'Tornar a comptar'] },
+      { type: 'vf', items: [
+        { t: 'El punt de trobada ha d’estar lluny de façanes i cristalls.', ok: true, fb: 'Sí, per a evitar despreniments.' },
+        { t: 'Si una persona no pot usar la ruta, la ruta continua sent vàlida.', ok: false, fb: 'No. Si no és accessible per a tot el grup, la ruta no està acabada.' },
+        { t: 'La farmiola convertix el professorat en personal sanitari.', ok: false, fb: 'No: servix per a curar ferides xicotetes, no per a intervindre.' }
+      ]}
+    ]
+  },
+
+  s4l3: {
+    time: { read: 6, practice: 9 },
+    examples: [
+      { t: 'El simulacre rècord', s: 'Tothom ix en 2 minuts, però una companya es queda al replà.', a: 'Anotar la incidència i corregir la ruta.', w: 'el rècord de temps no val si algú no pot eixir. L’accessibilitat és el resultat principal.' },
+      { t: 'El simulacre sense objectiu', s: 'Es fa el simulacre «perquè toca», sense mesurar res.', a: 'Definir objectiu, rols i què es mesurarà.', w: 'sense objectiu només es mesura el cronòmetre. Un simulacre és una mesura, no un tràmit.' },
+      { t: 'El company callat', s: 'Després del simulacre, algú està retret i no parla.', a: 'No forçar. Acompanyar i avisar el tutor si persistix.', w: 'el silenci també és una reacció. El que ajuda és presència i normalitat.' }
+    ],
+    practice: [
+      { type: 'decide', label: 'Decidix', q: 'Un simulacre ix perfecte en temps, però falla l’accessibilitat. Què fas?',
+        options: [
+          { t: 'Felicitar el grup pel temps.', ok: false, fb: 'El temps no compensa que una persona no puga eixir.' },
+          { t: 'Registrar la incidència i corregir la ruta abans del següent.', ok: true, fb: 'Correcte: la millora d’accessibilitat és part del resultat.' },
+          { t: 'Repetir el simulacre per a baixar el temps.', ok: false, fb: 'Repetir sense canviar res només millora el cronòmetre.' }
+        ] },
+      { type: 'order', hint: 'Ordena les fases d’un simulacre útil.', items: ['Definir objectiu i rols', 'Executar amb una senyal única', 'Mesurar i anotar fallades', 'Corregir amb responsable i data'] },
+      { type: 'vf', items: [
+        { t: 'Després d’un incident cal forçar tots a contar el que van sentir.', ok: false, fb: 'No. S’observa, es normalitza i no es força la verbalització.' },
+        { t: 'Un simulacre servix per a detectar fallades sense perill real.', ok: true, fb: 'Sí: és la seua funció principal.' },
+        { t: 'La tornada a la rutina s’ha de fer com si no haguera passat res.', ok: false, fb: 'No: es recupera la rutina amb informació, orde i cura.' }
+      ]}
+    ]
+  }
+});
+/* Repàs ràpid en valencià · 3 preguntes per lliçó */
+COURSE.quick = {
+  s1l1: [
+    { q: 'El perill i el risc són exactament el mateix.', options: ['Verdader', 'Fals'], correct: 1, fb: 'El perill és el que pot fer mal; el risc és la probabilitat que t’afecte, i depén també de l’exposició i la vulnerabilitat.' },
+    { q: 'Quina d’estes mesures reduïx l’exposició?', options: ['Tancar la porta de l’aula', 'No eixir al pati amb tempesta', 'Pujar a una altra planta si entra aigua'], correct: 1, fb: 'No eixir evita estar en el lloc i el moment perillosos. Tancar la porta és una barrera i pujar és moure’t del perill.' },
+    { q: 'La vulnerabilitat d’una persona influïx en el seu risc.', options: ['Verdader', 'Fals'], correct: 0, fb: 'Sí: la mobilitat, l’edat o les barreres de comprensió canvien el risc encara que el perill siga el mateix.' }
+  ],
+  s1l2: [
+    { q: 'Un avís d’AEMET és una ordre d’evacuació.', options: ['Verdader', 'Fals'], correct: 1, fb: 'Un avís informa de la probabilitat i intensitat d’un fenomen. L’ordre d’evacuar la dona el centre o l’autoritat.' },
+    { q: 'Quin canal envia un missatge al mòbil amb instruccions de protecció?', options: ['Meteoalerta', 'ES-Alert', 'La megafonia del centre'], correct: 1, fb: 'ES-Alert és el sistema d’alertes geolocalitzades al mòbil. Es llig sencer i es complix.' },
+    { q: 'En una telefonada a l’112 cal dir què passa, on i quantes persones.', options: ['Verdader', 'Fals'], correct: 0, fb: 'Eixes són les tres dades imprescindibles. Després, no penjar fins que t’ho indiquen.' }
+  ],
+  s1l3: [
+    { q: 'És millor donar tres ordes alhora perquè el grup sàpia tot el pla.', options: ['Verdader', 'Fals'], correct: 1, fb: 'En tensió costa retindre més d’una o dos instruccions. Una acció cada vegada.' },
+    { q: 'Quina és la fórmula d’una bona ordre?', options: ['Explicació + context + debat', 'Fet verificat + acció clara + canal únic', 'Tres ordes + megafonia'], correct: 1, fb: 'Un fet, una acció i un canal. La resta afegix soroll.' },
+    { q: 'Comprovar la comprensió és preguntar «ho heu entés?».', options: ['Verdader', 'Fals'], correct: 1, fb: 'Quasi tothom dirà que sí. Es comprova mirant si la conducta és la que vas demanar.' }
+  ],
+  s2l1: [
+    { q: 'Una DANA sempre acaba en inundació.', options: ['Verdader', 'Fals'], correct: 1, fb: 'És una configuració atmosfèrica que pot produir pluges intenses, però no sempre acaba en inundació.' },
+    { q: 'Si l’aigua comença a entrar al garatge, cal baixar a traure el cotxe.', options: ['Verdader', 'Fals'], correct: 1, fb: 'Mai. Soterranis i garatges són els punts més perillosos i l’aigua puja més ràpid del que es tarda a tornar.' },
+    { q: 'L’aigua talla l’eixida principal. Què fas?', options: ['Creuar ràpid per a arribar al punt de trobada', 'Pujar a una planta alta i avisar', 'Baixar al soterrani a comprovar'], correct: 1, fb: 'Altura, avís i espera. El punt de trobada es canvia; no es força el pas per l’aigua.' }
+  ],
+  s2l2: [
+    { q: 'Es pot continuar al pati si encara no plou, encara que hi haja trons.', options: ['Verdader', 'Fals'], correct: 1, fb: 'El tro ja és senyal suficient: el raig pot caure abans que arribe la pluja.' },
+    { q: 'Quina velocitat de vent usa la guia com a referència?', options: ['50 km/h', '70 km/h', '100 km/h'], correct: 1, fb: '70 km/h, encara que pot haver-hi avisos amb menys vent si el perill és greu.' },
+    { q: 'A la costa, basta amb no entrar a l’aigua.', options: ['Verdader', 'Fals'], correct: 1, fb: 'No: una ona pot superar l’espigó i arrossegar qui està mirant. La distància a l’aigua és la protecció.' }
+  ],
+  s2l3: [
+    { q: 'El fum és perillós només si veus la flama.', options: ['Verdader', 'Fals'], correct: 1, fb: 'El fum és el principal agent lesiu i pot afectar a quilòmetres de distància.' },
+    { q: 'Si hi ha combustible i oxigen però no hi ha foc, què falta?', options: ['Una font de calor', 'Més oxigen', 'Humitat'], correct: 0, fb: 'Sense espurna, raig o burilla no hi ha ignició. Són els tres costats del triangle del foc.' },
+    { q: 'Confinar-se és no fer res.', options: ['Verdader', 'Fals'], correct: 1, fb: 'És una mesura activa: entrar, tancar, allunyar-se de finestres i esperar informació oficial.' }
+  ],
+  s3l1: [
+    { q: 'En un incendi interior, la flama és el perill principal.', options: ['Verdader', 'Fals'], correct: 1, fb: 'El fum desorienta, irrita i pot ser tòxic. La majoria de les víctimes no arriba a vore el foc.' },
+    { q: 'Si la porta de l’aula està calenta, cal obrir-la per a vore què passa.', options: ['Verdader', 'Fals'], correct: 1, fb: 'Mai. Si crema, a l’altre costat hi ha foc. Es segella, s’avisa i s’espera.' },
+    { q: 'En eixir de l’aula per a evacuar, què es fa amb la porta?', options: ['Deixar-la oberta', 'Tancar-la', 'Bloquejar-la amb una cadira'], correct: 1, fb: 'Tancar-la frena el fum i el foc. Una porta oberta convertix el passadís en una ximenera.' }
+  ],
+  s3l2: [
+    { q: 'El monòxid de carboni es detecta per la seua olor.', options: ['Verdader', 'Fals'], correct: 1, fb: 'És incolor i inodor. La pista és el malestar compartit: mal de cap, nàusees i son en diverses persones.' },
+    { q: 'Amb calor, cal beure abans de tindre set.', options: ['Verdader', 'Fals'], correct: 0, fb: 'La set arriba tard. Cal oferir aigua de manera proactiva, sobretot en menors.' },
+    { q: 'Algú deixa de suar i està confós. Què és?', options: ['Senyal de milloria', 'Possible colp de calor: cal refredar i trucar a l’112', 'Només cansament'], correct: 1, fb: 'Deixar de suar és un signe de gravetat. Ombra, refrescar i trucar a l’112.' }
+  ],
+  s3l3: [
+    { q: 'Un petard fallit es recull i es tira a un poal d’aigua.', options: ['Verdader', 'Fals'], correct: 1, fb: 'Mai no es toca. Pot explotar amb retard. Es manté el perímetre i s’avisa.' },
+    { q: 'Quina és la seqüència davant d’un accident a casa?', options: ['Córrer, cridar, eixir', 'Parar, mirar, no tocar, avisar', 'Obrir, ventilar, tocar'], correct: 1, fb: 'Quatre verbs: parar, mirar, no tocar i avisar. Si és greu, 112.' },
+    { q: 'La caixa de petards es porta al coll per a no perdre-la.', options: ['Verdader', 'Fals'], correct: 1, fb: 'Es porta en una espatla, mai al coll ni creuada, per a poder deixar-la anar ràpid.' }
+  ],
+  s4l1: [
+    { q: 'Durant un sisme cal córrer a la porta per a eixir.', options: ['Verdader', 'Fals'], correct: 1, fb: 'Primer et protegeixes on estàs: ajupir-se, cobrir-se i subjectar-se. L’evacuació arriba després.' },
+    { q: 'Davant d’un avís de núvol tòxic, què fas?', options: ['Eixir en direcció al vent', 'Entrar, tancar finestres i portes i esperar', 'Obrir les finestres per a ventilar'], correct: 1, fb: 'El confinament és actiu: entrar, tancar i esperar la informació oficial.' },
+    { q: 'En un incident radiològic compten el temps, la distància i el blindatge.', options: ['Verdader', 'Fals'], correct: 0, fb: 'Menys temps, més lluny i amb més massa pel mig. Sense oblidar la instrucció oficial.' }
+  ],
+  s4l2: [
+    { q: 'El punt de trobada ha d’estar junt a la façana de l’edifici.', options: ['Verdader', 'Fals'], correct: 1, fb: 'Ha d’estar lluny de façanes, cristalls i pals, i no bloquejar el pas d’emergències.' },
+    { q: 'Quin element del kit servix quan fallen les comunicacions?', options: ['El xiulet', 'La ràdio de piles', 'La llanterna'], correct: 1, fb: 'La ràdio és el mitjà més resistent. El xiulet servix perquè et localitzen.' },
+    { q: 'Una ruta és vàlida encara que una persona del grup no la puga usar.', options: ['Verdader', 'Fals'], correct: 1, fb: 'Si no és accessible per a tot el grup, la ruta no està acabada.' }
+  ],
+  s4l3: [
+    { q: 'Un simulacre servix sobretot per a batre un rècord de temps.', options: ['Verdader', 'Fals'], correct: 1, fb: 'Servix per a detectar fallades i corregir-les. El temps és només una de les dades.' },
+    { q: 'Després d’un simulacre, què es fa?', options: ['Felicitar el grup i passar pàgina', 'Mesurar, anotar fallades i corregir amb responsable i data', 'Repetir-lo fins a baixar el temps'], correct: 1, fb: 'Un simulacre acaba amb una llista de correccions concretes, no amb una foto.' },
+    { q: 'Després d’un incident real, cal forçar tothom a contar el que va sentir.', options: ['Verdader', 'Fals'], correct: 1, fb: 'S’observa, es normalitza i no es força la verbalització. Si persistix, es deriva.' }
+  ]
+};
+/* =======================================================================
+   Diagramas explicativos (SVG propio) y material oficial incrustado
+   ======================================================================= */
+
+COURSE.figs = {
+
+  s1l1: {
+    cap: 'Les tres estratègies es combinen: quasi totes les mesures del curs ixen d’ací. Esquema propi a partir de la Guia tècnica, §1.',
+    svg: `<svg viewBox="0 0 720 250" role="img" aria-labelledby="f11t"><title id="f11t">Tres formes de reduir el risc: posar una barrera, reduir l’exposició i moure’t</title>
+<rect width="720" height="250" rx="14" fill="#f8fbfe"/>
+<g font-family="system-ui,sans-serif">
+  <rect x="20" y="20" width="208" height="200" rx="14" fill="#fff" stroke="#d9e2ee"/>
+  <rect x="98" y="48" width="52" height="38" rx="3" fill="#dbe7f2" stroke="#b9cde0"/>
+  <rect x="118" y="48" width="12" height="38" fill="#f8fbfe"/>
+  <text x="124" y="118" text-anchor="middle" font-size="17" font-weight="700" fill="#0f3f63">Barrera</text>
+  <text x="124" y="144" text-anchor="middle" font-size="13" fill="#33445c">Tancar la porta</text>
+  <text x="124" y="163" text-anchor="middle" font-size="13" fill="#33445c">davant del fum</text>
+  <rect x="246" y="20" width="208" height="200" rx="14" fill="#fff" stroke="#d9e2ee"/>
+  <circle cx="350" cy="67" r="19" fill="none" stroke="#17618f" stroke-width="3"/>
+  <path d="M350 55 V67 L360 72" fill="none" stroke="#17618f" stroke-width="3" stroke-linecap="round"/>
+  <text x="350" y="118" text-anchor="middle" font-size="17" font-weight="700" fill="#0f3f63">Reduir</text>
+  <text x="350" y="144" text-anchor="middle" font-size="13" fill="#33445c">No eixir al pati</text>
+  <text x="350" y="163" text-anchor="middle" font-size="13" fill="#33445c">amb tempesta</text>
+  <rect x="472" y="20" width="208" height="200" rx="14" fill="#fff" stroke="#d9e2ee"/>
+  <path d="M520 67 H580" stroke="#17618f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M570 57 L584 67 L570 77" fill="none" stroke="#17618f" stroke-width="4" stroke-linecap="round"/>
+  <text x="576" y="118" text-anchor="middle" font-size="17" font-weight="700" fill="#0f3f63">Moure’t</text>
+  <text x="576" y="144" text-anchor="middle" font-size="13" fill="#33445c">Pujar a la planta</text>
+  <text x="576" y="163" text-anchor="middle" font-size="13" fill="#33445c">alta si entra aigua</text>
+</g></svg>`
+  },
+
+  s1l2: {
+    cap: 'Tres niveles que se confunden a diario: el aviso informa, la alerta exigix atenció y la instrucción es complix. Esquema propio a partir de la Guia tècnica, §2, e infografía N3 n.º 13.',
+    svg: `<svg viewBox="0 0 720 250" role="img" aria-labelledby="f12t"><title id="f12t">Avís, alerta i instrucció: tres nivells distints</title>
+<rect width="720" height="250" rx="14" fill="#f8fbfe"/>
+<g font-family="system-ui,sans-serif">
+  <path d="M30 30 H210 L240 100 L210 170 H30 L60 100 Z" fill="#fdf3df" stroke="#e6c98a"/>
+  <path d="M240 30 H420 L450 100 L420 170 H240 L270 100 Z" fill="#fbe6cf" stroke="#e8a86a"/>
+  <path d="M450 30 H630 L660 100 L630 170 H450 L480 100 Z" fill="#fdece6" stroke="#e2a39c"/>
+  <text x="135" y="95" text-anchor="middle" font-size="17" font-weight="800" fill="#8a5a00">AVÍS</text>
+  <text x="135" y="117" text-anchor="middle" font-size="12.5" fill="#8a5a00">informa</text>
+  <text x="345" y="95" text-anchor="middle" font-size="17" font-weight="800" fill="#b8541f">ALERTA</text>
+  <text x="345" y="117" text-anchor="middle" font-size="12.5" fill="#b8541f">exigix atenció</text>
+  <text x="555" y="95" text-anchor="middle" font-size="17" font-weight="800" fill="#a92a20">INSTRUCCIÓ</text>
+  <text x="555" y="117" text-anchor="middle" font-size="12.5" fill="#a92a20">es complix</text>
+  <text x="135" y="200" text-anchor="middle" font-size="12.5" fill="#33445c">«Pot ploure molt»</text>
+  <text x="345" y="200" text-anchor="middle" font-size="12.5" fill="#33445c">«Atenció, això és seriós»</text>
+  <text x="555" y="200" text-anchor="middle" font-size="12.5" fill="#33445c">«No creues, puja»</text>
+  <text x="360" y="232" text-anchor="middle" font-size="12" fill="#5d6d84">Confondre’ls provoca moviments innecessaris i perillosos</text>
+</g></svg>`
+  },
+
+  s1l3: {
+    cap: 'La fórmula que funciona davall pressió. Esquema propi a partir de la Guia tècnica, §3.',
+    svg: `<svg viewBox="0 0 720 250" role="img" aria-labelledby="f13t"><title id="f13t">Fórmula de l’ordre: fet verificat, acció clara i canal únic</title>
+<rect width="720" height="250" rx="14" fill="#f8fbfe"/>
+<g font-family="system-ui,sans-serif">
+  <rect x="24" y="30" width="196" height="88" rx="12" fill="#fff" stroke="#cfdcea"/>
+  <text x="122" y="60" text-anchor="middle" font-size="12" font-weight="800" fill="#17618f">FET VERIFICAT</text>
+  <text x="122" y="86" text-anchor="middle" font-size="13.5" fill="#0f3f63">«Hi ha fum</text>
+  <text x="122" y="104" text-anchor="middle" font-size="13.5" fill="#0f3f63">al passadís»</text>
+  <path d="M228 74 H248" stroke="#b9cde0" stroke-width="3"/>
+  <path d="M242 68 L252 74 L242 80" fill="none" stroke="#b9cde0" stroke-width="3"/>
+  <rect x="260" y="30" width="196" height="88" rx="12" fill="#fff" stroke="#cfdcea"/>
+  <text x="358" y="60" text-anchor="middle" font-size="12" font-weight="800" fill="#17618f">ACCIÓ CLARA</text>
+  <text x="358" y="86" text-anchor="middle" font-size="13.5" fill="#0f3f63">«Salimos por</text>
+  <text x="358" y="104" text-anchor="middle" font-size="13.5" fill="#0f3f63">la dreta»</text>
+  <path d="M464 74 H484" stroke="#b9cde0" stroke-width="3"/>
+  <path d="M478 68 L488 74 L478 80" fill="none" stroke="#b9cde0" stroke-width="3"/>
+  <rect x="496" y="30" width="200" height="88" rx="12" fill="#fff" stroke="#cfdcea"/>
+  <text x="596" y="60" text-anchor="middle" font-size="12" font-weight="800" fill="#17618f">CANAL ÚNIC</text>
+  <text x="596" y="86" text-anchor="middle" font-size="13.5" fill="#0f3f63">«Esperem la</text>
+  <text x="596" y="104" text-anchor="middle" font-size="13.5" fill="#0f3f63">indicació»</text>
+  <rect x="24" y="150" width="672" height="66" rx="10" fill="#0f3f63"/>
+  <text x="360" y="176" text-anchor="middle" font-size="13.5" fill="#fff" font-weight="600">Hi ha fum. Eixim per l’escala de la dreta.</text>
+  <text x="360" y="198" text-anchor="middle" font-size="13.5" fill="#ffd9c7" font-weight="700">Ningú no torna arrere.</text>
+</g></svg>`
+  },
+
+  s2l1: {
+    cap: 'La regla del agua: sube y no baixes. Esquema propio a partir de la Guia tècnica, §5 y §6.',
+    svg: `<svg viewBox="0 0 720 290" role="img" aria-labelledby="f21t"><title id="f21t">En una inundació, els pisos alts són més segurs i el soterrani és el més perillós</title>
+<rect width="720" height="290" rx="14" fill="#f8fbfe"/>
+<g font-family="system-ui,sans-serif">
+  <rect x="80" y="30" width="330" height="70" fill="#e6f4ee" stroke="#b9decd"/>
+  <rect x="80" y="100" width="330" height="70" fill="#fdf3df" stroke="#e6c98a"/>
+  <rect x="80" y="170" width="330" height="80" fill="#fbe9e7" stroke="#e2a39c"/>
+  <text x="100" y="70" font-size="14" font-weight="700" fill="#176b4d">2a planta</text>
+  <text x="100" y="140" font-size="14" font-weight="700" fill="#8a5a00">Planta baixa</text>
+  <text x="100" y="212" font-size="14" font-weight="700" fill="#a92a20">Soterrani</text>
+  <path d="M100 250 Q130 240 160 250 T220 250 T280 250 T340 250 T400 250 V280 H100 Z" fill="#cfe6f5" opacity="0.9"/>
+  <path d="M470 250 V60" stroke="#17618f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M458 72 L470 54 L482 72" fill="none" stroke="#17618f" stroke-width="5" stroke-linecap="round"/>
+  <text x="500" y="110" font-size="20" font-weight="800" fill="#17618f">PUJA</text>
+  <text x="500" y="134" font-size="13" fill="#33445c">no baixes</text>
+  <text x="500" y="220" font-size="13" fill="#a92a20" font-weight="600">Mai al soterrani</text>
+  <text x="500" y="240" font-size="13" fill="#a92a20" font-weight="600">ni al garatge</text>
+  <text x="360" y="278" text-anchor="middle" font-size="12" fill="#5d6d84">L’aigua ocupa primer les cotes baixes i no sempre es veu l’eixida</text>
+</g></svg>`
+  },
+
+  s2l2: {
+    cap: 'La senyal és el tro, no la pluja. Esquema propi a partir de la Guia tècnica, §7.',
+    svg: `<svg viewBox="0 0 720 230" role="img" aria-labelledby="f22t"><title id="f22t">Seqüència davant una tempesta: tro, entrar, esperar i reprendre només amb indicació</title>
+<rect width="720" height="230" rx="14" fill="#f8fbfe"/>
+<g font-family="system-ui,sans-serif">
+  <path d="M50 120 H670" stroke="#b9cde0" stroke-width="3"/>
+  <circle cx="90" cy="120" r="10" fill="#d9532b"/>
+  <path d="M120 60 q-22 0 -22 18 q0 18 22 18 h20 q18 0 18 -16 q0 -14 -16 -16 q-4 -14 -22 -4" fill="#cfe0ee" stroke="#9db8ce"/>
+  <path d="M136 96 l-10 18 h10 l-6 16 16 -22 h-10 l6 -12 z" fill="#f0a45c"/>
+  <text x="90" y="150" text-anchor="middle" font-size="13" font-weight="700" fill="#a92a20">TRO</text>
+  <text x="90" y="168" text-anchor="middle" font-size="11.5" fill="#5d6d84">ja has tardat</text>
+  <circle cx="280" cy="120" r="10" fill="#17618f"/>
+  <rect x="318" y="78" width="56" height="34" fill="#eef3f9" stroke="#b9cde0"/>
+  <path d="M318 78 L346 58 L374 78" fill="none" stroke="#b9cde0" stroke-width="3"/>
+  <rect x="340" y="92" width="12" height="20" fill="#9db8ce"/>
+  <text x="280" y="150" text-anchor="middle" font-size="13" font-weight="700" fill="#17618f">ENTRAR</text>
+  <text x="280" y="168" text-anchor="middle" font-size="11.5" fill="#5d6d84">lluny de finestres</text>
+  <circle cx="470" cy="120" r="10" fill="#17618f"/>
+  <circle cx="500" cy="100" r="18" fill="none" stroke="#17618f" stroke-width="3"/>
+  <path d="M500 90 V100 L507 104" fill="none" stroke="#17618f" stroke-width="3" stroke-linecap="round"/>
+  <text x="470" y="150" text-anchor="middle" font-size="13" font-weight="700" fill="#17618f">ESPERAR</text>
+  <text x="470" y="168" text-anchor="middle" font-size="11.5" fill="#5d6d84">sense tornar al pati</text>
+  <circle cx="650" cy="120" r="10" fill="#176b4d"/>
+  <path d="M634 96 l10 12 l20 -22" fill="none" stroke="#176b4d" stroke-width="4" stroke-linecap="round"/>
+  <text x="650" y="150" text-anchor="middle" font-size="13" font-weight="700" fill="#176b4d">REPRÉN</text>
+  <text x="650" y="168" text-anchor="middle" font-size="11.5" fill="#5d6d84">només si ho indiquen</text>
+</g></svg>`
+  },
+
+  s2l3: {
+    cap: 'El triangle del foc: si falta un dels tres elements, no hi ha incendi. Esquema propi a partir de la Guia tècnica, §8.',
+    svg: `<svg viewBox="0 0 720 280" role="img" aria-labelledby="f23t"><title id="f23t">Triangle del foc: combustible, oxigen i font de calor</title>
+<rect width="720" height="280" rx="14" fill="#f8fbfe"/>
+<g font-family="system-ui,sans-serif">
+  <path d="M360 34 L150 232 L570 232 Z" fill="#fdece6" stroke="#d9532b" stroke-width="4"/>
+  <text x="360" y="120" text-anchor="middle" font-size="15" font-weight="700" fill="#a92a20">SENSE UN DELS TRES</text>
+  <text x="360" y="142" text-anchor="middle" font-size="15" font-weight="700" fill="#a92a20">NO HI HA FOC</text>
+  <text x="360" y="22" text-anchor="middle" font-size="13" font-weight="800" fill="#0f3f63">FONT DE CALOR</text>
+  <text x="210" y="266" text-anchor="middle" font-size="13" font-weight="800" fill="#0f3f63">COMBUSTIBLE</text>
+  <text x="210" y="248" text-anchor="middle" font-size="11.5" fill="#33445c">herba, branques, arbres</text>
+  <text x="510" y="266" text-anchor="middle" font-size="13" font-weight="800" fill="#0f3f63">OXIGEN</text>
+  <text x="510" y="248" text-anchor="middle" font-size="11.5" fill="#33445c">21 % en l’aire</text>
+</g></svg>`
+  },
+
+  s3l1: {
+    cap: 'El fum ocupa la part alta: per això s’avança ajupit i, si no hi ha ruta neta, es confina. Esquema propi a partir de la Guia tècnica, §4.',
+    svg: `<svg viewBox="0 0 720 280" role="img" aria-labelledby="f31t"><title id="f31t">En un incendi el fum s’acumula en la part alta del passadís</title>
+<rect width="720" height="280" rx="14" fill="#f8fbfe"/>
+<g font-family="system-ui,sans-serif">
+  <rect x="70" y="40" width="440" height="190" fill="#fff" stroke="#b9cde0"/>
+  <rect x="70" y="40" width="440" height="95" fill="#6b7280" opacity="0.24"/>
+  <path d="M70 135 q55 -16 110 0 t110 0 t110 0 t110 0 V40 H70 Z" fill="#6b7280" opacity="0.16"/>
+  <text x="290" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="#33445c">FUM: calor, gasos i poca visibilitat</text>
+  <line x1="70" y1="166" x2="510" y2="166" stroke="#176b4d" stroke-width="2" stroke-dasharray="7 6"/>
+  <text x="290" y="186" text-anchor="middle" font-size="12" fill="#176b4d">aire més net prop del sòl</text>
+  <circle cx="170" cy="205" r="11" fill="#0f3f63"/>
+  <path d="M150 228 q20 -18 40 0 q6 8 -20 8 q-26 0 -20 -8" fill="#0f3f63"/>
+  <rect x="480" y="150" width="34" height="80" fill="#e6f4ee" stroke="#b9decd"/>
+  <path d="M514 190 H580" stroke="#176b4d" stroke-width="4"/>
+  <path d="M570 182 L584 190 L570 198" fill="none" stroke="#176b4d" stroke-width="4"/>
+  <text x="555" y="172" font-size="13" font-weight="700" fill="#176b4d">eixida</text>
+  <text x="360" y="262" text-anchor="middle" font-size="12" fill="#5d6d84">El fum puja i s’acumula dalt: ajupir-se guanya aire, però no substitueix una ruta neta</text>
+</g></svg>`
+  },
+
+  s3l2: {
+    cap: 'El monòxid de carboni no es veu ni fa olor: la pista és el malestar compartit. Esquema propi a partir de la Guia tècnica, §9.',
+    svg: `<svg viewBox="0 0 720 260" role="img" aria-labelledby="f32t"><title id="f32t">Símptomes compartits que fan sospitar una intoxicació per monòxid de carboni</title>
+<rect width="720" height="260" rx="14" fill="#f8fbfe"/>
+<g font-family="system-ui,sans-serif">
+  <rect x="40" y="40" width="290" height="180" rx="10" fill="#fff" stroke="#b9cde0"/>
+  <rect x="130" y="150" width="74" height="44" rx="6" fill="#e2a39c" stroke="#a92a20"/>
+  <text x="167" y="177" text-anchor="middle" font-size="12" font-weight="700" fill="#7d2118">estufa</text>
+  <circle cx="120" cy="115" r="14" fill="none" stroke="#a92a20" stroke-width="2" stroke-dasharray="4 4"/>
+  <circle cx="155" cy="98" r="10" fill="none" stroke="#a92a20" stroke-width="2" stroke-dasharray="4 4"/>
+  <circle cx="190" cy="118" r="12" fill="none" stroke="#a92a20" stroke-width="2" stroke-dasharray="4 4"/>
+  <text x="185" y="215" text-anchor="middle" font-size="12" fill="#5d6d84">sense ventilació</text>
+  <text x="380" y="62" font-size="15" font-weight="800" fill="#0f3f63">Diverses persones alhora:</text>
+  <rect x="380" y="80" width="300" height="38" rx="9" fill="#fff" stroke="#d9e2ee"/>
+  <text x="396" y="105" font-size="13.5" fill="#33445c">Mal de cap</text>
+  <rect x="380" y="128" width="300" height="38" rx="9" fill="#fff" stroke="#d9e2ee"/>
+  <text x="396" y="153" font-size="13.5" fill="#33445c">Nàusees o mareig</text>
+  <rect x="380" y="176" width="300" height="38" rx="9" fill="#fff" stroke="#d9e2ee"/>
+  <text x="396" y="201" font-size="13.5" fill="#33445c">Somnolència o malestar</text>
+</g></svg>`
+  },
+
+  s3l3: {
+    cap: 'En pirotècnia, la distància és la protecció: no es recull un artefacte fallit ni es creua el perímetre. Esquema propi a partir de la Guia tècnica, §13.',
+    svg: `<svg viewBox="0 0 720 280" role="img" aria-labelledby="f33t"><title id="f33t">Zona de llançament, perímetre de seguretat y público alejado</title>
+<rect width="720" height="280" rx="14" fill="#f8fbfe"/>
+<g font-family="system-ui,sans-serif">
+  <circle cx="250" cy="140" r="60" fill="#fdece6" stroke="#d9532b" stroke-width="3" stroke-dasharray="8 6"/>
+  <circle cx="250" cy="140" r="120" fill="none" stroke="#e2a39c" stroke-width="3" stroke-dasharray="8 6"/>
+  <circle cx="250" cy="150" r="9" fill="#d9532b"/>
+  <text x="250" y="132" text-anchor="middle" font-size="12" font-weight="700" fill="#a92a20">llançament</text>
+  <text x="250" y="266" text-anchor="middle" font-size="12" fill="#a92a20">perímetre de seguretat</text>
+  <circle cx="520" cy="120" r="14" fill="#0f3f63"/>
+  <path d="M498 160 q22 -22 44 0 q8 10 -22 10 q-30 0 -22 -10" fill="#0f3f63"/>
+  <circle cx="590" cy="150" r="14" fill="#0f3f63"/>
+  <path d="M568 190 q22 -22 44 0 q8 10 -22 10 q-30 0 -22 -10" fill="#0f3f63"/>
+  <text x="556" y="228" text-anchor="middle" font-size="13" font-weight="700" fill="#176b4d">públic, fora del perímetre</text>
+  <text x="520" y="60" text-anchor="middle" font-size="12" fill="#5d6d84">ningú no s’acosta a un artefacte fallit</text>
+</g></svg>`
+  },
+
+  s4l1: {
+    cap: 'Ajupir-se, cobrir-se i subjectar-se: la seqüència que evita la majoria de les lesions. Esquema propi a partir de la Guia tècnica, §11.',
+    svg: `<svg viewBox="0 0 720 240" role="img" aria-labelledby="f41t"><title id="f41t">Seqüència durant un sisme: ajupir-se, cobrir-se i subjectar-se</title>
+<rect width="720" height="240" rx="14" fill="#f8fbfe"/>
+<g font-family="system-ui,sans-serif">
+  <rect x="30" y="30" width="200" height="140" rx="12" fill="#fff" stroke="#d9e2ee"/>
+  <circle cx="130" cy="86" r="12" fill="#0f3f63"/>
+  <path d="M104 128 q26 -26 52 0 q8 10 -26 10 q-34 0 -26 -10" fill="#0f3f63"/>
+  <rect x="86" y="112" width="88" height="10" rx="3" fill="#cfdcea"/>
+  <text x="130" y="196" text-anchor="middle" font-size="14" font-weight="800" fill="#17618f">1. AJUP-TE</text>
+  <rect x="260" y="30" width="200" height="140" rx="12" fill="#fff" stroke="#d9e2ee"/>
+  <circle cx="360" cy="92" r="12" fill="#0f3f63"/>
+  <path d="M360 60 q-30 18 -34 34 M360 60 q30 18 34 34" fill="none" stroke="#0f3f63" stroke-width="6" stroke-linecap="round"/>
+  <path d="M334 132 q26 -22 52 0 q8 8 -26 8 q-34 0 -26 -8" fill="#0f3f63"/>
+  <text x="360" y="196" text-anchor="middle" font-size="14" font-weight="800" fill="#17618f">2. COBRIX-TE</text>
+  <rect x="490" y="30" width="200" height="140" rx="12" fill="#fff" stroke="#d9e2ee"/>
+  <rect x="600" y="60" width="10" height="80" fill="#cfdcea"/>
+  <circle cx="566" cy="92" r="12" fill="#0f3f63"/>
+  <path d="M554 118 q12 -18 24 0" fill="none" stroke="#0f3f63" stroke-width="6" stroke-linecap="round"/>
+  <path d="M578 112 H604" stroke="#0f3f63" stroke-width="6" stroke-linecap="round"/>
+  <text x="590" y="196" text-anchor="middle" font-size="14" font-weight="800" fill="#17618f">3. SUBJECTA’T</text>
+</g></svg>`
+  },
+
+  s4l2: {
+    cap: 'El punt de trobada se elige antes: lejos de fachadas y sense bloquejar l’entrada de emergencias. Esquema propio a partir de la Guia tècnica, Annex III.',
+    svg: `<svg viewBox="0 0 720 300" role="img" aria-labelledby="f42t"><title id="f42t">Eixida de l’edifici i punt de trobada allunyat de la façana</title>
+<rect width="720" height="260" rx="14" fill="#f8fbfe"/>
+<g font-family="system-ui,sans-serif">
+  <rect x="60" y="40" width="220" height="150" fill="#eef3f9" stroke="#b9cde0"/>
+  <rect x="150" y="150" width="40" height="40" fill="#fff" stroke="#b9cde0"/>
+  <text x="170" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#33445c">centre</text>
+  <path d="M170 190 V214 H420" stroke="#17618f" stroke-width="4" fill="none"/>
+  <path d="M408 206 L424 214 L408 222" fill="none" stroke="#17618f" stroke-width="4"/>
+  <circle cx="480" cy="214" r="26" fill="#e6f4ee" stroke="#176b4d" stroke-width="3" stroke-dasharray="7 5"/>
+  <path d="M480 236 V196" stroke="#176b4d" stroke-width="3"/>
+  <path d="M480 196 h30 l-8 10 l8 10 h-30" fill="#176b4d"/>
+  <text x="480" y="262" text-anchor="middle" font-size="12.5" font-weight="700" fill="#176b4d">punt de trobada</text>
+  <text x="300" y="136" font-size="12" fill="#5d6d84">sense bloquejar l’entrada</text>
+  <text x="300" y="153" font-size="12" fill="#5d6d84">de bombers</text>
+  <text x="576" y="80" text-anchor="middle" font-size="12" fill="#a92a20">lluny de façanes,</text>
+  <text x="576" y="98" text-anchor="middle" font-size="12" fill="#a92a20">cristalls i pals</text>
+</g></svg>`
+  },
+
+  s4l3: {
+    cap: 'Un simulacre és una mesura: abans, durant i després. Esquema propi a partir de la Guia tècnica, §15 i Annex IV.',
+    svg: `<svg viewBox="0 0 720 220" role="img" aria-labelledby="f43t"><title id="f43t">Fases del simulacre: abans, durant i després</title>
+<rect width="720" height="220" rx="14" fill="#f8fbfe"/>
+<g font-family="system-ui,sans-serif">
+  <rect x="26" y="30" width="204" height="140" rx="12" fill="#fff" stroke="#d9e2ee"/>
+  <text x="128" y="58" text-anchor="middle" font-size="13" font-weight="800" fill="#17618f">ABANS</text>
+  <text x="128" y="88" text-anchor="middle" font-size="12.5" fill="#33445c">objectiu</text>
+  <text x="128" y="108" text-anchor="middle" font-size="12.5" fill="#33445c">escenari</text>
+  <text x="128" y="128" text-anchor="middle" font-size="12.5" fill="#33445c">rols</text>
+  <text x="128" y="148" text-anchor="middle" font-size="12.5" fill="#33445c">avís previ</text>
+  <rect x="258" y="30" width="204" height="140" rx="12" fill="#fff" stroke="#d9e2ee"/>
+  <text x="360" y="58" text-anchor="middle" font-size="13" font-weight="800" fill="#17618f">DURANT</text>
+  <text x="360" y="88" text-anchor="middle" font-size="12.5" fill="#33445c">una senyal única</text>
+  <text x="360" y="108" text-anchor="middle" font-size="12.5" fill="#33445c">una ordre cada vegada</text>
+  <text x="360" y="128" text-anchor="middle" font-size="12.5" fill="#33445c">ningú no torna arrere</text>
+  <text x="360" y="148" text-anchor="middle" font-size="12.5" fill="#33445c">sense córrer</text>
+  <rect x="490" y="30" width="204" height="140" rx="12" fill="#fff" stroke="#d9e2ee"/>
+  <text x="592" y="58" text-anchor="middle" font-size="13" font-weight="800" fill="#176b4d">DESPRÉS</text>
+  <text x="592" y="88" text-anchor="middle" font-size="12.5" fill="#33445c">mesurar temps</text>
+  <text x="592" y="108" text-anchor="middle" font-size="12.5" fill="#33445c">anotar fallades</text>
+  <text x="592" y="128" text-anchor="middle" font-size="12.5" fill="#33445c">corregir</text>
+  <text x="592" y="148" text-anchor="middle" font-size="12.5" fill="#33445c">amb data</text>
+  <path d="M234 100 H252" stroke="#b9cde0" stroke-width="3"/><path d="M246 94 L256 100 L246 106" fill="none" stroke="#b9cde0" stroke-width="3"/>
+  <path d="M466 100 H484" stroke="#b9cde0" stroke-width="3"/><path d="M478 94 L488 100 L478 106" fill="none" stroke="#b9cde0" stroke-width="3"/>
+  <text x="360" y="200" text-anchor="middle" font-size="12" fill="#5d6d84">El resultat és una llista de correccions, no una foto</text>
+</g></svg>`
+  }
+};
+
+/* Material oficial del 112CV incrustado (imagen reducida) */
 /* =======================================================================
    Motor de la web: navegación, progreso y tests
    ======================================================================= */
@@ -2887,12 +3512,6 @@ function escAttr(s) {
 
 function viewHome() {
   const p = countProgress();
-  const notice = COURSE.partial ? `
-<div class="callout warn">
-  <span class="ttl">Traducció en curs</span>
-  <p>Esta versió en valencià està en construcció. Ja estan traduïdes les <b>12 lliçons</b>, els tests, la interfície i la planificació. Falten els casos pràctics, els diagrames, la guia d’Aules i l’examen.</p>
-  <p>Mentres tant, la <a href="es/index.html">versió en castellà</a> és completa.</p>
-</div>` : '';
 
   const sessions = COURSE.sessions.map(s => {
     const done = s.lessons.filter(l => store.isDone(l.id)).length;
@@ -2904,7 +3523,7 @@ function viewHome() {
       '</a>';
   }).join('');
 
-  return notice + `
+  return `
 <div class="hero">
   <p class="eyebrow" style="color:#ffc9b4">Curs de formació · 4 sessions de 55 min</p>
   <h1>Protecció Civil en el centre educatiu</h1>

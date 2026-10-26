@@ -35,13 +35,13 @@ Web bilingüe: **valencià per defecte** i **castellà** en `/es/`.
 |---|---|---|
 | Interfície, menú i planificació | ✅ | ✅ |
 | 12 lliçons i tests de sessió | ✅ | ✅ |
+| Casos pràctics i exercicis | ✅ | ✅ |
+| Repàs ràpid (36 preguntes) | ✅ | ✅ |
+| Diagrames | ✅ | ✅ |
+| Captures d’infografies oficials | — (per decisió) | ✅ |
 | Glossari (21 termes) | ✅ | ✅ |
-| Casos pràctics i exercicis | ⏳ | ✅ |
-| Diagrames i captures oficials | ⏳ | ✅ |
-| Guia d’Aules | ⏳ (enllaça a la castellana) | ✅ |
-| Examen Moodle | ⏳ (enllaça al castellà) | ✅ |
-
-Mentres el valencià no estiga complet, la portada mostra un avís i un enllaç a la versió castellana completa.
+| Guia d’Aules | ✅ | ✅ |
+| Examen Moodle | ✅ | ✅ |
 
 ## Publicar en GitHub Pages
 
