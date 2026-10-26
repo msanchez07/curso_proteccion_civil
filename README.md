@@ -1,114 +1,85 @@
-# Curso de Protección Civil en el centro educativo
+# Curs de Protecció Civil en el centre educatiu
 
-**Autor:** Manuel Sánchez Gomis · Profesor de FP de Informática · me.sanchezgomis@edu.gva.es
+**Autor:** Manuel Sánchez Gomis · Professor de FP d’Informàtica · me.sanchezgomis@edu.gva.es
 
-Curso **autónomo** de 4 sesiones de **55 minutos** sobre prevención, autoprotección y respuesta inicial ante emergencias, para **alumnado de Bachillerato y Ciclos Formativos**.
+Curs **autònom** de 4 sessions de **55 minuts** sobre prevenció, autoprotecció i resposta inicial davant d’emergències, per a **alumnat de Batxillerat i Cicles Formatius**.
 
-Incluye el curso completo en una web autocontenida, la **guía para publicarlo en Aules** y el **examen en formato Moodle XML** listo para importar.
+Web bilingüe: **valencià per defecte** i **castellà** en `/es/`.
 
 ---
 
-## Estructura del repositorio
+## Estructura
 
 ```
 .
-├── index.html                     ← el curso (portada del repo)
-├── aules/
-│   └── index.html                 ← guía paso a paso para Aules
-├── descargas/
-│   └── examen-moodle.xml          ← examen de 20 preguntas (Moodle XML)
+├── index.html                     ← curs en valencià (portada)
+├── aules/index.html               ← guia d’Aules
+├── descargas/examen-moodle.xml    ← examen (Moodle XML)
+├── es/
+│   ├── index.html                 ← curs en castellà
+│   ├── aules/index.html           ← guia en castellà
+│   └── descargas/examen-moodle.xml
 ├── README.md
 ├── .gitignore
 └── .nojekyll
 ```
 
-- **`/`** → curso completo. Se abre con doble clic: no necesita servidor, internet ni dependencias externas.
-- **`/aules/`** → guía para importar el XML, crear el cuestionario y publicarlo, con capturas de la interfaz actual de Aules (Moodle 5.2) y enlace a un vídeo de referencia.
-- **`/descargas/examen-moodle.xml`** → examen final listo para el banco de preguntas.
+- **`/`** → curs en valencià.
+- **`/es/`** → curs en castellà (complet).
+- **`/aules/`** → guia per a importar el XML i publicar el qüestionari.
+- **`/descargas/examen-moodle.xml`** → examen de 20 preguntes.
 
----
+## Estat de la traducció
 
-## Verlo en local
-
-1. Descarga o clona el repositorio.
-2. Abre `index.html` en cualquier navegador actual.
-3. La guía está en `aules/index.html` y el examen en `descargas/examen-moodle.xml`.
-
-> El progreso del curso se guarda en el almacenamiento local del navegador. En modo privado funciona igual, pero no recuerda el avance.
-
----
-
-## Publicarlo en GitHub Pages
-
-1. Sube el repositorio a GitHub.
-2. Ve a **Settings › Pages**.
-3. En *Build and deployment*, elige **Deploy from a branch**.
-4. Rama: **main** · Carpeta: **/ (root)**. Guarda.
-5. En uno o dos minutos tendrás:
-   - `https://TU-USUARIO.github.io/TU-REPO/` → el curso.
-   - `https://TU-USUARIO.github.io/TU-REPO/aules/` → la guía.
-   - `https://TU-USUARIO.github.io/TU-REPO/descargas/examen-moodle.xml` → descarga directa del examen.
-
-El archivo `.nojekyll` evita que GitHub procese el sitio con Jekyll y sirve el HTML tal cual.
-
----
-
-## El curso
-
-| Sesión | Título | Lecciones |
+| Part | Valencià | Castellà |
 |---|---|---|
-| 1 | Entender el riesgo y saber a quién escuchar | 3 |
-| 2 | Agua y fuego | 3 |
-| 3 | Dentro del edificio y en casa | 3 |
-| 4 | Cuando el suelo o el aire son el peligro | 3 |
+| Interfície, menú i planificació | ✅ | ✅ |
+| 12 lliçons i tests de sessió | ✅ | ✅ |
+| Glossari (21 termes) | ✅ | ✅ |
+| Casos pràctics i exercicis | ⏳ | ✅ |
+| Diagrames i captures oficials | ⏳ | ✅ |
+| Guia d’Aules | ⏳ (enllaça a la castellana) | ✅ |
+| Examen Moodle | ⏳ (enllaça al castellà) | ✅ |
 
-Cada sesión son 55 minutos de trabajo autónomo. Cada lección incluye:
+Mentres el valencià no estiga complet, la portada mostra un avís i un enllaç a la versió castellana completa.
 
-- **En una frase** y explicación completa del fenómeno.
-- **Diagrama propio** del mecanismo.
-- **Casos frecuentes**: situación, qué hacer y por qué.
-- **Practica**: decidir, ordenar y verdadero/falso, con corrección razonada.
-- **Repaso rápido**: tres preguntas de comprobación.
-- **Lo esencial** y **fuentes** de la lección.
+## Publicar en GitHub Pages
 
-Además: 10 capturas de infografías oficiales del 112CV intercaladas en las explicaciones y un glosario de 21 términos.
+**Settings › Pages › Deploy from a branch › main · / (root)**.
 
-### Evaluación
+- `https://TU-USUARIO.github.io/TU-REPO/` → valencià
+- `https://TU-USUARIO.github.io/TU-REPO/es/` → castellà
+- `https://TU-USUARIO.github.io/TU-REPO/aules/` → guia
+- `https://TU-USUARIO.github.io/TU-REPO/descargas/examen-moodle.xml` → descàrrega
 
-| Instrumento | Momento | Criterio |
+## El curs
+
+| Sessió | Títol | Lliçons |
 |---|---|---|
-| Tests de sesión (4) | Final de cada sesión | 60 % de aciertos; repetición ilimitada |
-| Examen final en Aules | Al terminar la sesión 4 | 14/20 aciertos (70 %) |
+| 1 | Entendre el risc i saber a qui escoltar | 3 |
+| 2 | Aigua i foc | 3 |
+| 3 | Dins de l’edifici i a casa | 3 |
+| 4 | Quan el sòl o l’aire són el perill | 3 |
 
-El examen final **no** está dentro del curso: se hace en Aules con `descargas/examen-moodle.xml` (20 preguntas, 19 tipo test y 1 verdadero/falso).
+Cada sessió són 55 minuts de treball autònom: tres lliçons, un test i repàs. Cada lliçó inclou «En una frase», explicació completa, casos, pràctica, repàs ràpid, «L’essencial» i fonts.
 
----
+### Avaluació
 
-## Fuentes
+| Instrument | Moment | Criteri |
+|---|---|---|
+| Tests de sessió (4) | Final de cada sessió | 60 % d’encerts; repetició il·limitada |
+| Examen final en Aules | En acabar la sessió 4 | 14/20 encerts (70 %) |
 
-Todo el contenido se elabora a partir de materiales públicos de **112 Comunitat Valenciana** (Generalitat Valenciana), y cada lección enlaza la sección exacta que utiliza:
+## Fonts
 
-- *Guia tècnica de suport i consulta ràpida per al professorat de centres docents no universitaris* (2026).
-- Infografías N1, N2 y N3, textos de apoyo, díptico y cartel de inundaciones.
-- Vídeo y audiolibro sobre la DANA del 112CV.
-- Normativa: Plan de formación (BOE-A-2025-21354), RD 524/2023, RD 393/2007 y resolución autonómica de 2026.
+Materials públics de **112 Comunitat Valenciana** (Generalitat Valenciana): *Guia tècnica de suport i consulta ràpida* (2026), infografies N1, N2 i N3, textos de suport, díptic i cartell d’inundacions, vídeo i audiollibre de la DANA, i normativa (BOE-A-2025-21354, RD 524/2023, RD 393/2007, resolució autonòmica de 2026).
 
----
+## Llicència i ús
 
-## Licencia y uso
+- El **contingut original** (textos, diagrames, guia, examen) és de Manuel Sánchez Gomis i es compartix per a ús educatiu.
+- Les **infografies oficials** pertanyen a la Generalitat Valenciana i es reproduïxen sense modificacions, amb autoria i enllaç a l’original.
+- Si vols publicar el repositori amb una llicència explícita, una opció habitual per a materials educatius és **CC BY-NC-SA 4.0**.
 
-- El **contenido original** (textos, diagramas, guía, examen) es de Manuel Sánchez Gomis y se comparte para uso educativo.
-- Las **infografías oficiales** incrustadas pertenecen a la Generalitat Valenciana y se reproducen sin modificaciones, con autoría y enlace al original.
-- Si quieres publicar el repositorio con una licencia explícita, una opción habitual para materiales educativos es **CC BY-NC-SA 4.0**: permite reutilizar y adaptar citando la autoría, sin uso comercial y compartiendo igual.
+## Avís
 
----
-
-## Aviso
-
-Este curso es material formativo. **No sustituye** al plan de autoprotección del centro, a la formación oficial ni a las instrucciones de la autoridad competente. Las decisiones de evacuación, confinamiento, comunicación con familias, suspensión de actividad o reapertura se rigen por el plan del centro y por la autoridad.
-
-En una emergencia real: **112**.
-
----
-
-*Versión 4.0 · Curso autónomo · 4 sesiones de 55 min · 12 lecciones · Examen final en Aules.*
+Material formatiu. **No substitueix** el pla d’autoprotecció del centre, la formació oficial ni les instruccions de l’autoritat competent. En una emergència real: **112**.
