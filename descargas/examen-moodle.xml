@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/Curso Protección Civil</text></category>
+    <info format="html"><text></text></info>
+    <idnumber></idnumber>
+  </question>
+
+  <question type="multichoice">
+    <name><text><![CDATA[P1 · El riesgo de una situación depende de…]]></text></name>
+    <questiontext format="html"><text><![CDATA[El riesgo de una situación depende de…]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[Riesgo = probabilidad de daño modulada por exposición, vulnerabilidad y capacidad de respuesta. Por eso se puede reducir aunque el peligro siga ahí. (Sesión 1, lección 1)]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
+    <answer fraction="0" format="html"><text><![CDATA[La fuerza del fenómeno, únicamente.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[La probabilidad de daño según la exposición, la vulnerabilidad y la capacidad de respuesta.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[El número de efectivos de emergencia.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[La rapidez con la que se evacua.]]></text><feedback format="html"><text></text></feedback></answer>
+    <tags><tag><text>sesion1</text></tag><tag><text>fundamentos</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text><![CDATA[P2 · El orden correcto del ciclo de protección civil es:]]></text></name>
+    <questiontext format="html"><text><![CDATA[El orden correcto del ciclo de protección civil es:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[Anticipar → prevenir → preparar → responder → recuperar. (Sesión 1, lección 1)]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
+    <answer fraction="0" format="html"><text><![CDATA[Prevenir, anticipar, responder, preparar, recuperar.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[Anticipar, prevenir, preparar, responder, recuperar.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Anticipar, preparar, prevenir, recuperar, responder.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Responder, recuperar, anticipar, prevenir, preparar.]]></text><feedback format="html"><text></text></feedback></answer>
+    <tags><tag><text>sesion1</text></tag><tag><text>fundamentos</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text><![CDATA[P3 · La instrucción, dentro de la cadena de alerta, es:]]></text></name>
+    <questiontext format="html"><text><![CDATA[La instrucción, dentro de la cadena de alerta, es:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[El aviso informa, la alerta exige atención y la instrucción es la conducta concreta que debes seguir. (Sesión 1, lección 2)]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
+    <answer fraction="0" format="html"><text><![CDATA[La información sobre la posibilidad de un fenómeno.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[Lo que tienes que hacer exactamente: entrar, salir, esperar, no cruzar.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[El aviso técnico de AEMET.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[El mensaje que se reenvía a las familias.]]></text><feedback format="html"><text></text></feedback></answer>
+    <tags><tag><text>sesion1</text></tag><tag><text>fundamentos</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text><![CDATA[P4 · Recibes un ES-Alert en el móvil. Lo correcto es:]]></text></name>
+    <questiontext format="html"><text><![CDATA[Recibes un ES-Alert en el móvil. Lo correcto es:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[Es un mensaje oficial con instrucciones de protección: se lee entero y se cumple. (Sesión 1, lección 2)]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
+    <answer fraction="0" format="html"><text><![CDATA[Reenviarlo a todos los contactos.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[Leerlo completo, cumplir la instrucción y no difundirlo como cadena.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Esperar a que alguien llame al centro.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Borrarlo si no ves nada raro.]]></text><feedback format="html"><text></text></feedback></answer>
+    <tags><tag><text>sesion1</text></tag><tag><text>fundamentos</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text><![CDATA[P5 · En una llamada al 1·1·2 hay que decir, como mínimo:]]></text></name>
+    <questiontext format="html"><text><![CDATA[En una llamada al 1·1·2 hay que decir, como mínimo:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[Qué pasa, dónde (calle, municipio, punto de referencia) y cuántas personas. Después, no colgar y seguir instrucciones. (Sesión 1, lección 2)]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
+    <answer fraction="100" format="html"><text><![CDATA[Qué pasa, dónde es y cuántas personas están afectadas.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[El nombre del centro y el curso.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Solo el municipio y la hora.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Tu nombre y tu teléfono personal.]]></text><feedback format="html"><text></text></feedback></answer>
+    <tags><tag><text>sesion1</text></tag><tag><text>fundamentos</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text><![CDATA[P6 · La fórmula de comunicación en emergencias es:]]></text></name>
+    <questiontext format="html"><text><![CDATA[La fórmula de comunicación en emergencias es:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[Un hecho verificado, una acción clara y un canal único. Menos ruido, más protección. (Sesión 1, lección 3)]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
+    <answer fraction="100" format="html"><text><![CDATA[Hecho verificado + acción clara + canal único.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Explicación completa + contexto + debate.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Varias órdenes a la vez + megafonía.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Mensaje emocional + red social oficial.]]></text><feedback format="html"><text></text></feedback></answer>
+    <tags><tag><text>sesion1</text></tag><tag><text>fundamentos</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text><![CDATA[P7 · Una DANA es:]]></text></name>
+    <questiontext format="html"><text><![CDATA[Una DANA es:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[Es una bolsa de aire frío aislada en altura. Puede provocar lluvias muy intensas, pero no equivale automáticamente a inundación. (Sesión 2, lección 1)]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
+    <answer fraction="100" format="html"><text><![CDATA[Una depresión aislada en niveles altos de la atmósfera.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Una alerta roja automática por inundación.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Un sistema de drenaje de avenidas.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Un protocolo municipal de evacuación.]]></text><feedback format="html"><text></text></feedback></answer>
+    <tags><tag><text>sesion2</text></tag><tag><text>agua-fuego</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text><![CDATA[P8 · Sobre el agua en movimiento, la afirmación correcta es:]]></text></name>
+    <questiontext format="html"><text><![CDATA[Sobre el agua en movimiento, la afirmación correcta es:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[La velocidad es lo que más influye. No se cruza, ni andando ni en coche. (Sesión 2, lección 1)]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
+    <answer fraction="0" format="html"><text><![CDATA[Con poca profundidad no hay riesgo.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[Unos centímetros pueden tumbarte por la velocidad y la fuerza de arrastre.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Solo es peligrosa si supera un metro.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Se puede cruzar despacio y en grupo.]]></text><feedback format="html"><text></text></feedback></answer>
+    <tags><tag><text>sesion2</text></tag><tag><text>agua-fuego</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text><![CDATA[P9 · ¿Qué presas deben tener plan de emergencia?]]></text></name>
+    <questiontext format="html"><text><![CDATA[¿Qué presas deben tener plan de emergencia?]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[Se clasifican por riesgo potencial en A, B y C. Las categorías A y B necesitan plan de emergencia. (Sesión 2, lección 1)]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
+    <answer fraction="0" format="html"><text><![CDATA[Todas, sin excepción.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[Las de categoría A y B.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Solo las de categoría C.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Solo las de la Comunitat Valenciana.]]></text><feedback format="html"><text></text></feedback></answer>
+    <tags><tag><text>sesion2</text></tag><tag><text>agua-fuego</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text><![CDATA[P10 · El valor de viento que la guía usa como referencia para tomar medidas ]]></text></name>
+    <questiontext format="html"><text><![CDATA[El valor de viento que la guía usa como referencia para tomar medidas es:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[70 km/h, aunque puede haber avisos con menos viento si el peligro es grave. Y con truenos, ya toca entrar. (Sesión 2, lección 2)]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
+    <answer fraction="0" format="html"><text><![CDATA[30 km/h]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[50 km/h]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[70 km/h]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[100 km/h]]></text><feedback format="html"><text></text></feedback></answer>
+    <tags><tag><text>sesion2</text></tag><tag><text>agua-fuego</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text><![CDATA[P11 · En el triángulo del fuego, el comburente es:]]></text></name>
+    <questiontext format="html"><text><![CDATA[En el triángulo del fuego, el comburente es:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[El oxígeno (21 % del aire; el fuego necesita al menos un 16 %). La vegetación es combustible y la chispa, la fuente de calor. (Sesión 2, lección 3)]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
+    <answer fraction="0" format="html"><text><![CDATA[La vegetación seca.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[El oxígeno del aire.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[La chispa.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[El viento.]]></text><feedback format="html"><text></text></feedback></answer>
+    <tags><tag><text>sesion2</text></tag><tag><text>agua-fuego</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text><![CDATA[P12 · En un incendio interior, el principal peligro suele ser:]]></text></name>
+    <questiontext format="html"><text><![CDATA[En un incendio interior, el principal peligro suele ser:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[El humo quita visibilidad, desorienta, irrita la garganta y puede ser tóxico. (Sesión 3, lección 1)]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
+    <answer fraction="0" format="html"><text><![CDATA[La llama.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[El humo.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[El calor del suelo.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[La alarma.]]></text><feedback format="html"><text></text></feedback></answer>
+    <tags><tag><text>sesion3</text></tag><tag><text>centro-hogar</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text><![CDATA[P13 · Si el humo impide salir del aula, hay que:]]></text></name>
+    <questiontext format="html"><text><![CDATA[Si el humo impide salir del aula, hay que:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[Cerrar y esperar protegido. Nunca ascensor, nunca volver atrás, nunca abrir una puerta caliente. (Sesión 3, lección 1)]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
+    <answer fraction="0" format="html"><text><![CDATA[Usar el ascensor.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[Cerrar la puerta, tapar rendijas y esperar en el espacio más protegido.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Abrir las ventanas y esperar en el pasillo.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Volver a por la mochila.]]></text><feedback format="html"><text></text></feedback></answer>
+    <tags><tag><text>sesion3</text></tag><tag><text>centro-hogar</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text><![CDATA[P14 · Varias personas tienen a la vez dolor de cabeza, náuseas y sueño en un]]></text></name>
+    <questiontext format="html"><text><![CDATA[Varias personas tienen a la vez dolor de cabeza, náuseas y sueño en un aula con calefacción. Sospechas:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[El CO no se ve ni huele. Si varias personas se marean a la vez, ventila, sal y avisa. (Sesión 3, lección 2)]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
+    <answer fraction="100" format="html"><text><![CDATA[Monóxido de carbono.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Exceso de oxígeno.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Alergia al polvo.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Un problema de iluminación.]]></text><feedback format="html"><text></text></feedback></answer>
+    <tags><tag><text>sesion3</text></tag><tag><text>centro-hogar</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text><![CDATA[P15 · Con mucho calor, la pauta correcta es:]]></text></name>
+    <questiontext format="html"><text><![CDATA[Con mucho calor, la pauta correcta es:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[La sed llega tarde. Suspender a tiempo es mejor que esperar a que alguien se desmaye. (Sesión 3, lección 2)]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
+    <answer fraction="0" format="html"><text><![CDATA[Beber solo cuando alguien tenga sed.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[Beber de forma proactiva y adaptar o suspender el esfuerzo físico.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Mantener el ejercicio para aclimatarse.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Sustituir el agua por bebidas azucaradas.]]></text><feedback format="html"><text></text></feedback></answer>
+    <tags><tag><text>sesion3</text></tag><tag><text>centro-hogar</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text><![CDATA[P16 · Si un artefacto pirotécnico falla, hay que:]]></text></name>
+    <questiontext format="html"><text><![CDATA[Si un artefacto pirotécnico falla, hay que:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[No se manipula nunca, aunque parezca apagado. Se mantiene el perímetro y se avisa. (Sesión 3, lección 3)]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
+    <answer fraction="0" format="html"><text><![CDATA[Acercarse a comprobar la mecha.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[No tocarlo, mantener la distancia y avisar.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Recogerlo y llevarlo a un cubo de agua.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Lanzarlo otra vez.]]></text><feedback format="html"><text></text></feedback></answer>
+    <tags><tag><text>sesion3</text></tag><tag><text>centro-hogar</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text><![CDATA[P17 · Durante una sacudida sísmica en el aula hay que:]]></text></name>
+    <questiontext format="html"><text><![CDATA[Durante una sacudida sísmica en el aula hay que:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[Protegerte donde estás es más seguro que correr mientras caen objetos. La evacuación llega después. (Sesión 4, lección 1)]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
+    <answer fraction="0" format="html"><text><![CDATA[Salir corriendo al patio.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[Agacharse, cubrirse la cabeza y el cuello y sujetarse; evacuar después si toca.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Bajar por el ascensor.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Asomarse a la ventana.]]></text><feedback format="html"><text></text></feedback></answer>
+    <tags><tag><text>sesion4</text></tag><tag><text>respuesta</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text><![CDATA[P18 · Ante un aviso de nube tóxica por un accidente industrial:]]></text></name>
+    <questiontext format="html"><text><![CDATA[Ante un aviso de nube tóxica por un accidente industrial:]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[El confinamiento es una respuesta activa. Salir a mirar puede meterte justo en la nube. (Sesión 4, lección 1)]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
+    <answer fraction="0" format="html"><text><![CDATA[Salir del centro en dirección al viento.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[Entrar, cerrar ventanas y puertas, limitar la ventilación y esperar información oficial.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Abrir las ventanas para ventilar.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Ir a la valla a mirar.]]></text><feedback format="html"><text></text></feedback></answer>
+    <tags><tag><text>sesion4</text></tag><tag><text>respuesta</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text><![CDATA[P19 · ¿Qué características debe cumplir un punto de encuentro?]]></text></name>
+    <questiontext format="html"><text><![CDATA[¿Qué características debe cumplir un punto de encuentro?]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[Debe estar lejos de fachadas, cristales y postes, ser accesible para todo el mundo y no bloquear la entrada de los servicios de emergencia. Y todo el grupo debe conocerlo. (Sesión 4, lección 2)]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text>Respuesta correcta.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Respuesta parcialmente correcta.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Respuesta incorrecta.</text></incorrectfeedback>
+    <answer fraction="0" format="html"><text><![CDATA[Estar dentro del edificio, junto a las escaleras.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text><![CDATA[Estar lejos de fachadas y cristales, ser accesible y conocido por todo el grupo.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Ser la puerta principal del centro.]]></text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text><![CDATA[Estar en el patio, debajo del árbol más grande.]]></text><feedback format="html"><text></text></feedback></answer>
+    <tags><tag><text>sesion4</text></tag><tag><text>respuesta</text></tag></tags>
+  </question>
+
+  <question type="truefalse">
+    <name><text><![CDATA[P20 · Un simulacro debe terminar con una lista de correcciones concretas, co]]></text></name>
+    <questiontext format="html"><text><![CDATA[Un simulacro debe terminar con una lista de correcciones concretas, con responsable y fecha.]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[Verdadero. Un simulacro es una medición: sirve para mejorar, no para lucirse. (Sesión 4, lección 3)]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="100" format="html"><text>true</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>false</text><feedback format="html"><text></text></feedback></answer>
+    <tags><tag><text>sesion4</text></tag><tag><text>respuesta</text></tag></tags>
+  </question>
+
+</quiz>
