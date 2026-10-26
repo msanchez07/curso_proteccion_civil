@@ -69,6 +69,10 @@ a{color:var(--brand2)}
   a[href^="http"]::after{content:" (" attr(href) ")";font-size:8pt;color:#555}
   .wrap{padding:0}
 }
+
+.dl{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1rem 0}
+.small{font-size:.86rem}
+.muted{color:var(--muted)}
 </style>
 </head>
 <body>
@@ -105,7 +109,11 @@ a{color:var(--brand2)}
   <li>El teu curs d’Aules amb permisos de <b>professor</b> (no basta «professor no editor» per a importar).</li>
   <li>Cinc minuts. El procés complet no sol passar d’ahí.</li>
 </ul>
-<p><a class="btn" href="../descargas/examen-moodle.xml" download>Descarrega el qüestionari (.xml)</a></p>
+<p class="dl">
+  <a class="btn" href="../descargas/examen-moodle.xml" download>Qüestionari en valencià (.xml)</a>
+  <a class="btn ghost" href="../es/descargas/examen-moodle.xml" download>Qüestionari en castellà (.xml)</a>
+</p>
+<p class="small muted">Els dos fitxers tenen les mateixes 20 preguntes; tria l’idioma que necessites. També els tens en la <a href="../index.html">portada del curs</a>.</p>
 
 <h2><span class="n">2</span>Entra al curs i activa l’edició</h2>
 <ol>

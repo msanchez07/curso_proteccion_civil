@@ -69,6 +69,10 @@ a{color:var(--brand2)}
   a[href^="http"]::after{content:" (" attr(href) ")";font-size:8pt;color:#555}
   .wrap{padding:0}
 }
+
+.dl{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1rem 0}
+.small{font-size:.86rem}
+.muted{color:var(--muted)}
 </style>
 </head>
 <body>
@@ -103,7 +107,11 @@ a{color:var(--brand2)}
   <li>Tu curso de Aules con permisos de <b>profesor</b> (no basta «profesor no editor» para importar).</li>
   <li>Cinco minutos. El proceso completo no suele pasar de ahí.</li>
 </ul>
-<p><a class="btn" href="../descargas/examen-moodle.xml" download>Descargar cuestionario (.xml)</a></p>
+<p class="dl">
+  <a class="btn" href="../descargas/examen-moodle.xml" download>Cuestionario en castellano (.xml)</a>
+  <a class="btn ghost" href="../../descargas/examen-moodle.xml" download>Cuestionario en valenciano (.xml)</a>
+</p>
+<p class="small muted">Los dos archivos tienen las mismas 20 preguntas; elige el idioma que necesites. También están en la <a href="../index.html">portada del curso</a>.</p>
 
 <h2><span class="n">2</span>Entra al curso y activa la edición</h2>
 <ol>
