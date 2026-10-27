@@ -557,6 +557,24 @@ details.deep p,details.deep ul{font-size:.93rem}
 }
 a.chip{text-decoration:none}
 .ref-link.local{font-weight:700}
+
+/* Còmic inline a la lliçó */
+.lesson-comic{margin:2.2rem 0;background:#fff;border:1px solid #d7e3ec;border-radius:16px;padding:14px 14px 10px;box-shadow:0 8px 24px rgba(16,42,67,.06)}
+.lc-head{display:flex;justify-content:space-between;align-items:center;margin:0 4px 10px;font-size:.72rem;letter-spacing:.14em;font-weight:800;color:#1f6b8f}
+.lc-stage{position:relative;background:#0e1a24;border-radius:12px;overflow:hidden}
+.lc-stage img{display:block;width:100%;height:auto;cursor:zoom-in}
+.lc-nav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.7);background:#123a52;color:#fff;font-size:1.4rem;line-height:1;cursor:pointer;z-index:5;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+.lc-nav.prev{left:10px}.lc-nav.next{right:10px}
+.lc-nav[disabled]{opacity:.25;cursor:default}
+.lc-foot{display:flex;justify-content:space-between;gap:12px;align-items:center;margin:10px 4px 2px;font-size:.86rem;color:#51697c}
+.lc-title{font-weight:700;color:#123a52}
+.lc-all{color:#1f6b8f;font-weight:700;text-decoration:none;white-space:nowrap}
+.lc-all:hover{text-decoration:underline}
+.lc-dots{display:flex;gap:6px;justify-content:center;padding:6px 0 2px}
+.lc-dot{width:6px;height:6px;border-radius:3px;background:#c9d8e3}
+.lc-dot.on{background:#1f6b8f}
+.lightbox.wide img{width:min(96vw,1400px);max-height:92vh;aspect-ratio:auto;object-fit:contain;background:#0b0f14}
+
 </style>
 </head>
 <body>
@@ -573,7 +591,6 @@ a.chip{text-decoration:none}
     </div>
     <span class="byline"><b>Manuel Sánchez Gomis</b> · Professor de FP d’Informàtica<br><a href="mailto:me.sanchezgomis@edu.gva.es">me.sanchezgomis@edu.gva.es</a></span>
     <div class="topbar-actions">
-      <a class="chip comic-link" href="materials/index.html" title="Còmic 112">🎬 Còmic 112</a>
       <div class="lang" role="group" aria-label="Idioma">
         <span aria-current="true" lang="va">VA</span>
         <a href="es/index.html" hreflang="es" lang="es" title="Versión en castellano">ES</a>
@@ -3212,7 +3229,7 @@ function refsHTML(refs) {
     const local = LOCAL_MATERIALS[id];
     const localTxt = local ? '<a class="ref-link local" href="' + local + '">' + 'Llegir la fitxa processada →' + '</a>' : '';
     const linkTxt = localTxt + (src.href ? '<a class="ref-link" href="' + src.href + '" target="_blank" rel="noopener noreferrer">' + shortUrl(src.href) + '</a>' : '');
-    return '<li class="src"><span class="kind ' + src.kind + '">' + kindLabel(src.kind) + '</span><div>' +
+    return '<li class="src" data-src="' + id + '"><span class="kind ' + src.kind + '">' + kindLabel(src.kind) + '</span><div>' +
       '<b>' + esc(src.title) + '</b>' +
       (loc ? '<span class="note"><b>Secció utilizada:</b> ' + esc(loc) + '</span>' : '') +
       (src.note ? '<span class="note">' + esc(src.note) + '</span>' : '') +
@@ -3968,14 +3985,15 @@ ${blocks}
   }
   function close() {
     lb.hidden = true;
+    lb.classList.remove('wide');
     lbImg.src = '';
     document.body.style.overflow = '';
     if (lastFocus) lastFocus.focus();
   }
 
   document.addEventListener('click', e => {
-    const img = e.target.closest('.capture img');
-    if (img) { e.preventDefault(); open(img.src, img.alt); }
+    const img = e.target.closest('.capture img, .lesson-comic img');
+    if (img) { e.preventDefault(); lb.classList.toggle('wide', !!img.closest('.lesson-comic')); open(img.src, img.alt); }
   });
   lb.addEventListener('click', e => {
     if (e.target === lb || e.target.closest('.lb-close')) close();
@@ -4019,5 +4037,72 @@ render();
 updateProgressUI();
 
 </script>
+
+<script>
+(function () {
+  const LC_DATA = {"n3_1": ["Inundació i DANA", "Inundación y DANA"], "n3_2": ["Preses i embassaments", "Presas y embalses"], "n3_3": ["Tempesta, vent fort i temporal marítim", "Tormenta, viento fuerte y temporal marítimo"], "n3_4": ["Incendi forestal", "Incendio forestal"], "n3_5": ["Onada de fred, nevades i CO", "Ola de frío, nevadas y CO"], "n3_6": ["Onada de calor", "Ola de calor"], "n3_7": ["Terratrèmol", "Terremoto"], "n3_8": ["Risc tecnològic · Evacuació", "Riesgo tecnológico · Evacuación"], "n3_9": ["Risc tecnològic · Confinament", "Riesgo tecnológico · Confinamiento"], "n3_10": ["Pirotècnia", "Pirotécnia"], "n3_11": ["Riscos en la llar", "Riesgos en el hogar"], "n3_12": ["Esdeveniments multitudinaris", "Eventos multitudinarios"], "n3_13": ["Alertes i notícies falses", "Alertas y noticias falsas"], "n3_14": ["Després de l'emergència", "Después de la emergencia"], "n3_15": ["Telefonada a l’1·1·2", "Llamada al 1·1·2"]};
+  const lang = document.documentElement.lang.startsWith('es') ? 'es' : 'va';
+  const base = lang === 'es' ? '../assets/materials/' : 'assets/materials/';
+  const ui = lang === 'es'
+    ? {kick:'CÓMIC DE LA LECCIÓN', prev:'Anterior', next:'Siguiente', all:'Ver todo el cómic', of:'de'}
+    : {kick:'CÒMIC DE LA LLIÇÓ', prev:'Anterior', next:'Següent', all:'Veure tot el còmic', of:'de'};
+  const view = document.getElementById('view');
+  if (!view) return;
+
+  function mount() {
+    const src = view.querySelector('.sources');
+    if (!src || src.dataset.lc) return;
+    const ids = [...src.querySelectorAll('li[data-src]')].map(li => li.dataset.src).filter(id => LC_DATA[id]);
+    if (!ids.length) return;
+    src.dataset.lc = '1';
+
+    let i = 0;
+    const sec = document.createElement('section');
+    sec.className = 'lesson-comic';
+    sec.setAttribute('aria-label', ui.kick);
+    sec.innerHTML = '<div class="lc-head"><span>' + ui.kick + '</span><span class="lc-count"></span></div>' +
+      '<div class="lc-stage"><img alt=""><button class="lc-nav prev" aria-label="' + ui.prev + '">‹</button>' +
+      '<button class="lc-nav next" aria-label="' + ui.next + '">›</button></div>' +
+      '<div class="lc-foot"><span class="lc-title"></span><a class="lc-all" href="#"></a></div>' +
+      '<div class="lc-dots"></div>';
+    const img = sec.querySelector('img');
+    const title = sec.querySelector('.lc-title');
+    const count = sec.querySelector('.lc-count');
+    const dots = sec.querySelector('.lc-dots');
+    const prev = sec.querySelector('.prev');
+    const next = sec.querySelector('.next');
+    const all = sec.querySelector('.lc-all');
+
+    function draw() {
+      const id = ids[i];
+      const t = LC_DATA[id];
+      img.src = base + 'n3/full/' + id + '.webp';
+      img.alt = (lang === 'es' ? t[1] : t[0]) + ' · infografia oficial del 112CV';
+      title.textContent = lang === 'es' ? t[1] : t[0];
+      count.textContent = (i + 1) + ' ' + ui.of + ' ' + ids.length;
+      all.href = 'materials/#' + id.replace('_', '-');
+      all.textContent = ui.all;
+      prev.disabled = i === 0;
+      next.disabled = i === ids.length - 1;
+      dots.innerHTML = '';
+      ids.forEach((_, n) => {
+        const d = document.createElement('span');
+        d.className = 'lc-dot' + (n === i ? ' on' : '');
+        dots.appendChild(d);
+      });
+    }
+
+    prev.addEventListener('click', e => { e.stopPropagation(); if (i > 0) { i--; draw(); } });
+    next.addEventListener('click', e => { e.stopPropagation(); if (i < ids.length - 1) { i++; draw(); } });
+    if (ids.length === 1) { prev.hidden = true; next.hidden = true; }
+    draw();
+    src.parentNode.insertBefore(sec, src);
+  }
+
+  new MutationObserver(() => requestAnimationFrame(mount)).observe(view, {childList: true, subtree: true});
+  mount();
+})();
+</script>
+
 </body>
 </html>

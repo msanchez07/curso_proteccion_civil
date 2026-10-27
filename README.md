@@ -32,14 +32,15 @@ Web bilingüe: **valencià per defecte** i **castellà** en `/es/`.
 - **`/`** → curs en valencià.
 - **`/es/`** → curs en castellà (complet).
 - **`/aules/`** → guia per a importar el XML i publicar el qüestionari.
-- **`/materials/`** → còmic amb les 15 infografies N3, N1/N2 i la guia.
+- **`/materials/`** → arxiu del còmic (les infografies també apareixen dins de cada lliçó).
 - **`/descargas/examen-moodle.xml`** → examen de 20 preguntes.
 
 ## Materials processats
 
 Les fonts oficials del 112CV ja no són només enllaços:
 
-- **Còmic d’emergències** (`/materials/`): lector per diapositives amb les 15 infografies N3, una per pàgina, amb navegació, teclat, gestos i descàrrega de l’original.
+- **Còmic a la lliçó**: cada lliçó mostra les seues infografies N3 com a diapositives, just abans de les fonts, amb fletxes, comptador, ampliació i enllaç a l’arxiu.
+- **Arxiu** (`/materials/`): les 15 làmines N3, N1/N2 i la guia, per consultar-les fora del curs.
 - **Nivell 2** (10 làmines) i **Nivell 1** (8 làmines), també en el lector.
 - **Guia tècnica** (51 p.), amb portada, índex i pàgines de mostra.
 - **Díptic i cartell** d’inundacions.
