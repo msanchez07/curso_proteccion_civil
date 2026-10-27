@@ -609,7 +609,6 @@ a.chip{text-decoration:none}
     <p id="status" class="sr-only" role="status" aria-live="polite"></p>
     <footer class="footer wrap">
       <p><b>Autor:</b> Manuel Sánchez Gomis · Profesor de FP de Informática · <a href="mailto:me.sanchezgomis@edu.gva.es">me.sanchezgomis@edu.gva.es</a></p>
-      <p><a href="aules/index.html">Guía para publicar el examen en Aules</a></p>
       <p>Material formativo elaborado a partir de las infografías, textos de apoyo y la <em>Guia tècnica de suport i consulta ràpida</em> de la Direcció General d’Innovació en Emergències (Conselleria d’Emergències i Interior, Generalitat Valenciana) y de los contenidos públicos de 112 Comunitat Valenciana.</p>
       <p>Uso educativo. No sustituye al plan de autoprotección del centro, a la formación oficial ni a las instrucciones de la autoridad competente. En una emergencia real: <strong>112</strong>.</p>
     </footer>
@@ -4167,7 +4166,7 @@ updateProgressUI();
   const TITLES = {"n3_1": ["Inundació i DANA", "Inundación y DANA"], "n3_2": ["Preses i embassaments", "Presas y embalses"], "n3_3": ["Tempesta, vent fort i temporal marítim", "Tormenta, viento fuerte y temporal marítimo"], "n3_4": ["Incendi forestal", "Incendio forestal"], "n3_5": ["Onada de fred, nevades i CO", "Ola de frío, nevadas y CO"], "n3_6": ["Onada de calor", "Ola de calor"], "n3_7": ["Terratrèmol", "Terremoto"], "n3_8": ["Risc tecnològic · Evacuació", "Riesgo tecnológico · Evacuación"], "n3_9": ["Risc tecnològic · Confinament", "Riesgo tecnológico · Confinamiento"], "n3_10": ["Pirotècnia", "Pirotécnia"], "n3_11": ["Riscos en la llar", "Riesgos en el hogar"], "n3_12": ["Esdeveniments multitudinaris", "Eventos multitudinarios"], "n3_13": ["Alertes i notícies falses", "Alertas y noticias falsas"], "n3_14": ["Després de l'emergència", "Después de la emergencia"], "n3_15": ["Telefonada a l’1·1·2", "Llamada al 1·1·2"]};
   const LESSONS = {"s1l2": ["n3_13", "n3_15"], "s1l3": ["n3_8", "n3_9"], "s2l1": ["n3_1", "n3_2"], "s2l2": ["n3_3"], "s2l3": ["n3_4"], "s3l1": ["n3_8", "n3_9"], "s3l2": ["n3_5", "n3_6"], "s3l3": ["n3_10", "n3_11"], "s4l1": ["n3_7", "n3_9"], "s4l2": ["n3_8", "n3_9"], "s4l3": ["n3_14", "n3_15"]};
   const lang = document.documentElement.lang.startsWith('es') ? 'es' : 'va';
-  const base = lang === 'es' ? '../assets/materials/' : 'assets/materials/';
+  const base = lang === 'es' ? '../assets/materials/es/' : 'assets/materials/';
   const ui = lang === 'es'
     ? {kick:'CÓMIC DE LA LECCIÓN', prev:'Anterior', next:'Siguiente', all:'Ver todo el cómic', of:'de'}
     : {kick:'CÒMIC DE LA LLIÇÓ', prev:'Anterior', next:'Següent', all:'Veure tot el còmic', of:'de'};

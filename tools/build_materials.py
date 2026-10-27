@@ -343,7 +343,7 @@ if (h) {
 
 def build(lang: str) -> str:
     ui = UI[lang]
-    asset = "../assets/materials/" if lang == "va" else "../../assets/materials/"
+    asset = "../assets/materials/" if lang == "va" else "../../assets/materials/es/"
     course = "../index.html" if lang == "va" else "../index.html"
     other = "../es/materials/index.html" if lang == "va" else "../../materials/index.html"
     otherlang = "es" if lang == "va" else "va"
@@ -373,7 +373,7 @@ def build(lang: str) -> str:
         })
 
     toc = "".join(f"<li><b>{t[0] if lang == 'va' else t[2]}</b> · p. {t[1]}</li>" for t in TOC)
-    pdf = FUENTES["guia"]["href"]
+    pdf = FUENTES["guia"]["href"] if lang == "va" else "https://www.112cv.gva.es/documents/163565706/413620410/Guia+cas+DIGITAL+05-08.pdf/518e48e1-ae85-0e40-6a57-bd344ed3a7a2?t=1786354187342"
     h1 = ui["h1"]
 
     html = (TEMPLATE

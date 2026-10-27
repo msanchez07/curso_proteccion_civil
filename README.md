@@ -42,6 +42,7 @@ Les fonts oficials del 112CV ja no són només enllaços:
 - **Còmic a la lliçó**: cada lliçó mostra les seues infografies N3 com a diapositives, just abans de les fonts, amb fletxes, comptador, ampliació i enllaç a l’arxiu.
 - **Arxiu** (`/materials/`): les 15 làmines N3, N1/N2 i la guia, per consultar-les fora del curs.
 - **Nivell 2** (10 làmines) i **Nivell 1** (8 làmines), també en el lector.
+- **Versió en castellà**: N3 `_C`, N1/N2 `_Cast` i guia `Guia cas`, servides des de `/es/materials/`.
 - **Guia tècnica** (51 p.), amb portada, índex i pàgines de mostra.
 - **Díptic i cartell** d’inundacions.
 - Les referències de cada lliçó enllacen a la fitxa processada (`Llegir la fitxa processada`), no només al PDF extern.
@@ -61,7 +62,7 @@ python3 tools/build_materials.py
 | Casos pràctics i exercicis | ✅ | ✅ |
 | Repàs ràpid (36 preguntes) | ✅ | ✅ |
 | Diagrames | ✅ | ✅ |
-| Infografies oficials (còmic) | ✅ 15 làmines N3 | ✅ 15 làmines N3 |
+| Infografies oficials (còmic) | ✅ 15 N3 (VA) | ✅ 15 N3 (ES) |
 | Glossari (21 termes) | ✅ | ✅ |
 | Guia d’Aules | ✅ | ✅ |
 | Examen Moodle | ✅ | ✅ |
