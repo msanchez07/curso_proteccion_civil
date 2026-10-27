@@ -214,7 +214,7 @@ details.case .ans p:last-child{margin-bottom:0}
 .vocab span{font-size:.82rem;background:#eef3f9;border:1px solid var(--line);border-radius:999px;padding:.22rem .62rem;color:var(--ink-soft)}
 .vocab b{color:var(--brand)}
 
-/* ---------- Lección interactiva ---------- */
+/* ---------- Lliçó interactiva ---------- */
 #view{--accent:#17618f}
 #view[data-s="s1"]{--accent:#17618f}
 #view[data-s="s2"]{--accent:#0f6f63}
@@ -593,7 +593,7 @@ a.chip{text-decoration:none}
     <div class="topbar-actions">
       <div class="lang" role="group" aria-label="Idioma">
         <span aria-current="true" lang="va">VA</span>
-        <a href="es/index.html" hreflang="es" lang="es" title="Versión en castellano">ES</a>
+        <a href="es/index.html" hreflang="es" lang="es" title="Versió en castellà">ES</a>
       </div>
       <span class="chip" id="topProgress" aria-hidden="true">0 % completat</span>
       <button class="btn-menu" id="menuBtn" aria-expanded="false" aria-controls="sidebar">☰ Menú</button>
@@ -628,7 +628,7 @@ a.chip{text-decoration:none}
 
 <script>
 /* =======================================================================
-   CURSO DE PROTECCIÓN CIVIL · datos del curso
+   CURS DE PROTECCIÓ CIVIL · dades del curs
    Fuentes: 112 Comunitat Valenciana (infografías N1, N2, N3, textos de
    apoyo y Guia tècnica de suport i consulta ràpida, 2026).
    ======================================================================= */
@@ -687,12 +687,12 @@ const SOURCES = {
   n3_15: { kind:'infografia', title:'N3 · 15. Telefonada a l’1·1·2', href:'https://www.112cv.gva.es/documents/163565706/415855315/15_LLAMADA+112_n3_V.jpg/dec1e33c-e468-37cf-2787-34486ec6a581?version=1.0&t=1791199004073' },
   video_dana: {
     kind: 'video',
-    title: 'Vídeo «VÍDEO_DANA_Valenciano»',
+    title: 'Vídeo «VÍDEO_DANA_Valencià»',
     href: 'https://www.112cv.gva.es/va/-/v%C3%8Ddeo_dana_valenciano',
   },
   audio_dana: {
     kind: 'video',
-    title: 'Audiolibro «AUDIOLIBRO_Valenciano»',
+    title: 'Audiollibre «AUDIOLIBRO_Valencià»',
     href: 'https://www.112cv.gva.es/va/-/audiolibro_valenciano',
   },
   diptico: {
@@ -726,7 +726,7 @@ const SOURCES = {
   w_planes: { kind:'web', title:'112CV · Guies per a redacció de plans d’emergència', href:'https://www.112cv.gva.es/va/guies-per-a-redaccio-de-plans-d-emergencia' },
   w_educacio: { kind:'web', title:'112CV · Educació preventiva', href:'https://www.112cv.gva.es/va/educacio-preventiva' },
   w_infografias: { kind:'web', title:'112CV · Infografies i textos de suport', href:'https://www.112cv.gva.es/va/infografias-textos' },
-  retro: { kind:'juego', title:'RetoEmergencias (juego educativo de la Generalitat Valenciana)', href:'https://emergencias.gva.es/estatico/retoEMERgencias_1_0/index.html' },
+  retro: { kind:'juego', title:'RetoEmergencias (joc educatiu de la Generalitat Valenciana)', href:'https://emergencias.gva.es/estatico/retoEMERgencias_1_0/index.html' },
   n_plan: { kind:'norma', title:'Pla de formació davant d’emergències de protecció civil en centres educatius no universitaris (BOE-A-2025-21354)', href:'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-21354' },
   n_524: { kind:'norma', title:'Reial decret 524/2023, Norma bàsica de protecció civil (BOE-A-2023-14679)', href:'https://www.boe.es/buscar/act.php?id=BOE-A-2023-14679' },
   n_393: { kind:'norma', title:'Reial decret 393/2007, Norma bàsica d’autoprotecció (BOE-A-2007-6237)', href:'https://www.boe.es/buscar/doc.php?id=BOE-A-2007-6237' },
@@ -2977,7 +2977,7 @@ COURSE.figs = {
 
   s3l3: {
     cap: 'En pirotècnia, la distància és la protecció: no es recull un artefacte fallit ni es creua el perímetre. Esquema propi a partir de la Guia tècnica, §13.',
-    svg: `<svg viewBox="0 0 720 280" role="img" aria-labelledby="f33t"><title id="f33t">Zona de llançament, perímetre de seguretat y público alejado</title>
+    svg: `<svg viewBox="0 0 720 280" role="img" aria-labelledby="f33t"><title id="f33t">Zona de llançament, perímetre de seguretat i públic allunyat</title>
 <rect width="720" height="280" rx="14" fill="#f8fbfe"/>
 <g font-family="system-ui,sans-serif">
   <circle cx="250" cy="140" r="60" fill="#fdece6" stroke="#d9532b" stroke-width="3" stroke-dasharray="8 6"/>
@@ -3071,7 +3071,7 @@ COURSE.figs = {
 
 /* Material oficial del 112CV incrustado (imagen reducida) */
 /* =======================================================================
-   Motor de la web: navegación, progreso y tests
+   Motor de la web: navegació, progrés i tests
    ======================================================================= */
 
 const ALL_LESSONS = COURSE.sessions.flatMap(s => s.lessons.map(l => ({ s, l })));
@@ -3122,7 +3122,7 @@ function updateProgressUI() {
   byId('topProgress').setAttribute('title', p.done + ' de ' + p.total + ' elements completats');
 }
 
-/* ---------------- Navegación ---------------- */
+/* ---------------- Navegació ---------------- */
 
 function buildSidebar() {
   let html = '';
@@ -3145,7 +3145,7 @@ function buildSidebar() {
   });
 
   html += '<div class="side-sep"></div>';
-  html += '<p class="small muted" style="padding:0 .5rem">Basado en las infografías y la guía técnica del 112 Comunitat Valenciana.</p>';
+  html += '<p class="small muted" style="padding:0 .5rem">Basat en les infografies i la guia tècnica del 112 Comunitat Valenciana.</p>';
 
   sidebar.innerHTML = html;
 }
@@ -3237,14 +3237,14 @@ function refsHTML(refs) {
   }).join('');
   return '<section class="sources" aria-labelledby="src-h">' +
     '<h2 id="src-h">Fonts de esta lliçó</h2>' +
-    '<p class="hint">Cada dada de la lliçó procede de uno de estos materiales. Los enlaces abren el documento original del 112 Comunitat Valenciana.</p>' +
+    '<p class="hint">Cada dada de la lliçó prové dels materials oficials. Els enllaços obrin el document original del 112 Comunitat Valenciana.</p>' +
     '<ul class="src-list">' + items + '</ul></section>';
 }
 
 function kindLabel(k) {
   return ({
-    guia: 'Guía', infografia: 'Infografía', video: 'Vídeo', web: 'Web', norma: 'Normativa', juego: 'Juego'
-  })[k] || 'Fuente';
+    guia: 'Guia', infografia: 'Infografia', video: 'Vídeo', web: 'Web', norma: 'Normativa', juego: 'Joc'
+  })[k] || 'Font';
 }
 
 function shortUrl(u) {
@@ -3309,7 +3309,7 @@ function initWidgets() {
     const fb = item.querySelector('.vf-fb');
     const p = document.createElement('p');
     p.className = 'print-answer';
-    p.textContent = 'Resposta: ' + (ok ? 'verdadero' : 'falso') + '. ' + (fb ? fb.textContent : '');
+    p.textContent = 'Resposta: ' + (ok ? 'veritable' : 'fals') + '. ' + (fb ? fb.textContent : '');
     item.appendChild(p);
   });
   document.querySelectorAll('.order').forEach(box => {
@@ -3373,7 +3373,7 @@ function initWidgets() {
           else if (x === b) x.classList.add('bad');
         });
         fb.className = 'vf-fb show';
-        fb.textContent = (good ? 'Correcte. ' : 'No. La respuesta correcta es «' + (ok ? 'verdadero' : 'falso') + '». ') + fb.textContent;
+        fb.textContent = (good ? 'Correcte. ' : 'No. La resposta correcta és «' + (ok ? 'veritable' : 'fals') + '». ') + fb.textContent;
       });
     });
   });
@@ -3478,18 +3478,18 @@ function renderExtras(lesson, ex) {
   let html = '';
 
   if (ex.examples && ex.examples.length) {
-    html += '<h2>Casos frecuentes</h2><p>Tres situaciones que pasan de verdad. Para cada una: qué hacer y por qué.</p><div class="examples">';
+    html += '<h2>Casos freqüents</h2><p>Tres situacions que passen de veritat. Per a cadascuna: què fer i per què.</p><div class="examples">';
     html += ex.examples.map(e =>
       '<div class="example"><h4>' + e.t + '</h4>' +
-      '<p><b>Situación:</b> ' + e.s + '</p>' +
-      '<p><b>Què hacer:</b> ' + e.a + '</p>' +
+      '<p><b>Situació:</b> ' + e.s + '</p>' +
+      '<p><b>Què fer:</b> ' + e.a + '</p>' +
       '<p class="why"><b>Per què:</b> ' + e.w + '</p></div>'
     ).join('');
     html += '</div>';
   }
 
   if (ex.practice && ex.practice.length) {
-    html += '<section class="practice"><h2>Practica</h2><p>Responde sin prisa. Cada ejercicio te dice por qué la opción correcta lo es.</p>';
+    html += '<section class="practice"><h2>Practica</h2><p>Respon sense pressa. Cada exercici et diu per què la resposta correcta ho és.</p>';
     html += ex.practice.map(p => renderExercise(p)).join('');
     html += '</section>';
   }
@@ -3503,7 +3503,7 @@ function renderQuick(lesson) {
   const items = (COURSE.quick || {})[lesson.id];
   if (!items || !items.length) return '';
   return '<section class="quick"><h2>Repaso rápido</h2>' +
-    '<p class="qk-intro">Tres preguntes para comprobar que lo has entendido. Sin nota: si fallas, la explicación te dice por qué.</p>' +
+    '<p class="qk-intro">Tres preguntes per a comprovar que ho has entès. Sense nota: si falles, la resposta et diu per què.</p>' +
     '<div class="qk-list">' + items.map((it, i) =>
       '<div class="qk" data-ok="' + it.correct + '">' +
         '<p class="qk-q"><b>' + (i + 1) + '.</b> ' + it.q + '</p>' +
@@ -3529,7 +3529,7 @@ function renderExercise(p) {
     return '<div class="vf">' + p.items.map((it, i) =>
       '<div class="vf-item" data-ok="' + (it.ok ? 1 : 0) + '">' +
       '<p class="vf-q"><b>' + (i + 1) + '.</b> ' + it.t + '</p>' +
-      '<div class="vf-btns"><button type="button" data-v="1">Verdadero</button><button type="button" data-v="0">Falso</button></div>' +
+      '<div class="vf-btns"><button type="button" data-v="1">Veritable</button><button type="button" data-v="0">Fals</button></div>' +
       '<p class="vf-fb" aria-live="polite">' + it.fb + '</p></div>'
     ).join('') + '</div>';
   }
@@ -3664,10 +3664,10 @@ function viewLesson(s, lesson, index) {
   });
 
   const nav = `
-  <nav class="lesson-nav" aria-label="Navegación entre lecciones">
+  <nav class="lesson-nav" aria-label="Navegació entre lliçons">
     ${prev
       ? '<a class="btn ghost" href="#/' + s.id + '/' + prev.id + '"><span><span class="dir">Anterior</span><span class="t">' + esc(prev.title) + '</span></span></a>'
-      : '<a class="btn ghost" href="#/"><span><span class="dir">Anterior</span><span class="t">Portada del curso</span></span></a>'}
+      : '<a class="btn ghost" href="#/"><span><span class="dir">Anterior</span><span class="t">Portada del curs</span></span></a>'}
     ${next
       ? '<a class="btn" href="#/' + s.id + '/' + next.id + '" data-next="1"><span><span class="dir">Següent</span><span class="t">' + esc(next.title) + '</span></span></a>'
       : '<a class="btn accent" href="#/' + s.id + '/test" data-next="1"><span><span class="dir">Següent</span><span class="t">Test de la sessió</span></span></a>'}
@@ -3693,7 +3693,7 @@ ${essentialsHTML}
   <button class="btn ghost sm" id="printBtn" type="button">Imprimir lliçó</button>
   ${done
     ? '<span class="badge-ok">Lliçó completada</span>'
-    : '<button class="btn sm" id="doneBtn" type="button">Marcar como completada</button>'}
+    : '<button class="btn sm" id="doneBtn" type="button">Marcar com a completada</button>'}
 </div>
 
 ${refsHTML(lesson.refs)}
@@ -3739,8 +3739,8 @@ function viewTest(s) {
   <div class="score" id="scoreBox" role="status"></div>
 </form>
 
-<nav class="lesson-nav" aria-label="Navegación de sessió">
-  <a class="btn ghost" href="#/${s.id}/${s.lessons[0].id}"><span><span class="dir">Sessió ${s.num}</span><span class="t">Repasar las lecciones</span></span></a>
+<nav class="lesson-nav" aria-label="Navegació de la sessió">
+  <a class="btn ghost" href="#/${s.id}/${s.lessons[0].id}"><span><span class="dir">Sessió ${s.num}</span><span class="t">Repassar les lliçons</span></span></a>
   ${s.num < COURSE.sessions.length
     ? '<a class="btn" href="#/' + COURSE.sessions[s.num].id + '/' + COURSE.sessions[s.num].lessons[0].id + '"><span><span class="dir">Següent</span><span class="t">Sessió ' + (s.num + 1) + ' · ' + esc(COURSE.sessions[s.num].title) + '</span></span></a>'
     : '<a class="btn accent" href="#/"><span><span class="dir">Fin</span><span class="t">Torna a la portada</span></span></a>'}
@@ -3811,7 +3811,7 @@ function afterQuiz(kind) {
     box.innerHTML = '<p class="big">' + score + ' de ' + questions.length + ' encerts · ' + pct + ' %</p>' +
       '<p>' + (pass ? '<b>Superado.</b> ' : '<b>No superado.</b> ') +
       (pass ? 'Pots passar a la sessió següent.' : 'Repassa la sessió i repetix el test: no hi ha límit d’intents.') +
-      ' Revisa las explicaciones de cada pregunta.</p>';
+      ' Revisa les explicacions de cada pregunta.</p>';
 
     store.setTest(kind.replace('test-', ''), score, questions.length);
 
@@ -3957,7 +3957,7 @@ ${blocks}
 </div>
 
 <h2>Nota sobre els vídeos</h2>
-<p>La web del 112CV manté una galeria de vídeos en <em>Educació preventiva → Inundacions</em> amb el <b>VÍDEO_DANA_Valenciano</b> i un <b>audiollibre</b> del mateix material. Són els recursos audiovisuals oficials enllaçats en la sessió 2. No s’han incorporat vídeos d’altres fonts per a no atribuir a la Generalitat continguts que no siguen seus.</p>
+<p>La web del 112CV manté una galeria de vídeos en <em>Educació preventiva → Inundacions</em> amb el <b>VÍDEO_DANA_Valencià</b> i un <b>audiollibre</b> del mateix material. Són els recursos audiovisuals oficials enllaçats en la sessió 2. No s’han incorporat vídeos d’altres fonts per a no atribuir a la Generalitat continguts que no siguen seus.</p>
 
 <div class="callout warn">
   <span class="ttl">Material viu</span>
@@ -4018,7 +4018,7 @@ document.addEventListener('keydown', ev => {
 
 window.addEventListener('hashchange', render);
 
-/* Al imprimir, abrir los casos prácticos para que la respuesta no se pierda */
+/* En imprimir, obri els casos pràctics perquè la resposta no es perda */
 window.addEventListener('beforeprint', () => {
   document.querySelectorAll('details.case:not([open])').forEach(d => {
     d.dataset.autoOpen = '1';
