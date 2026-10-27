@@ -3221,6 +3221,7 @@ function esc(s) {
 }
 
 function refsHTML(refs) {
+  return '';
   if (!refs || !refs.length) return '';
   const items = refs.map(r => {
     const [id, loc] = String(r).split('|');
@@ -4038,9 +4039,11 @@ updateProgressUI();
 
 </script>
 
+
 <script>
 (function () {
-  const LC_DATA = {"n3_1": ["Inundació i DANA", "Inundación y DANA"], "n3_2": ["Preses i embassaments", "Presas y embalses"], "n3_3": ["Tempesta, vent fort i temporal marítim", "Tormenta, viento fuerte y temporal marítimo"], "n3_4": ["Incendi forestal", "Incendio forestal"], "n3_5": ["Onada de fred, nevades i CO", "Ola de frío, nevadas y CO"], "n3_6": ["Onada de calor", "Ola de calor"], "n3_7": ["Terratrèmol", "Terremoto"], "n3_8": ["Risc tecnològic · Evacuació", "Riesgo tecnológico · Evacuación"], "n3_9": ["Risc tecnològic · Confinament", "Riesgo tecnológico · Confinamiento"], "n3_10": ["Pirotècnia", "Pirotécnia"], "n3_11": ["Riscos en la llar", "Riesgos en el hogar"], "n3_12": ["Esdeveniments multitudinaris", "Eventos multitudinarios"], "n3_13": ["Alertes i notícies falses", "Alertas y noticias falsas"], "n3_14": ["Després de l'emergència", "Después de la emergencia"], "n3_15": ["Telefonada a l’1·1·2", "Llamada al 1·1·2"]};
+  const TITLES = {"n3_1": ["Inundació i DANA", "Inundación y DANA"], "n3_2": ["Preses i embassaments", "Presas y embalses"], "n3_3": ["Tempesta, vent fort i temporal marítim", "Tormenta, viento fuerte y temporal marítimo"], "n3_4": ["Incendi forestal", "Incendio forestal"], "n3_5": ["Onada de fred, nevades i CO", "Ola de frío, nevadas y CO"], "n3_6": ["Onada de calor", "Ola de calor"], "n3_7": ["Terratrèmol", "Terremoto"], "n3_8": ["Risc tecnològic · Evacuació", "Riesgo tecnológico · Evacuación"], "n3_9": ["Risc tecnològic · Confinament", "Riesgo tecnológico · Confinamiento"], "n3_10": ["Pirotècnia", "Pirotécnia"], "n3_11": ["Riscos en la llar", "Riesgos en el hogar"], "n3_12": ["Esdeveniments multitudinaris", "Eventos multitudinarios"], "n3_13": ["Alertes i notícies falses", "Alertas y noticias falsas"], "n3_14": ["Després de l'emergència", "Después de la emergencia"], "n3_15": ["Telefonada a l’1·1·2", "Llamada al 1·1·2"]};
+  const LESSONS = {"s1l2": ["n3_13", "n3_15"], "s1l3": ["n3_8", "n3_9"], "s2l1": ["n3_1", "n3_2"], "s2l2": ["n3_3"], "s2l3": ["n3_4"], "s3l1": ["n3_8", "n3_9"], "s3l2": ["n3_5", "n3_6"], "s3l3": ["n3_10", "n3_11"], "s4l1": ["n3_7", "n3_9"], "s4l2": ["n3_8", "n3_9"], "s4l3": ["n3_14", "n3_15"]};
   const lang = document.documentElement.lang.startsWith('es') ? 'es' : 'va';
   const base = lang === 'es' ? '../assets/materials/' : 'assets/materials/';
   const ui = lang === 'es'
@@ -4049,16 +4052,28 @@ updateProgressUI();
   const view = document.getElementById('view');
   if (!view) return;
 
+  function route() {
+    const parts = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean);
+    return parts.length ? parts[parts.length - 1] : '';
+  }
+
   function mount() {
-    const src = view.querySelector('.sources');
-    if (!src || src.dataset.lc) return;
-    const ids = [...src.querySelectorAll('li[data-src]')].map(li => li.dataset.src).filter(id => LC_DATA[id]);
+    const id = route();
+    const ids = LESSONS[id] || [];
     if (!ids.length) return;
-    src.dataset.lc = '1';
+
+    const old = view.querySelector('.lesson-comic');
+    if (old) { if (old.dataset.lesson === id) return; old.remove(); }
+
+    const heads = [...view.querySelectorAll('h2,h3')];
+    let anchor = heads.find(h => /qu[eè] cal fer|qu[eé] hacer|qu[eè] fer/i.test(h.textContent));
+    if (!anchor) anchor = heads[Math.floor(heads.length / 2)] || null;
+    if (!anchor) return;
 
     let i = 0;
     const sec = document.createElement('section');
     sec.className = 'lesson-comic';
+    sec.dataset.lesson = id;
     sec.setAttribute('aria-label', ui.kick);
     sec.innerHTML = '<div class="lc-head"><span>' + ui.kick + '</span><span class="lc-count"></span></div>' +
       '<div class="lc-stage"><img alt=""><button class="lc-nav prev" aria-label="' + ui.prev + '">‹</button>' +
@@ -4074,13 +4089,13 @@ updateProgressUI();
     const all = sec.querySelector('.lc-all');
 
     function draw() {
-      const id = ids[i];
-      const t = LC_DATA[id];
-      img.src = base + 'n3/full/' + id + '.webp';
+      const sid = ids[i];
+      const t = TITLES[sid];
+      img.src = base + 'n3/full/' + sid + '.webp';
       img.alt = (lang === 'es' ? t[1] : t[0]) + ' · infografia oficial del 112CV';
       title.textContent = lang === 'es' ? t[1] : t[0];
       count.textContent = (i + 1) + ' ' + ui.of + ' ' + ids.length;
-      all.href = 'materials/#' + id.replace('_', '-');
+      all.href = 'materials/#' + sid.replace('_', '-');
       all.textContent = ui.all;
       prev.disabled = i === 0;
       next.disabled = i === ids.length - 1;
@@ -4096,13 +4111,15 @@ updateProgressUI();
     next.addEventListener('click', e => { e.stopPropagation(); if (i < ids.length - 1) { i++; draw(); } });
     if (ids.length === 1) { prev.hidden = true; next.hidden = true; }
     draw();
-    src.parentNode.insertBefore(sec, src);
+    anchor.parentNode.insertBefore(sec, anchor);
   }
 
   new MutationObserver(() => requestAnimationFrame(mount)).observe(view, {childList: true, subtree: true});
+  window.addEventListener('hashchange', () => setTimeout(mount, 0));
   mount();
 })();
 </script>
+
 
 </body>
 </html>
