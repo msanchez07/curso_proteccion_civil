@@ -1,0 +1,308 @@
+[
+ {
+  "id": "guia",
+  "kind": "guia",
+  "title": "Guia tècnica de suport i consulta ràpida per al professorat de centres docents no universitaris",
+  "href": "https://www.112cv.gva.es/documents/163565706/413620410/Guia+val+DIGITAL+05-08.pdf/6b1a605c-f436-98eb-31e8-38a5c8a0ce82?t=1786354188826"
+ },
+ {
+  "id": "inf1",
+  "kind": "infografia",
+  "title": "Infografies Nivell 1 (valencià)",
+  "href": "https://www.112cv.gva.es/documents/163565706/412645166/Infografias_Nivel1_Val.pdf/8b05479a-ebe0-f844-e03d-af059a8db8f3?t=1784094794928"
+ },
+ {
+  "id": "txt1",
+  "kind": "infografia",
+  "title": "Textos de suport Nivell 1 (valencià)",
+  "href": "https://www.112cv.gva.es/documents/163565706/412645166/TextosApoyo_Nivel1_Val.pdf/53092b47-40c6-9384-51bd-788cf70cf3ba?t=1784094864657"
+ },
+ {
+  "id": "inf2",
+  "kind": "infografia",
+  "title": "Infografies Nivell 2 (valencià)",
+  "href": "https://www.112cv.gva.es/documents/163565706/412645169/Infografias_Nivel2_Val.pdf/28d6aaef-be74-1427-c0aa-dfe9ab4c1be1?t=1784094946275"
+ },
+ {
+  "id": "n3",
+  "kind": "infografia",
+  "title": "Infografies Nivell 3 · galería completa (15 infografías)",
+  "href": "https://www.112cv.gva.es/va/infografias-textos/nivel-3"
+ },
+ {
+  "id": "n3_1",
+  "kind": "infografia",
+  "title": "N3 · 1. DANA",
+  "href": "https://www.112cv.gva.es/documents/163565706/415855315/1_DANA_n3_V.jpg/2946238f-f325-0c5f-de58-70e067145010?version=1.0&t=1791198993263"
+ },
+ {
+  "id": "n3_2",
+  "kind": "infografia",
+  "title": "N3 · 2. Preses",
+  "href": "https://www.112cv.gva.es/documents/163565706/415855315/2_PRESAS_n3_V.jpg/c604f373-f984-9f9b-19d6-5b8bc7bd78bd?version=1.0&t=1791198994250"
+ },
+ {
+  "id": "n3_3",
+  "kind": "infografia",
+  "title": "N3 · 3. Tempesta",
+  "href": "https://www.112cv.gva.es/documents/163565706/415855315/3_TORMENTA_n3_V.jpg/62cf84bc-44e6-b9ab-5621-0b2ce7b2e609?version=1.0&t=1791198994894"
+ },
+ {
+  "id": "n3_4",
+  "kind": "infografia",
+  "title": "N3 · 4. Incendi",
+  "href": "https://www.112cv.gva.es/documents/163565706/415855315/4_INCENDIO_n3_V.jpg/b8558390-d6db-1295-f8e1-279ee4b04a66?version=1.0&t=1791198995623"
+ },
+ {
+  "id": "n3_5",
+  "kind": "infografia",
+  "title": "N3 · 5. Onada de fred",
+  "href": "https://www.112cv.gva.es/documents/163565706/415855315/5_OLA+DE+FR%C3%8DO_n3_V.jpg/50f55acf-ddee-70e2-2b58-2f9bb384f799?version=1.0&t=1791198996573"
+ },
+ {
+  "id": "n3_6",
+  "kind": "infografia",
+  "title": "N3 · 6. Onada de calor",
+  "href": "https://www.112cv.gva.es/documents/163565706/415855315/6_OLA+DE+CALOR_n3_V.jpg/340db0ba-e92e-aa8b-03f5-7e4234c2d385?version=1.0&t=1791198997235"
+ },
+ {
+  "id": "n3_7",
+  "kind": "infografia",
+  "title": "N3 · 7. Terratrèmol",
+  "href": "https://www.112cv.gva.es/documents/163565706/415855315/7_TERREMOTO_n3_V.jpg/71af4552-07c2-e294-7059-2294b74aa4b9?version=1.0&t=1791198998031"
+ },
+ {
+  "id": "n3_8",
+  "kind": "infografia",
+  "title": "N3 · 8. Risc d’evacuació",
+  "href": "https://www.112cv.gva.es/documents/163565706/415855315/8_RIESGO_EVACUACI%C3%93_n3_V.jpg/080bbbae-e649-57fa-b59c-9c0e1ad2f0cf?version=1.0&t=1791198998825"
+ },
+ {
+  "id": "n3_9",
+  "kind": "infografia",
+  "title": "N3 · 9. Risc de confinament",
+  "href": "https://www.112cv.gva.es/documents/163565706/415855315/9_RIESGO_CONFINAMIENTO_n3_V.jpg/7767085e-4639-3dfa-83e5-8c05fed4bbdf?version=1.0&t=1791198999614"
+ },
+ {
+  "id": "n3_10",
+  "kind": "infografia",
+  "title": "N3 · 10. Pirotècnia",
+  "href": "https://www.112cv.gva.es/documents/163565706/415855315/10_PIROTECNIA_n3+_.jpg/649acc92-2a19-e1ee-b673-4828b1e4a681?version=1.0&t=1791199000365"
+ },
+ {
+  "id": "n3_11",
+  "kind": "infografia",
+  "title": "N3 · 11. Riscos a casa",
+  "href": "https://www.112cv.gva.es/documents/163565706/415855315/11_RIESGOS_HOGAR_n3+_V.jpg/d415cf96-1b9a-22c6-3bf6-3ce89f74c571?version=1.0&t=1791199000992"
+ },
+ {
+  "id": "n3_12",
+  "kind": "infografia",
+  "title": "N3 · 12. Esdeveniments multitudinaris",
+  "href": "https://www.112cv.gva.es/documents/163565706/415855315/12_EVENTOS+MULTITUDINARIOS_n3_V.jpg/31158898-5883-4890-b532-ff6337aa82b9?version=1.0&t=1791199001774"
+ },
+ {
+  "id": "n3_13",
+  "kind": "infografia",
+  "title": "N3 · 13. Alertes i notícies falses",
+  "href": "https://www.112cv.gva.es/documents/163565706/415855315/13_ALERTAS+Y+BULOS_n3_V.jpg/c785ab92-d9b6-4e80-65bb-f00a02f8379c?version=1.0&t=1791199002595"
+ },
+ {
+  "id": "n3_14",
+  "kind": "infografia",
+  "title": "N3 · 14. Després de l’emergència",
+  "href": "https://www.112cv.gva.es/documents/163565706/415855315/14_DESPU%C3%89S_EMERGENCIA_n3_V.jpg/b64c3090-adaa-14b6-868a-c08a2ca25b07?version=1.0&t=1791199003269"
+ },
+ {
+  "id": "n3_15",
+  "kind": "infografia",
+  "title": "N3 · 15. Telefonada a l’1·1·2",
+  "href": "https://www.112cv.gva.es/documents/163565706/415855315/15_LLAMADA+112_n3_V.jpg/dec1e33c-e468-37cf-2787-34486ec6a581?version=1.0&t=1791199004073"
+ },
+ {
+  "id": "video_dana",
+  "kind": "video",
+  "title": "Vídeo «VÍDEO_DANA_Valenciano»",
+  "href": "https://www.112cv.gva.es/va/-/v%C3%8Ddeo_dana_valenciano"
+ },
+ {
+  "id": "audio_dana",
+  "kind": "video",
+  "title": "Audiolibro «AUDIOLIBRO_Valenciano»",
+  "href": "https://www.112cv.gva.es/va/-/audiolibro_valenciano"
+ },
+ {
+  "id": "diptico",
+  "kind": "infografia",
+  "title": "Díptic «Inundacions, com protegir-nos?» · guia per a xiquets i xiquetes",
+  "href": "https://www.112cv.gva.es/documents/163565706/396931138/D%C3%8DPTICO_+Proyecto+educativo+DANA.pdf/e1341fac-a331-7cbf-bb17-8c91e2d3a53b?t=1759484979099"
+ },
+ {
+  "id": "cartell",
+  "kind": "infografia",
+  "title": "Cartell «Inundacions, com protegir-nos?»",
+  "href": "https://www.112cv.gva.es/documents/163565706/396931138/CARTELL_+Inundacions%2C+com+protegir-nos_.pdf/18f3f347-8666-98dc-5db4-7657a63bbbc5?t=1759484977998"
+ },
+ {
+  "id": "w_autoproteccion",
+  "kind": "web",
+  "title": "112CV · Autoprotecció",
+  "href": "https://www.112cv.gva.es/va/autoproteccion"
+ },
+ {
+  "id": "w_edificios",
+  "kind": "web",
+  "title": "112CV · Incendis en edificis",
+  "href": "https://www.112cv.gva.es/va/incendios-en-edificios"
+ },
+ {
+  "id": "w_montana",
+  "kind": "web",
+  "title": "112CV · En la muntanya",
+  "href": "https://www.112cv.gva.es/va/en-la-montana"
+ },
+ {
+  "id": "w_mar",
+  "kind": "web",
+  "title": "112CV · En el mar",
+  "href": "https://www.112cv.gva.es/va/en-el-mar"
+ },
+ {
+  "id": "w_llamar",
+  "kind": "web",
+  "title": "112CV · Telefonar a l’1·1·2",
+  "href": "https://www.112cv.gva.es/va/llamar-al-1-1-2"
+ },
+ {
+  "id": "w_trabajo",
+  "kind": "web",
+  "title": "112CV · En el centre de treball",
+  "href": "https://www.112cv.gva.es/va/en-el-centre-de-trabajo"
+ },
+ {
+  "id": "w_espectaculos",
+  "kind": "web",
+  "title": "112CV · Espectacles públics",
+  "href": "https://www.112cv.gva.es/va/espectaculos-publicos"
+ },
+ {
+  "id": "w_inundaciones",
+  "kind": "web",
+  "title": "112CV · Inundacions",
+  "href": "https://www.112cv.gva.es/va/inundaciones"
+ },
+ {
+  "id": "w_forestales",
+  "kind": "web",
+  "title": "112CV · Incendis forestals",
+  "href": "https://www.112cv.gva.es/va/incendios-forestales1"
+ },
+ {
+  "id": "w_sismico",
+  "kind": "web",
+  "title": "112CV · Risc sísmic",
+  "href": "https://www.112cv.gva.es/va/riesgo-sismico"
+ },
+ {
+  "id": "w_nevadas",
+  "kind": "web",
+  "title": "112CV · Nevades",
+  "href": "https://www.112cv.gva.es/va/nevadas"
+ },
+ {
+  "id": "w_viento",
+  "kind": "web",
+  "title": "112CV · Vent i temporal marítim",
+  "href": "https://www.112cv.gva.es/va/viento/temporal-maritimo"
+ },
+ {
+  "id": "w_quimico",
+  "kind": "web",
+  "title": "112CV · Risc químic",
+  "href": "https://www.112cv.gva.es/va/riesgo-quimico"
+ },
+ {
+  "id": "w_mercancias",
+  "kind": "web",
+  "title": "112CV · Mercaderies perilloses",
+  "href": "https://www.112cv.gva.es/va/mercancias-peligrosas"
+ },
+ {
+  "id": "w_frio_calor",
+  "kind": "web",
+  "title": "112CV · Onades de fred i de calor",
+  "href": "https://www.112cv.gva.es/va/olas-de-frio-y-de-calor"
+ },
+ {
+  "id": "w_radiactivo",
+  "kind": "web",
+  "title": "112CV · Risc radiactiu",
+  "href": "https://www.112cv.gva.es/va/riesgo-radiactivo"
+ },
+ {
+  "id": "w_pcivil",
+  "kind": "web",
+  "title": "112CV · La protecció civil",
+  "href": "https://www.112cv.gva.es/va/la-proteccion-civil"
+ },
+ {
+  "id": "w_legislacion",
+  "kind": "web",
+  "title": "112CV · Legislació",
+  "href": "https://www.112cv.gva.es/va/legislacion"
+ },
+ {
+  "id": "w_planes",
+  "kind": "web",
+  "title": "112CV · Guies per a redacció de plans d’emergència",
+  "href": "https://www.112cv.gva.es/va/guies-per-a-redaccio-de-plans-d-emergencia"
+ },
+ {
+  "id": "w_educacio",
+  "kind": "web",
+  "title": "112CV · Educació preventiva",
+  "href": "https://www.112cv.gva.es/va/educacio-preventiva"
+ },
+ {
+  "id": "w_infografias",
+  "kind": "web",
+  "title": "112CV · Infografies i textos de suport",
+  "href": "https://www.112cv.gva.es/va/infografias-textos"
+ },
+ {
+  "id": "retro",
+  "kind": "juego",
+  "title": "RetoEmergencias (juego educativo de la Generalitat Valenciana)",
+  "href": "https://emergencias.gva.es/estatico/retoEMERgencias_1_0/index.html"
+ },
+ {
+  "id": "n_plan",
+  "kind": "norma",
+  "title": "Pla de formació davant d’emergències de protecció civil en centres educatius no universitaris (BOE-A-2025-21354)",
+  "href": "https://www.boe.es/diario_boe/txt.php?id=boe-a-2025-21354"
+ },
+ {
+  "id": "n_524",
+  "kind": "norma",
+  "title": "Reial decret 524/2023, Norma bàsica de protecció civil (BOE-A-2023-14679)",
+  "href": "https://www.boe.es/buscar/act.php?id=boe-a-2023-14679"
+ },
+ {
+  "id": "n_393",
+  "kind": "norma",
+  "title": "Reial decret 393/2007, Norma bàsica d’autoprotecció (BOE-A-2007-6237)",
+  "href": "https://www.boe.es/buscar/doc.php?id=boe-a-2007-6237"
+ },
+ {
+  "id": "n_dogv",
+  "kind": "norma",
+  "title": "Resolució de 30 de març de 2026, instruccions del Pla de formació (DOGV)",
+  "href": "https://dogv.gva.es/datos/2026/04/14/pdf/2026_9957_va.pdf"
+ },
+ {
+  "id": "aemet",
+  "kind": "web",
+  "title": "AEMET · Avisos meteorològics i Meteoalerta (ajuda)",
+  "href": "https://www.aemet.es/va/eltiempo/prediccion/avisos/ayuda"
+ }
+]

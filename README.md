@@ -14,10 +14,15 @@ Web bilingüe: **valencià per defecte** i **castellà** en `/es/`.
 .
 ├── index.html                     ← curs en valencià (portada)
 ├── aules/index.html               ← guia d’Aules
+├── materials/index.html           ← còmic d’emergències (112CV)
 ├── descargas/examen-moodle.xml    ← examen (Moodle XML)
+├── assets/materials/              ← infografies processades (WebP)
+├── materiales/fuentes.json        ← inventari de fonts oficials
+├── tools/build_materials.py       ← genera el còmic en VA/ES
 ├── es/
 │   ├── index.html                 ← curs en castellà
 │   ├── aules/index.html           ← guia en castellà
+│   ├── materials/index.html       ← còmic en castellà
 │   └── descargas/examen-moodle.xml
 ├── README.md
 ├── .gitignore
@@ -27,7 +32,24 @@ Web bilingüe: **valencià per defecte** i **castellà** en `/es/`.
 - **`/`** → curs en valencià.
 - **`/es/`** → curs en castellà (complet).
 - **`/aules/`** → guia per a importar el XML i publicar el qüestionari.
+- **`/materials/`** → còmic amb les 15 infografies N3, N1/N2 i la guia.
 - **`/descargas/examen-moodle.xml`** → examen de 20 preguntes.
+
+## Materials processats
+
+Les fonts oficials del 112CV ja no són només enllaços:
+
+- **Còmic d’emergències** (`/materials/`): lector per diapositives amb les 15 infografies N3, una per pàgina, amb navegació, teclat, gestos i descàrrega de l’original.
+- **Nivell 2** (10 làmines) i **Nivell 1** (8 làmines), també en el lector.
+- **Guia tècnica** (51 p.), amb portada, índex i pàgines de mostra.
+- **Díptic i cartell** d’inundacions.
+- Les referències de cada lliçó enllacen a la fitxa processada (`Llegir la fitxa processada`), no només al PDF extern.
+
+Per regenerar el còmic:
+
+```bash
+python3 tools/build_materials.py
+```
 
 ## Estat de la traducció
 
@@ -38,7 +60,7 @@ Web bilingüe: **valencià per defecte** i **castellà** en `/es/`.
 | Casos pràctics i exercicis | ✅ | ✅ |
 | Repàs ràpid (36 preguntes) | ✅ | ✅ |
 | Diagrames | ✅ | ✅ |
-| Captures d’infografies oficials | — (per decisió) | ✅ |
+| Infografies oficials (còmic) | ✅ 15 làmines N3 | ✅ 15 làmines N3 |
 | Glossari (21 termes) | ✅ | ✅ |
 | Guia d’Aules | ✅ | ✅ |
 | Examen Moodle | ✅ | ✅ |

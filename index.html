@@ -555,6 +555,8 @@ details.deep p,details.deep ul{font-size:.93rem}
   details.case summary::before{display:none}
   h2{break-after:avoid}
 }
+a.chip{text-decoration:none}
+.ref-link.local{font-weight:700}
 </style>
 </head>
 <body>
@@ -571,6 +573,7 @@ details.deep p,details.deep ul{font-size:.93rem}
     </div>
     <span class="byline"><b>Manuel Sánchez Gomis</b> · Professor de FP d’Informàtica<br><a href="mailto:me.sanchezgomis@edu.gva.es">me.sanchezgomis@edu.gva.es</a></span>
     <div class="topbar-actions">
+      <a class="chip comic-link" href="materials/index.html" title="Còmic 112">🎬 Còmic 112</a>
       <div class="lang" role="group" aria-label="Idioma">
         <span aria-current="true" lang="va">VA</span>
         <a href="es/index.html" hreflang="es" lang="es" title="Versión en castellano">ES</a>
@@ -714,6 +717,30 @@ const SOURCES = {
   n_dogv: { kind:'norma', title:'Resolució de 30 de març de 2026, instruccions del Pla de formació (DOGV)', href:'https://dogv.gva.es/datos/2026/04/14/pdf/2026_9957_va.pdf' },
   aemet: { kind:'web', title:'AEMET · Avisos meteorològics i Meteoalerta (ajuda)', href:'https://www.aemet.es/va/eltiempo/prediccion/avisos/ayuda' }
 };
+const LOCAL_MATERIALS = {
+  guia: 'materials/#guia',
+  inf1: 'materials/#n1',
+  inf2: 'materials/#n2',
+  txt1: 'materials/#n1',
+  diptico: 'materials/#guia',
+  cartell: 'materials/#guia',
+  n3_1: 'materials/#n3-1',
+  n3_2: 'materials/#n3-2',
+  n3_3: 'materials/#n3-3',
+  n3_4: 'materials/#n3-4',
+  n3_5: 'materials/#n3-5',
+  n3_6: 'materials/#n3-6',
+  n3_7: 'materials/#n3-7',
+  n3_8: 'materials/#n3-8',
+  n3_9: 'materials/#n3-9',
+  n3_10: 'materials/#n3-10',
+  n3_11: 'materials/#n3-11',
+  n3_12: 'materials/#n3-12',
+  n3_13: 'materials/#n3-13',
+  n3_14: 'materials/#n3-14',
+  n3_15: 'materials/#n3-15'
+};
+
 COURSE.sessions.push({
   id: 's1',
   num: 1,
@@ -3182,8 +3209,9 @@ function refsHTML(refs) {
     const [id, loc] = String(r).split('|');
     const src = SOURCES[id];
     if (!src) return '';
-    const href = src.href ? ' href="' + src.href + '" target="_blank" rel="noopener noreferrer"' : '';
-    const linkTxt = src.href ? '<a class="ref-link" href="' + src.href + '" target="_blank" rel="noopener noreferrer">' + shortUrl(src.href) + '</a>' : '';
+    const local = LOCAL_MATERIALS[id];
+    const localTxt = local ? '<a class="ref-link local" href="' + local + '">' + 'Llegir la fitxa processada →' + '</a>' : '';
+    const linkTxt = localTxt + (src.href ? '<a class="ref-link" href="' + src.href + '" target="_blank" rel="noopener noreferrer">' + shortUrl(src.href) + '</a>' : '');
     return '<li class="src"><span class="kind ' + src.kind + '">' + kindLabel(src.kind) + '</span><div>' +
       '<b>' + esc(src.title) + '</b>' +
       (loc ? '<span class="note"><b>Secció utilizada:</b> ' + esc(loc) + '</span>' : '') +

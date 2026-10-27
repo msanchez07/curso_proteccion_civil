@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="va">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Còmic d'emergències · Protecció Civil</title>
+<style>
+:root{color-scheme:dark;--bg:#0b0f14;--panel:#121922;--line:#222d39;--ink:#e6edf3;--muted:#93a3b1;--accent:#5fa8c0;--blue:#1f5fa8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"Helvetica Neue",Arial,sans-serif}
+a{color:#9fc7e8}
+.top{position:sticky;top:0;z-index:20;background:rgba(11,15,20,.9);backdrop-filter:blur(12px);border-bottom:1px solid #1b2530}
+.bar{max-width:1280px;margin:0 auto;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;gap:16px}
+.brand{font-weight:800;letter-spacing:.2px;font-size:15px}
+.brand small{display:block;color:var(--accent);font-size:11px;letter-spacing:2.5px;font-weight:800}
+.links{display:flex;align-items:center;gap:18px;font-size:14px}
+.wrap{max-width:1280px;margin:0 auto;padding:0 24px}
+.hero{padding:46px 0 8px}
+.hero h1{font-size:56px;line-height:1.02;letter-spacing:-2.5px;margin:10px 0 14px}
+.hero .lead{color:var(--muted);font-size:18px;line-height:1.55;max-width:780px;margin:0}
+.kicker{color:var(--accent);font-size:12px;letter-spacing:3px;font-weight:800}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:28px 0 20px}
+.tab{border:1px solid #2a3440;background:#111821;color:#c8d4de;padding:9px 15px;border-radius:999px;cursor:pointer;font-weight:650;font-size:14px}
+.tab[aria-selected="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(265px,1fr));gap:16px;padding-bottom:22px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;cursor:pointer;transition:transform .18s,border-color .18s;text-align:left;color:inherit;font:inherit;padding:0}
+.card:hover{transform:translateY(-3px);border-color:#3d5c7c}
+.card img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;background:#0a0e13}
+.card .body{padding:12px 15px 16px}
+.card .n{font-size:11px;color:var(--accent);font-weight:800;letter-spacing:2px}
+.card h3{margin:4px 0 6px;font-size:17px;line-height:1.3}
+.card p{margin:0;color:#8fa0ae;font-size:13px;line-height:1.45}
+.card .go{display:inline-block;margin-top:10px;font-size:12.5px;color:#9fc7e8}
+.guide{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;padding:8px 0 60px}
+.guide .cover img{width:100%;border-radius:12px;border:1px solid var(--line);display:block}
+.guide .mini{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+.guide .mini img{width:100%;border-radius:8px;border:1px solid var(--line);display:block;cursor:pointer}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+.toc h2{margin:0 0 12px;font-size:19px}
+.toc ol{margin:0;padding-left:20px;color:#b9c7d3;line-height:1.85;font-size:14px}
+.toc li b{color:#e6edf3;font-weight:650}
+.btn{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;font-weight:750;padding:11px 16px;border-radius:9px;margin-top:16px}
+.note{color:#7f8e9b;font-size:12.5px;line-height:1.6;margin-top:18px}
+.reader{position:fixed;inset:0;background:rgba(4,7,11,.97);display:none;flex-direction:column;z-index:100}
+.reader.open{display:flex}
+.rbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 22px;color:#c8d4de}
+.rbar .t{font-weight:750;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rbar .c{font-variant-numeric:tabular-nums;color:#8fa0ae;font-size:13px}
+.close{background:none;border:1px solid #2a3440;color:#c8d4de;border-radius:9px;padding:8px 13px;cursor:pointer}
+.stage{flex:1;display:flex;align-items:center;justify-content:center;position:relative;padding:0 72px 66px;min-height:0}
+.paper{background:#fff;padding:10px;border-radius:6px;box-shadow:0 30px 90px rgba(0,0,0,.65);max-width:min(1420px,94vw);max-height:100%;display:flex;flex-direction:column}
+.paper img{display:block;max-width:100%;max-height:calc(100vh - 230px);width:auto;height:auto;margin:0 auto}
+.paper .cap{color:#33424f;font-size:12.5px;display:flex;justify-content:space-between;gap:14px;padding:8px 6px 2px}
+.paper .cap a{color:#1f5fa8}
+.paper.turn{animation:turn .22s ease-out}
+@keyframes turn{from{opacity:.35;transform:translateX(26px)}to{opacity:1;transform:none}}
+.nav{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;border:1px solid #2a3440;background:#121922;color:#fff;font-size:22px;cursor:pointer}
+.prev{left:12px}.next{right:12px}
+.nav:disabled{opacity:.22;cursor:default}
+.dots{display:flex;gap:6px;justify-content:center;padding:0 0 14px;flex-wrap:wrap}
+.dot{width:7px;height:7px;border-radius:4px;background:#2a3440}
+.dot.on{background:var(--accent)}
+@media(max-width:800px){.hero h1{font-size:38px}.guide{grid-template-columns:1fr}.stage{padding:0 10px 58px}.nav{width:42px;height:42px}.paper img{max-height:calc(100vh - 210px)}.links a.hide{display:none}}
+</style>
+<body>
+<header class="top"><div class="bar">
+  <div class="brand"><small>112 · PROTECCIÓ CIVIL</small>Còmic d'emergències</div>
+  <div class="links">
+    <a href="../index.html">← Tornar al curs</a>
+    <a href="../es/materials/index.html" hreflang="es">Castellà</a>
+  </div>
+</div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <div class="kicker">MATERIAL OFICIAL · 112CV</div>
+    <h1>Còmic d'emergències</h1>
+    <p class="lead">Les 15 infografies del Nivell 3, per llegir com un còmic: una pàgina, una emergència. Cada làmina explica què fer abans, durant i després.</p>
+    <div class="tabs" role="tablist" aria-label="Nivells">
+      <button class="tab" role="tab" data-list="n3" aria-selected="true">Nivell 3 · 15 làmines</button>
+      <button class="tab" role="tab" data-list="n2" aria-selected="false">Nivell 2 · 10 làmines</button>
+      <button class="tab" role="tab" data-list="n1" aria-selected="false">Nivell 1 · 8 làmines</button>
+      <button class="tab" role="tab" data-list="guia" aria-selected="false">Guia</button>
+    </div>
+    <div id="grid" class="grid"></div>
+    <section id="guia" class="guide" hidden>
+      <div class="cover">
+        <img src="../assets/materials/guia/p1-01.webp" alt="Portada de la guia tècnica">
+        <div class="mini">
+          <img src="../assets/materials/guia/p9-09.webp" alt="Pàgina de mostra de la guia" data-pdf="1">
+          <img src="../assets/materials/guia/p37-37.webp" alt="Pàgina d'annexos de la guia" data-pdf="1">
+          <img src="../assets/materials/guia/p11-11.webp" alt="Pàgina de mostra de la guia" data-pdf="1">
+        </div>
+        <div class="mini" style="grid-template-columns:repeat(2,1fr)">
+          <a href="https://www.112cv.gva.es/documents/163565706/396931138/D%C3%8DPTICO_+Proyecto+educativo+DANA.pdf/e1341fac-a331-7cbf-bb17-8c91e2d3a53b?t=1759484979099" target="_blank" rel="noopener"><img src="../assets/materials/misc/diptico-1.webp" alt="Díptic Inundacions, com protegir-nos"></a>
+          <a href="https://www.112cv.gva.es/documents/163565706/396931138/CARTELL_+Inundacions%2C+com+protegir-nos_.pdf/18f3f347-8666-98dc-5db4-7657a63bbbc5?t=1759484977998" target="_blank" rel="noopener"><img src="../assets/materials/misc/cartell.webp" alt="Cartell Inundacions, com protegir-nos"></a>
+        </div>
+      </div>
+      <div class="toc">
+        <h2>Guia tècnica del professorat</h2>
+        <p class="note" style="margin-top:0">51 pàgines de consulta ràpida. Ací tens l'índex i les pàgines clau; el PDF complet està en el botó.</p>
+        <ol><li><b>Marc d'ús, abast i llenguatge comú</b> · p. 1</li><li><b>Sistema Nacional de Protecció Civil, alertes i fonts oficials</b> · p. 3</li><li><b>Comunicació accessible i conducció bàsica del grup</b> · p. 5</li><li><b>Incendi en interior</b> · p. 6</li><li><b>Inundació i DANA</b> · p. 8</li><li><b>Preses i embassaments</b> · p. 10</li><li><b>Tempesta, vent fort i temporal marítim</b> · p. 13</li><li><b>Incendi forestal i interfície urbanoforestal</b> · p. 15</li><li><b>Onada de fred, neu i calefacció</b> · p. 18</li><li><b>Onada de calor, radiació solar i activitat física</b> · p. 21</li><li><b>Terratrèmol</b> · p. 23</li><li><b>Risc tecnològic</b> · p. 26</li><li><b>Pirotècnia</b> · p. 28</li><li><b>Riscos freqüents a casa</b> · p. 30</li><li><b>Recuperació inicial i suport</b> · p. 32</li><li><b>Annexos operatius</b> · p. 33</li><li><b>Glossari operatiu</b> · p. 42</li><li><b>Referències tècniques bàsiques i bibliografia</b> · p. 44</li></ol>
+        <a class="btn" href="https://www.112cv.gva.es/documents/163565706/413620410/Guia+val+DIGITAL+05-08.pdf/6b1a605c-f436-98eb-31e8-38a5c8a0ce82?t=1786354188826" target="_blank" rel="noopener">Obrir la guia (PDF)</a>
+        <p class="note">Material elaborat per la Generalitat Valenciana (112CV). Distribució gratuïta; es reprodueix amb finalitat educativa i s'enllaça la font original.</p>
+      </div>
+    </section>
+    <p class="note" id="foot">Material elaborat per la Generalitat Valenciana (112CV). Distribució gratuïta; es reprodueix amb finalitat educativa i s'enllaça la font original.</p>
+  </section>
+</main>
+
+<div class="reader" id="reader" role="dialog" aria-modal="true" aria-labelledby="rt">
+  <div class="rbar">
+    <div class="t" id="rt"></div>
+    <div class="c" id="rc"></div>
+    <button class="close" id="rclose">Tancar ✕</button>
+  </div>
+  <div class="stage" id="stage">
+    <button class="nav prev" id="rprev" aria-label="Anterior">‹</button>
+    <div class="paper" id="paper">
+      <img id="rimg" alt="">
+      <div class="cap"><span id="rdesc"></span><a id="rsrc" href="#" target="_blank" rel="noopener">Descarregar l'original</a></div>
+    </div>
+    <button class="nav next" id="rnext" aria-label="Següent">›</button>
+  </div>
+  <div class="dots" id="rdots"></div>
+</div>
+
+<script>
+const DATA = {"n3": [{"id": "n3-1", "n": "01", "title": "Inundació i DANA", "desc": "L'aigua enganya. Davant d'una inundació, busca altura.", "alt": "Inundació i DANA · infografia oficial del 112CV", "img": "n3/full/n3_1.webp", "thumb": "n3/thumb/n3_1.webp", "src": "https://www.112cv.gva.es/documents/163565706/415855315/1_DANA_n3_V.jpg/2946238f-f325-0c5f-de58-70e067145010?version=1.0&t=1791198993263", "list": "n3", "i": 0}, {"id": "n3-2", "n": "02", "title": "Preses i embassaments", "desc": "Segueix la ruta segura prevista i mantín el grup unit.", "alt": "Preses i embassaments · infografia oficial del 112CV", "img": "n3/full/n3_2.webp", "thumb": "n3/thumb/n3_2.webp", "src": "https://www.112cv.gva.es/documents/163565706/415855315/2_PRESAS_n3_V.jpg/c604f373-f984-9f9b-19d6-5b8bc7bd78bd?version=1.0&t=1791198994250", "list": "n3", "i": 1}, {"id": "n3-3", "n": "03", "title": "Tempesta, vent fort i temporal marítim", "desc": "Busca un lloc interior segur i allunya't del que puga caure.", "alt": "Tempesta, vent fort i temporal marítim · infografia oficial del 112CV", "img": "n3/full/n3_3.webp", "thumb": "n3/thumb/n3_3.webp", "src": "https://www.112cv.gva.es/documents/163565706/415855315/3_TORMENTA_n3_V.jpg/62cf84bc-44e6-b9ab-5621-0b2ce7b2e609?version=1.0&t=1791198994894", "list": "n3", "i": 2}, {"id": "n3-4", "n": "04", "title": "Incendi forestal", "desc": "Si veus fum, avisa i segueix la indicació oficial.", "alt": "Incendi forestal · infografia oficial del 112CV", "img": "n3/full/n3_4.webp", "thumb": "n3/thumb/n3_4.webp", "src": "https://www.112cv.gva.es/documents/163565706/415855315/4_INCENDIO_n3_V.jpg/b8558390-d6db-1295-f8e1-279ee4b04a66?version=1.0&t=1791198995623", "list": "n3", "i": 3}, {"id": "n3-5", "n": "05", "title": "Onada de fred, nevades i CO", "desc": "Abrida't, evita caigudes i usa la calefacció de forma segura.", "alt": "Onada de fred, nevades i CO · infografia oficial del 112CV", "img": "n3/full/n3_5.webp", "thumb": "n3/thumb/n3_5.webp", "src": "https://www.112cv.gva.es/documents/163565706/415855315/5_OLA+DE+FR%C3%8DO_n3_V.jpg/50f55acf-ddee-70e2-2b58-2f9bb384f799?version=1.0&t=1791198996573", "list": "n3", "i": 4}, {"id": "n3-6", "n": "06", "title": "Onada de calor", "desc": "Reconeix els senyals, baixa el ritme i busca un lloc fresc.", "alt": "Onada de calor · infografia oficial del 112CV", "img": "n3/full/n3_6.webp", "thumb": "n3/thumb/n3_6.webp", "src": "https://www.112cv.gva.es/documents/163565706/415855315/6_OLA+DE+CALOR_n3_V.jpg/340db0ba-e92e-aa8b-03f5-7e4234c2d385?version=1.0&t=1791198997235", "list": "n3", "i": 5}, {"id": "n3-7", "n": "07", "title": "Terratrèmol", "desc": "Protegeix-te durant el tremolor; després, segueix la indicació del centre.", "alt": "Terratrèmol · infografia oficial del 112CV", "img": "n3/full/n3_7.webp", "thumb": "n3/thumb/n3_7.webp", "src": "https://www.112cv.gva.es/documents/163565706/415855315/7_TERREMOTO_n3_V.jpg/71af4552-07c2-e294-7059-2294b74aa4b9?version=1.0&t=1791198998031", "list": "n3", "i": 6}, {"id": "n3-8", "n": "08", "title": "Risc tecnològic · Evacuació", "desc": "Si la instrucció és eixir, segueix la ruta segura indicada.", "alt": "Risc tecnològic · Evacuació · infografia oficial del 112CV", "img": "n3/full/n3_8.webp", "thumb": "n3/thumb/n3_8.webp", "src": "https://www.112cv.gva.es/documents/163565706/415855315/8_RIESGO_EVACUACI%C3%93_n3_V.jpg/080bbbae-e649-57fa-b59c-9c0e1ad2f0cf?version=1.0&t=1791198998825", "list": "n3", "i": 7}, {"id": "n3-9", "n": "09", "title": "Risc tecnològic · Confinament", "desc": "Estar dins és més segur: entra, tanca i informa't.", "alt": "Risc tecnològic · Confinament · infografia oficial del 112CV", "img": "n3/full/n3_9.webp", "thumb": "n3/thumb/n3_9.webp", "src": "https://www.112cv.gva.es/documents/163565706/415855315/9_RIESGO_CONFINAMIENTO_n3_V.jpg/7767085e-4639-3dfa-83e5-8c05fed4bbdf?version=1.0&t=1791198999614", "list": "n3", "i": 8}, {"id": "n3-10", "n": "10", "title": "Pirotècnia", "desc": "Disfruta amb distància i respecte.", "alt": "Pirotècnia · infografia oficial del 112CV", "img": "n3/full/n3_10.webp", "thumb": "n3/thumb/n3_10.webp", "src": "https://www.112cv.gva.es/documents/163565706/415855315/10_PIROTECNIA_n3+_.jpg/649acc92-2a19-e1ee-b673-4828b1e4a681?version=1.0&t=1791199000365", "list": "n3", "i": 9}, {"id": "n3-11", "n": "11", "title": "Riscos en la llar", "desc": "A casa: para, protegeix-te i avisa.", "alt": "Riscos en la llar · infografia oficial del 112CV", "img": "n3/full/n3_11.webp", "thumb": "n3/thumb/n3_11.webp", "src": "https://www.112cv.gva.es/documents/163565706/415855315/11_RIESGOS_HOGAR_n3+_V.jpg/d415cf96-1b9a-22c6-3bf6-3ce89f74c571?version=1.0&t=1791199000992", "list": "n3", "i": 10}, {"id": "n3-12", "n": "12", "title": "Esdeveniments multitudinaris", "desc": "Grup unit, punt de trobada i eixides clares.", "alt": "Esdeveniments multitudinaris · infografia oficial del 112CV", "img": "n3/full/n3_12.webp", "thumb": "n3/thumb/n3_12.webp", "src": "https://www.112cv.gva.es/documents/163565706/415855315/12_EVENTOS+MULTITUDINARIOS_n3_V.jpg/31158898-5883-4890-b532-ff6337aa82b9?version=1.0&t=1791199001774", "list": "n3", "i": 11}, {"id": "n3-13", "n": "13", "title": "Alertes i notícies falses", "desc": "Verifica la informació abans de compartir-la.", "alt": "Alertes i notícies falses · infografia oficial del 112CV", "img": "n3/full/n3_13.webp", "thumb": "n3/thumb/n3_13.webp", "src": "https://www.112cv.gva.es/documents/163565706/415855315/13_ALERTAS+Y+BULOS_n3_V.jpg/c785ab92-d9b6-4e80-65bb-f00a02f8379c?version=1.0&t=1791199002595", "list": "n3", "i": 12}, {"id": "n3-14", "n": "14", "title": "Després de l'emergència", "desc": "Seguretat, cura i aprenentatge.", "alt": "Després de l'emergència · infografia oficial del 112CV", "img": "n3/full/n3_14.webp", "thumb": "n3/thumb/n3_14.webp", "src": "https://www.112cv.gva.es/documents/163565706/415855315/14_DESPU%C3%89S_EMERGENCIA_n3_V.jpg/b64c3090-adaa-14b6-868a-c08a2ca25b07?version=1.0&t=1791199003269", "list": "n3", "i": 13}, {"id": "n3-15", "n": "15", "title": "Telefonada a l'1·1·2", "desc": "Què dir i qui ajuda.", "alt": "Telefonada a l'1·1·2 · infografia oficial del 112CV", "img": "n3/full/n3_15.webp", "thumb": "n3/thumb/n3_15.webp", "src": "https://www.112cv.gva.es/documents/163565706/415855315/15_LLAMADA+112_n3_V.jpg/dec1e33c-e468-37cf-2787-34486ec6a581?version=1.0&t=1791199004073", "list": "n3", "i": 14}], "n2": [{"id": "n2-1", "n": "01", "title": "Missió emergència!", "desc": "", "alt": "Missió emergència! · 112CV", "img": "n2/full/01.webp", "thumb": "n2/thumb/01.webp", "src": "https://www.112cv.gva.es/documents/163565706/412645169/Infografias_Nivel2_Val.pdf/28d6aaef-be74-1427-c0aa-dfe9ab4c1be1?t=1784094946275", "list": "n2", "i": 0}, {"id": "n2-2", "n": "02", "title": "Infografia N2 · pàgina 2", "desc": "", "alt": "Infografia N2 · pàgina 2 · 112CV", "img": "n2/full/02.webp", "thumb": "n2/thumb/02.webp", "src": "https://www.112cv.gva.es/documents/163565706/412645169/Infografias_Nivel2_Val.pdf/28d6aaef-be74-1427-c0aa-dfe9ab4c1be1?t=1784094946275", "list": "n2", "i": 1}, {"id": "n2-3", "n": "03", "title": "Infografia N2 · pàgina 3", "desc": "", "alt": "Infografia N2 · pàgina 3 · 112CV", "img": "n2/full/03.webp", "thumb": "n2/thumb/03.webp", "src": "https://www.112cv.gva.es/documents/163565706/412645169/Infografias_Nivel2_Val.pdf/28d6aaef-be74-1427-c0aa-dfe9ab4c1be1?t=1784094946275", "list": "n2", "i": 2}, {"id": "n2-4", "n": "04", "title": "Infografia N2 · pàgina 4", "desc": "", "alt": "Infografia N2 · pàgina 4 · 112CV", "img": "n2/full/04.webp", "thumb": "n2/thumb/04.webp", "src": "https://www.112cv.gva.es/documents/163565706/412645169/Infografias_Nivel2_Val.pdf/28d6aaef-be74-1427-c0aa-dfe9ab4c1be1?t=1784094946275", "list": "n2", "i": 3}, {"id": "n2-5", "n": "05", "title": "Infografia N2 · pàgina 5", "desc": "", "alt": "Infografia N2 · pàgina 5 · 112CV", "img": "n2/full/05.webp", "thumb": "n2/thumb/05.webp", "src": "https://www.112cv.gva.es/documents/163565706/412645169/Infografias_Nivel2_Val.pdf/28d6aaef-be74-1427-c0aa-dfe9ab4c1be1?t=1784094946275", "list": "n2", "i": 4}, {"id": "n2-6", "n": "06", "title": "Infografia N2 · pàgina 6", "desc": "", "alt": "Infografia N2 · pàgina 6 · 112CV", "img": "n2/full/06.webp", "thumb": "n2/thumb/06.webp", "src": "https://www.112cv.gva.es/documents/163565706/412645169/Infografias_Nivel2_Val.pdf/28d6aaef-be74-1427-c0aa-dfe9ab4c1be1?t=1784094946275", "list": "n2", "i": 5}, {"id": "n2-7", "n": "07", "title": "Infografia N2 · pàgina 7", "desc": "", "alt": "Infografia N2 · pàgina 7 · 112CV", "img": "n2/full/07.webp", "thumb": "n2/thumb/07.webp", "src": "https://www.112cv.gva.es/documents/163565706/412645169/Infografias_Nivel2_Val.pdf/28d6aaef-be74-1427-c0aa-dfe9ab4c1be1?t=1784094946275", "list": "n2", "i": 6}, {"id": "n2-8", "n": "08", "title": "Infografia N2 · pàgina 8", "desc": "", "alt": "Infografia N2 · pàgina 8 · 112CV", "img": "n2/full/08.webp", "thumb": "n2/thumb/08.webp", "src": "https://www.112cv.gva.es/documents/163565706/412645169/Infografias_Nivel2_Val.pdf/28d6aaef-be74-1427-c0aa-dfe9ab4c1be1?t=1784094946275", "list": "n2", "i": 7}, {"id": "n2-9", "n": "09", "title": "Infografia N2 · pàgina 9", "desc": "", "alt": "Infografia N2 · pàgina 9 · 112CV", "img": "n2/full/09.webp", "thumb": "n2/thumb/09.webp", "src": "https://www.112cv.gva.es/documents/163565706/412645169/Infografias_Nivel2_Val.pdf/28d6aaef-be74-1427-c0aa-dfe9ab4c1be1?t=1784094946275", "list": "n2", "i": 8}, {"id": "n2-10", "n": "10", "title": "Infografia N2 · pàgina 10", "desc": "", "alt": "Infografia N2 · pàgina 10 · 112CV", "img": "n2/full/10.webp", "thumb": "n2/thumb/10.webp", "src": "https://www.112cv.gva.es/documents/163565706/412645169/Infografias_Nivel2_Val.pdf/28d6aaef-be74-1427-c0aa-dfe9ab4c1be1?t=1784094946275", "list": "n2", "i": 9}], "n1": [{"id": "n1-1", "n": "01", "title": "Em prepare amb Emer! Dins o fora?", "desc": "", "alt": "Em prepare amb Emer! Dins o fora? · 112CV", "img": "n1/full/1.webp", "thumb": "n1/thumb/1.webp", "src": "https://www.112cv.gva.es/documents/163565706/412645166/Infografias_Nivel1_Val.pdf/8b05479a-ebe0-f844-e03d-af059a8db8f3?t=1784094794928", "list": "n1", "i": 0}, {"id": "n1-2", "n": "02", "title": "Infografia N1 · pàgina 2", "desc": "", "alt": "Infografia N1 · pàgina 2 · 112CV", "img": "n1/full/2.webp", "thumb": "n1/thumb/2.webp", "src": "https://www.112cv.gva.es/documents/163565706/412645166/Infografias_Nivel1_Val.pdf/8b05479a-ebe0-f844-e03d-af059a8db8f3?t=1784094794928", "list": "n1", "i": 1}, {"id": "n1-3", "n": "03", "title": "Infografia N1 · pàgina 3", "desc": "", "alt": "Infografia N1 · pàgina 3 · 112CV", "img": "n1/full/3.webp", "thumb": "n1/thumb/3.webp", "src": "https://www.112cv.gva.es/documents/163565706/412645166/Infografias_Nivel1_Val.pdf/8b05479a-ebe0-f844-e03d-af059a8db8f3?t=1784094794928", "list": "n1", "i": 2}, {"id": "n1-4", "n": "04", "title": "Infografia N1 · pàgina 4", "desc": "", "alt": "Infografia N1 · pàgina 4 · 112CV", "img": "n1/full/4.webp", "thumb": "n1/thumb/4.webp", "src": "https://www.112cv.gva.es/documents/163565706/412645166/Infografias_Nivel1_Val.pdf/8b05479a-ebe0-f844-e03d-af059a8db8f3?t=1784094794928", "list": "n1", "i": 3}, {"id": "n1-5", "n": "05", "title": "Infografia N1 · pàgina 5", "desc": "", "alt": "Infografia N1 · pàgina 5 · 112CV", "img": "n1/full/5.webp", "thumb": "n1/thumb/5.webp", "src": "https://www.112cv.gva.es/documents/163565706/412645166/Infografias_Nivel1_Val.pdf/8b05479a-ebe0-f844-e03d-af059a8db8f3?t=1784094794928", "list": "n1", "i": 4}, {"id": "n1-6", "n": "06", "title": "Infografia N1 · pàgina 6", "desc": "", "alt": "Infografia N1 · pàgina 6 · 112CV", "img": "n1/full/6.webp", "thumb": "n1/thumb/6.webp", "src": "https://www.112cv.gva.es/documents/163565706/412645166/Infografias_Nivel1_Val.pdf/8b05479a-ebe0-f844-e03d-af059a8db8f3?t=1784094794928", "list": "n1", "i": 5}, {"id": "n1-7", "n": "07", "title": "Infografia N1 · pàgina 7", "desc": "", "alt": "Infografia N1 · pàgina 7 · 112CV", "img": "n1/full/7.webp", "thumb": "n1/thumb/7.webp", "src": "https://www.112cv.gva.es/documents/163565706/412645166/Infografias_Nivel1_Val.pdf/8b05479a-ebe0-f844-e03d-af059a8db8f3?t=1784094794928", "list": "n1", "i": 6}, {"id": "n1-8", "n": "08", "title": "Infografia N1 · pàgina 8", "desc": "", "alt": "Infografia N1 · pàgina 8 · 112CV", "img": "n1/full/8.webp", "thumb": "n1/thumb/8.webp", "src": "https://www.112cv.gva.es/documents/163565706/412645166/Infografias_Nivel1_Val.pdf/8b05479a-ebe0-f844-e03d-af059a8db8f3?t=1784094794928", "list": "n1", "i": 7}]};
+const ASSET = "../assets/materials/";
+const UI = {"lang": "va", "title": "Còmic d'emergències · Protecció Civil", "kicker": "MATERIAL OFICIAL · 112CV", "h1": "Còmic d'emergències", "lead": "Les 15 infografies del Nivell 3, per llegir com un còmic: una pàgina, una emergència. Cada làmina explica què fer abans, durant i després.", "tabs": ["Nivell 3", "Nivell 2", "Nivell 1", "Guia"], "read": "Llegir la pàgina", "page": "Pàgina", "close": "Tancar", "download": "Descarregar l'original", "prev": "Anterior", "next": "Següent", "guide": "Guia tècnica del professorat", "guideLead": "51 pàgines de consulta ràpida. Ací tens l'índex i les pàgines clau; el PDF complet està en el botó.", "guideBtn": "Obrir la guia (PDF)", "back": "Tornar al curs", "other": "Castellà", "note": "Material elaborat per la Generalitat Valenciana (112CV). Distribució gratuïta; es reprodueix amb finalitat educativa i s'enllaça la font original.", "count": "15 làmines", "count2": "10 làmines", "count1": "8 làmines"};
+let listName = "n3", index = 0;
+
+const $ = (s) => document.querySelector(s);
+const grid = $("#grid");
+const guide = $("#guia");
+const reader = $("#reader");
+const paper = $("#paper");
+const img = $("#rimg");
+
+function card(item) {
+  const el = document.createElement("button");
+  el.className = "card";
+  el.type = "button";
+  el.innerHTML = '<img loading="lazy" src="' + ASSET + item.thumb + '" alt="' + item.alt + '">' +
+    '<div class="body"><div class="n">' + item.n + '</div><h3>' + item.title + '</h3>' +
+    '<p>' + (item.desc || "") + '</p><span class="go">' + UI.read + ' →</span></div>';
+  el.addEventListener("click", () => openReader(item.list, item.i));
+  return el;
+}
+
+function renderGrid(name) {
+  listName = name;
+  document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", String(t.dataset.list === name)));
+  const isGuide = name === "guia";
+  guide.hidden = !isGuide;
+  grid.hidden = isGuide;
+  $("#foot").hidden = isGuide;
+  if (isGuide) return;
+  grid.innerHTML = "";
+  DATA[name].forEach(item => grid.appendChild(card(item)));
+}
+
+function openReader(name, i) {
+  listName = name; index = i;
+  reader.classList.add("open");
+  history.replaceState(null, "", "#" + DATA[name][i].id);
+  render();
+  $("#rclose").focus();
+}
+
+function closeReader() {
+  reader.classList.remove("open");
+  history.replaceState(null, "", location.pathname + location.search);
+}
+
+function render() {
+  const arr = DATA[listName];
+  const it = arr[index];
+  img.src = ASSET + it.img;
+  img.alt = it.alt;
+  $("#rt").textContent = it.title;
+  $("#rc").textContent = (index + 1) + " / " + arr.length;
+  $("#rdesc").textContent = it.desc || "";
+  $("#rsrc").href = it.src || "#";
+  $("#rprev").disabled = index === 0;
+  $("#rnext").disabled = index === arr.length - 1;
+  const dots = $("#rdots");
+  dots.innerHTML = "";
+  arr.forEach((_, n) => {
+    const d = document.createElement("span");
+    d.className = "dot" + (n === index ? " on" : "");
+    dots.appendChild(d);
+  });
+  paper.classList.remove("turn");
+  void paper.offsetWidth;
+  paper.classList.add("turn");
+  const next = arr[index + 1], prev = arr[index - 1];
+  if (next) new Image().src = ASSET + next.img;
+  if (prev) new Image().src = ASSET + prev.img;
+}
+
+function go(delta) {
+  const arr = DATA[listName];
+  const n = index + delta;
+  if (n < 0 || n >= arr.length) return;
+  index = n;
+  history.replaceState(null, "", "#" + arr[index].id);
+  render();
+}
+
+document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => renderGrid(t.dataset.list)));
+$("#rprev").addEventListener("click", () => go(-1));
+$("#rnext").addEventListener("click", () => go(1));
+$("#rclose").addEventListener("click", closeReader);
+reader.addEventListener("click", (e) => { if (e.target === reader) closeReader(); });
+document.addEventListener("keydown", (e) => {
+  if (!reader.classList.contains("open")) return;
+  if (e.key === "Escape") closeReader();
+  if (e.key === "ArrowLeft") go(-1);
+  if (e.key === "ArrowRight") go(1);
+});
+let tx = 0;
+$("#stage").addEventListener("touchstart", (e) => { tx = e.touches[0].clientX; }, {passive: true});
+$("#stage").addEventListener("touchend", (e) => {
+  const dx = e.changedTouches[0].clientX - tx;
+  if (Math.abs(dx) > 50) go(dx < 0 ? 1 : -1);
+}, {passive: true});
+document.querySelectorAll("[data-pdf]").forEach(el => el.addEventListener("click", () => window.open("https://www.112cv.gva.es/documents/163565706/413620410/Guia+val+DIGITAL+05-08.pdf/6b1a605c-f436-98eb-31e8-38a5c8a0ce82?t=1786354188826", "_blank")));
+
+const h = decodeURIComponent(location.hash.slice(1));
+if (h) {
+  if (h === "guia") { renderGrid("guia"); guide.scrollIntoView({behavior: "smooth"}); }
+  else {
+    for (const k in DATA) {
+      const i = DATA[k].findIndex(x => x.id === h);
+      if (i >= 0) { renderGrid(k); openReader(k, i); break; }
+    }
+  }
+} else {
+  renderGrid("n3");
+}
+</script>
+</body>
+</html>
