@@ -4120,5 +4120,17 @@ updateProgressUI();
 </script>
 
 
+
+<script>
+(function () {
+  const a = document.querySelector('.lang a');
+  if (!a) return;
+  const base = a.dataset.base || a.getAttribute('href').split('#')[0];
+  a.dataset.base = base;
+  function sync() { a.href = base + (location.hash || ''); }
+  window.addEventListener('hashchange', sync);
+  sync();
+})();
+</script>
 </body>
 </html>

@@ -45,26 +45,25 @@ N1_TITLES = {1: "Em prepare amb Emer! Dins o fora?"}
 N2_TITLES = {1: "Missió emergència!"}
 
 TOC = [
-    ("Marc d'ús, abast i llenguatge comú", 1, "Marco de uso, alcance y lenguaje común"),
-    ("Sistema Nacional de Protecció Civil, alertes i fonts oficials", 3, "Sistema Nacional de Protección Civil, alertas y fuentes oficiales"),
-    ("Comunicació accessible i conducció bàsica del grup", 5, "Comunicación accesible y conducción básica del grupo"),
-    ("Incendi en interior", 6, "Incendio en interior"),
-    ("Inundació i DANA", 8, "Inundación y DANA"),
-    ("Preses i embassaments", 10, "Presas y embalses"),
-    ("Tempesta, vent fort i temporal marítim", 13, "Tormenta, viento fuerte y temporal marítimo"),
-    ("Incendi forestal i interfície urbanoforestal", 15, "Incendio forestal e interfaz urbanoforestal"),
-    ("Onada de fred, neu i calefacció", 18, "Ola de frío, nieve y calefacción"),
-    ("Onada de calor, radiació solar i activitat física", 21, "Ola de calor, radiación solar y actividad física"),
-    ("Terratrèmol", 23, "Terremoto"),
-    ("Risc tecnològic", 26, "Riesgo tecnológico"),
-    ("Pirotècnia", 28, "Pirotécnia"),
-    ("Riscos freqüents a casa", 30, "Riesgos frecuentes en casa"),
-    ("Recuperació inicial i suport", 32, "Recuperación inicial y apoyo"),
-    ("Annexos operatius", 33, "Anexos operativos"),
-    ("Glossari operatiu", 42, "Glosario operativo"),
-    ("Referències tècniques bàsiques i bibliografia", 44, "Referencias técnicas básicas y bibliografía"),
+    ("Marc d'ús, abast i llenguatge comú", 1, "Marco de uso, alcance y lenguaje común", 1),
+    ("Sistema Nacional de Protecció Civil, alertes i fonts oficials", 3, "Sistema Nacional de Protección Civil, alertas y fuentes oficiales", 3),
+    ("Comunicació accessible i conducció bàsica del grup", 5, "Comunicación accesible y conducción básica del grupo", 5),
+    ("Incendi en interior", 6, "Incendio en interior", 6),
+    ("Inundació i DANA", 8, "Inundación y DANA", 8),
+    ("Preses i embassaments", 10, "Presas y embalses", 11),
+    ("Tempesta, vent fort i temporal marítim", 13, "Tormenta, viento fuerte y temporal marítimo", 14),
+    ("Incendi forestal i interfície urbanoforestal", 15, "Incendio forestal e interfaz urbano-forestal", 17),
+    ("Onada de fred, neu i calefacció", 18, "Ola de frío, nieve y uso seguro de calefacción", 20),
+    ("Onada de calor, radiació solar i activitat física", 21, "Ola de calor, radiación solar y actividad física", 23),
+    ("Terratrèmol", 23, "Terremoto", 25),
+    ("Risc tecnològic", 26, "Riesgo tecnológico", 28),
+    ("Pirotècnia", 28, "Pirotecnia", 30),
+    ("Riscos freqüents a casa", 30, "Riesgos frecuentes en el hogar", 32),
+    ("Recuperació inicial i suport", 32, "Recuperación inicial y apoyo", 34),
+    ("Annexos operatius", 33, "Anexos operativos", 35),
+    ("Glossari operatiu", 42, "Glosario operativo", 44),
+    ("Referències tècniques bàsiques i bibliografia", 44, "Referencias técnicas básicas y bibliografía", 46),
 ]
-
 UI = {
     "va": {
         "lang": "va", "title": "Còmic d'emergències · Protecció Civil",
@@ -267,6 +266,7 @@ function openReader(name, i) {
 function closeReader() {
   reader.classList.remove("open");
   history.replaceState(null, "", location.pathname + location.search);
+  syncOther();
 }
 
 function render() {
@@ -290,6 +290,7 @@ function render() {
   paper.classList.remove("turn");
   void paper.offsetWidth;
   paper.classList.add("turn");
+  syncOther();
   const next = arr[index + 1], prev = arr[index - 1];
   if (next) new Image().src = ASSET + next.img;
   if (prev) new Image().src = ASSET + prev.img;
@@ -323,6 +324,14 @@ $("#stage").addEventListener("touchend", (e) => {
 }, {passive: true});
 document.querySelectorAll("[data-pdf]").forEach(el => el.addEventListener("click", () => window.open("__GUIDEPDF__", "_blank")));
 
+const otherLink = document.querySelector('.links a[hreflang]');
+function syncOther() {
+  if (!otherLink) return;
+  const base = otherLink.dataset.base || otherLink.getAttribute('href').split('#')[0];
+  otherLink.dataset.base = base;
+  otherLink.href = base + (location.hash || '');
+}
+
 const h = decodeURIComponent(location.hash.slice(1));
 if (h) {
   if (h === "guia") { renderGrid("guia"); guide.scrollIntoView({behavior: "smooth"}); }
@@ -335,6 +344,7 @@ if (h) {
 } else {
   renderGrid("n3");
 }
+syncOther();
 </script>
 </body>
 </html>
@@ -372,7 +382,7 @@ def build(lang: str) -> str:
             "src": FUENTES["inf1"]["href"], "list": "n1", "i": n - 1,
         })
 
-    toc = "".join(f"<li><b>{t[0] if lang == 'va' else t[2]}</b> · p. {t[1]}</li>" for t in TOC)
+    toc = "".join(f"<li><b>{t[0] if lang == 'va' else t[2]}</b> · p. {t[1] if lang == 'va' else t[3]}</li>" for t in TOC)
     pdf = FUENTES["guia"]["href"] if lang == "va" else "https://www.112cv.gva.es/documents/163565706/413620410/Guia+cas+DIGITAL+05-08.pdf/518e48e1-ae85-0e40-6a57-bd344ed3a7a2?t=1786354187342"
     h1 = ui["h1"]
 

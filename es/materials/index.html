@@ -98,7 +98,7 @@ a{color:#9fc7e8}
       <div class="toc">
         <h2>Guía técnica del profesorado</h2>
         <p class="note" style="margin-top:0">51 páginas de consulta rápida. Aquí tienes el índice y las páginas clave; el PDF completo está en el botón.</p>
-        <ol><li><b>Marco de uso, alcance y lenguaje común</b> · p. 1</li><li><b>Sistema Nacional de Protección Civil, alertas y fuentes oficiales</b> · p. 3</li><li><b>Comunicación accesible y conducción básica del grupo</b> · p. 5</li><li><b>Incendio en interior</b> · p. 6</li><li><b>Inundación y DANA</b> · p. 8</li><li><b>Presas y embalses</b> · p. 10</li><li><b>Tormenta, viento fuerte y temporal marítimo</b> · p. 13</li><li><b>Incendio forestal e interfaz urbanoforestal</b> · p. 15</li><li><b>Ola de frío, nieve y calefacción</b> · p. 18</li><li><b>Ola de calor, radiación solar y actividad física</b> · p. 21</li><li><b>Terremoto</b> · p. 23</li><li><b>Riesgo tecnológico</b> · p. 26</li><li><b>Pirotécnia</b> · p. 28</li><li><b>Riesgos frecuentes en casa</b> · p. 30</li><li><b>Recuperación inicial y apoyo</b> · p. 32</li><li><b>Anexos operativos</b> · p. 33</li><li><b>Glosario operativo</b> · p. 42</li><li><b>Referencias técnicas básicas y bibliografía</b> · p. 44</li></ol>
+        <ol><li><b>Marco de uso, alcance y lenguaje común</b> · p. 1</li><li><b>Sistema Nacional de Protección Civil, alertas y fuentes oficiales</b> · p. 3</li><li><b>Comunicación accesible y conducción básica del grupo</b> · p. 5</li><li><b>Incendio en interior</b> · p. 6</li><li><b>Inundación y DANA</b> · p. 8</li><li><b>Presas y embalses</b> · p. 11</li><li><b>Tormenta, viento fuerte y temporal marítimo</b> · p. 14</li><li><b>Incendio forestal e interfaz urbano-forestal</b> · p. 17</li><li><b>Ola de frío, nieve y uso seguro de calefacción</b> · p. 20</li><li><b>Ola de calor, radiación solar y actividad física</b> · p. 23</li><li><b>Terremoto</b> · p. 25</li><li><b>Riesgo tecnológico</b> · p. 28</li><li><b>Pirotecnia</b> · p. 30</li><li><b>Riesgos frecuentes en el hogar</b> · p. 32</li><li><b>Recuperación inicial y apoyo</b> · p. 34</li><li><b>Anexos operativos</b> · p. 35</li><li><b>Glosario operativo</b> · p. 44</li><li><b>Referencias técnicas básicas y bibliografía</b> · p. 46</li></ol>
         <a class="btn" href="https://www.112cv.gva.es/documents/163565706/413620410/Guia+cas+DIGITAL+05-08.pdf/518e48e1-ae85-0e40-6a57-bd344ed3a7a2?t=1786354187342" target="_blank" rel="noopener">Abrir la guía (PDF)</a>
         <p class="note">Material elaborado por la Generalitat Valenciana (112CV). Distribución gratuita; se reproduce con finalidad educativa y se enlaza la fuente original.</p>
       </div>
@@ -171,6 +171,7 @@ function openReader(name, i) {
 function closeReader() {
   reader.classList.remove("open");
   history.replaceState(null, "", location.pathname + location.search);
+  syncOther();
 }
 
 function render() {
@@ -194,6 +195,7 @@ function render() {
   paper.classList.remove("turn");
   void paper.offsetWidth;
   paper.classList.add("turn");
+  syncOther();
   const next = arr[index + 1], prev = arr[index - 1];
   if (next) new Image().src = ASSET + next.img;
   if (prev) new Image().src = ASSET + prev.img;
@@ -227,6 +229,14 @@ $("#stage").addEventListener("touchend", (e) => {
 }, {passive: true});
 document.querySelectorAll("[data-pdf]").forEach(el => el.addEventListener("click", () => window.open("https://www.112cv.gva.es/documents/163565706/413620410/Guia+cas+DIGITAL+05-08.pdf/518e48e1-ae85-0e40-6a57-bd344ed3a7a2?t=1786354187342", "_blank")));
 
+const otherLink = document.querySelector('.links a[hreflang]');
+function syncOther() {
+  if (!otherLink) return;
+  const base = otherLink.dataset.base || otherLink.getAttribute('href').split('#')[0];
+  otherLink.dataset.base = base;
+  otherLink.href = base + (location.hash || '');
+}
+
 const h = decodeURIComponent(location.hash.slice(1));
 if (h) {
   if (h === "guia") { renderGrid("guia"); guide.scrollIntoView({behavior: "smooth"}); }
@@ -239,6 +249,7 @@ if (h) {
 } else {
   renderGrid("n3");
 }
+syncOther();
 </script>
 </body>
 </html>

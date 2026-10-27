@@ -171,6 +171,7 @@ function openReader(name, i) {
 function closeReader() {
   reader.classList.remove("open");
   history.replaceState(null, "", location.pathname + location.search);
+  syncOther();
 }
 
 function render() {
@@ -194,6 +195,7 @@ function render() {
   paper.classList.remove("turn");
   void paper.offsetWidth;
   paper.classList.add("turn");
+  syncOther();
   const next = arr[index + 1], prev = arr[index - 1];
   if (next) new Image().src = ASSET + next.img;
   if (prev) new Image().src = ASSET + prev.img;
@@ -227,6 +229,14 @@ $("#stage").addEventListener("touchend", (e) => {
 }, {passive: true});
 document.querySelectorAll("[data-pdf]").forEach(el => el.addEventListener("click", () => window.open("https://www.112cv.gva.es/documents/163565706/413620410/Guia+val+DIGITAL+05-08.pdf/6b1a605c-f436-98eb-31e8-38a5c8a0ce82?t=1786354188826", "_blank")));
 
+const otherLink = document.querySelector('.links a[hreflang]');
+function syncOther() {
+  if (!otherLink) return;
+  const base = otherLink.dataset.base || otherLink.getAttribute('href').split('#')[0];
+  otherLink.dataset.base = base;
+  otherLink.href = base + (location.hash || '');
+}
+
 const h = decodeURIComponent(location.hash.slice(1));
 if (h) {
   if (h === "guia") { renderGrid("guia"); guide.scrollIntoView({behavior: "smooth"}); }
@@ -239,6 +249,7 @@ if (h) {
 } else {
   renderGrid("n3");
 }
+syncOther();
 </script>
 </body>
 </html>
